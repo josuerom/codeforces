@@ -1,0 +1,275 @@
+{ // @author josuerom
+	"System.out.print()": {
+		"prefix": "s",
+		"body": [
+			"System.out.print($1);"
+		],
+		"description": "Standard data output"
+	},
+
+	"System.out.println()": {
+		"prefix": "ss",
+		"body": [
+			"System.out.println($1);"
+		],
+		"description": "Standard output with line break"
+	},
+
+	"System.out.prinf()": {
+		"prefix": "sf",
+		"body": [
+			"System.out.printf($1, $2);"
+		],
+		"description": "Formatted standard output"
+	},
+
+	"Scanner(System.in)": {
+		"prefix": "sc",
+		"body": [
+			"Scanner sc = new Scanner(System.in);$1"
+		],
+		"description": "Standard input using the Scanner method"
+	},
+
+	"BufferedReader(new InputStreamReader(System.in))": {
+		"prefix": "buffer",
+		"body": [
+			"BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));$1"
+		],
+		"description": "Improved standard input using the (BufferedReader, InputStreamReader, IOException) methods"
+	},
+
+	"Main method": {
+		"prefix": "main",
+		"body": [
+			"public static void main(String[] args) {",
+			"\t$1",
+			"}"
+		],
+		"description": "This is the main method that java executes"
+	},
+
+	"public static void nameMethod": {
+		"prefix": "psv",
+		"body": [
+			"public static void ${1:nameMethod}($2) {",
+			"}"
+		],
+		"description": "Method I use most often"
+	},
+
+	"Method template": {
+		"prefix": "method",
+		"body": [
+			"public ${1:static} ${2:void} ${3:name}($4) {",
+			"}"
+		],
+		"description": "Template for create methods"
+	},
+
+	"try catch": {
+		"prefix": "try",
+		"body": [
+			"try {",
+			"\t$1",
+			"} catch (${2:Exeption} e) {",
+			"\te.printStackTrace();",
+			"}"
+		],
+		"description": "Methods for handling exceptions"
+	},
+
+	"catch": {
+		"prefix": "cat",
+		"body": [
+			"catch ($1 e) {",
+			"}"
+		],
+	},
+
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if (${1:condition}) {",
+			"}"
+		],
+	},
+
+	"if else": {
+		"prefix": "ifel",
+		"body": [
+			"if ($1) {",
+			"} else {$2",
+			"}"
+		],
+	},
+
+	"do while": {
+		"prefix": "do",
+		"body": [
+			"do {\n\t$1",
+			"} while (${2:condition});"
+		],
+	},
+
+	"while": {
+		"prefix": "wh",
+		"body": [
+			"while ($1) {$2",
+			"}"
+		],
+	},
+
+	"for simple": {
+		"prefix": "for",
+		"body": [
+			"for ($1) {$2",
+			"}"
+		],
+	},
+
+	"for iterator": {
+		"prefix": "fori",
+		"body": [
+			"for (int ${1:i} = 0; ${1:i} < $2; ${1:i}++) {\n\t$3",
+			"}"
+		],
+	},
+
+	"for each": {
+		"prefix": "fore",
+		"body": [
+			"for (${1:int} e : $2) {\n\t$3",
+			"}"
+		],
+	},
+
+	"switch": {
+		"prefix": "sw",
+		"body": [
+			"switch ($1) {",
+			"\tcase 1: $2;",
+			"\t\tbreak;",
+			"\tdefault:",
+			"\t\tSystem.err.println('ERROR. Debe elegir una de las opción válidas.');",
+			"}"
+		],
+	},
+
+	"Ternary operator": {
+		"prefix": "oter",
+		"body": [
+			"${1:boolean name} = (${2:condition}) ? $3 : $4;"
+		],
+	},
+
+	"Object creation": {
+		"prefix": "obj",
+		"body": [
+			"${1:nameClass} ${2:value} = new ${1:nameConstructor}($3);"
+		],
+	},
+
+	"Constructor ()": {
+		"prefix": "constructor",
+		"body": [
+			"public ${1:nameClass}($2) {",
+			"\tthis.$3 = $3;",
+			"}"
+		],
+	},
+
+	"import": {
+		"prefix": "im",
+		"body": [
+			"import java.$1;",
+		],
+		"description": "Import packages"
+	},
+
+	"JavaClass Template": {
+		"prefix": "javaclass",
+		"body": [
+			"public class ${2:nameClass} {",
+			"\t$3",
+			"}"
+		],
+		"description": "JavaClass template"
+	},
+
+	"JavaMainClass Template": {
+		"prefix": "javamainclass",
+		"body": [
+			"public class ${1:nameClass} {\n",
+			"\tpublic static void main(String[] args) {",
+			"\t\t$2",
+			"\t}",
+			"}"
+		],
+		"description": "JavaMainClass template"
+	},
+
+	"JavaDocs": {
+		"prefix": "doc",
+		"body": [
+			"/**",
+			" * @author josuerom",
+			" * @see $1/$2/2022 COL",
+			"*/"
+		],
+		"description": "JavaDocs template"
+	},
+
+	"Arrays()": {
+		"prefix": "arrays",
+		"body": [
+			"Arrays.$1($2);"
+		],
+	},
+
+	"Plantilla java para competir": {
+		"prefix": "java_template_to_compete",
+		"body": [
+			"import java.io.BufferedReader;",
+			"import java.io.IOException;",
+			"import java.io.InputStreamReader;",
+			"import java.util.Arrays;\n",
+			"/**",
+			" * @solution implemented for the problem ${1:problemName}",
+			" * @author josuerom",
+			"*/",
+			"public class ${TM_FILENAME_BASE} {\n",
+			"\tpublic static void main(String[] args) {",
+			"\t\tpc2Read();",
+			"\t}",
+			"",
+			"\tpublic static void solve(${5:int int}Array) {",
+			"\t}",
+			"",
+			"\tpublic static void pc2Read() {",
+			"\t\tString strArray[], line;",
+			"\t\t${3:int int}Array[], tc;",
+			"",
+			"\t\tBufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));",
+			"",
+			"\t\ttry {",
+			"\t\t\ttc = Integer.valueOf(buffer.readLine());\n",
+			"\t\t\twhile (tc-- >= 1) {",
+			"\t\t\t\tline = buffer.readLine();",
+			"\t\t\t\tint$4Array = Arrays.stream(line.substring(0).split(\" \")).map(String::trim)",
+         		"\t\t\t\t\t.mapToInt(Integer::parseInt).toArray();",
+			"\t\t\t\t//Arrays.sort(vec);",
+			"\t\t\t\tsolve(int$4Array);$2",
+			"\t\t\t}",
+			"\t\t\tbuffer.close();",
+			"\t\t} catch (NullPointerException e) {",
+			"\t\t\te.printStackTrace();",
+			"\t\t} catch (IOException e) {",
+			"\t\t\te.printStackTrace();",
+			"\t\t}",
+			"\t}",
+			"}"
+		],
+		"description": "Plantilla de Java para competencias"
+	},
+}
