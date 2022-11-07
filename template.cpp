@@ -1,8 +1,8 @@
-/**
- * @solution problem: #problemName
- * @author josuerom
-*/
-//#pragma GCC optimize("03,unroll-loops")
+/******************************************
+* @AUTHOR:            JOSUEROM            *
+* @UNIVERSITY: MINUTE OF GOD OF COLOMBIA  *
+******************************************/
+#pragma GCC optimize("03,unroll-loops")
 #include <bits/stdc++.h>
 
 #define speed ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);
@@ -23,7 +23,7 @@
 #define program_time cerr << "finished in " << (float)clock() / (CLOCKS_PER_SEC/1000) << " ms\n"
 #define veredict(condition) cout << ((condition) ? "YES\n" : "NO\n") << ln
 #define online_jugde #ifndef ONLINE_JUDGE freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout); #endif
-#define test_cases(t) while((t)--)
+#define test_cases(t) while((t)--) solve();
 #define ln "\n"
 
 #define MAX (ll) 1e9
@@ -37,7 +37,7 @@ typedef long long ll; //9^18
 typedef unsigned int ui; //4^9
 typedef unsigned short us; //65^3
 
-int n, m, t, k, c;
+ll n, m, t, k, c;
 //ll m[MAX][MAX], a[MIN];
 
 void solve() {
@@ -48,6 +48,6 @@ int main() {
    speed;
    online_jugde;
    scanf("%d", &t);
-   test_cases(t) solve();
+   test_cases(t);
    return 0;
 }
