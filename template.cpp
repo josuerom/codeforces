@@ -1,9 +1,9 @@
-/***************************************************
-* @AUTHOR:                JOSUEROM                 *
-* @DATE:               11/11/22 17:48              *
-* @INSTITUTE: MINUTE OF GOD UNIVERSITY OF COLOMBIA *
-***************************************************/
-#pragma GCC optimize("03,unroll-loops")
+/****************************************************
+* @Author:                josuerom                  *
+* @Date:               $1/11/22 $2               *
+* @Institute: Minute Of God University Of Colombia  *
+****************************************************/
+//$3#pragma GCC optimize("03,unroll-loops")
 #include <bits/stdc++.h>
 
 #define read_array(vec) void template<typename T> void read(vector<T>& (vec)) { int n=(vec).size(); for(auto &e : (vec)) cin >> e; }
@@ -40,15 +40,15 @@
 #define ld long double
 using namespace std;
 
-ll n, m, t, k, c;
+ll n, m, t, k, c$4;
 //ll M[MAX][MAX], A[MIN];
 
 void solve() {
-   
+   $5
 }
 
 int main() {
-   SPEDD_IO;
+   SPEED_IO;
    ONLINE_JUGDE;
    cin >> t;
    TEST_CASE(t);
