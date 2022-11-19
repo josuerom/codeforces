@@ -1,6 +1,6 @@
 /****************************************************
 * @author:                josuerom                  *
-* @date:               14/11/22 21:37               *
+* @date:               18/11/22 18:33               *
 * @institute: Minute Of God University Of Colombia  *
 ****************************************************/
 #pragma GCC optimize("03,unroll-loops")
@@ -9,7 +9,7 @@
 #define readArray(vec) void template<typename T> void read(vector<T>&(vec)){int n=(vec).size();for(auto&e:vec) cin >> e;}
 #define TESTING #ifndef ONLINE_JUDGE freopen("test/inp.in", "r", stdin); freopen("test/out.ans", "w", stdout); #endif
 #define SPEED_IO ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);
-#define PROGRAM_TIME cerr << "finished in " << (float)clock() / (CLOCKS_PER_SEC/1000) << " ms\n"
+#define PROGRAM_TIME cerr << "finished in " << (int)clock()/(CLOCKS_PER_SEC/100) << " ms\n"
 #define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n+1);
 #define binarySearch(vec, key) sort(all(vec)); binary_search(all(vec), key);
 #define VEREDICT(condition) cout << ((condition) ? "YES\n" : "NO\n") << endl
@@ -41,45 +41,36 @@ const ui MIN = 1e4;
 const ui MOD = 1000000007;
 const ld PI = 3.1415926535897932384626433832795;
 
+int t, n, i, j, ans;
+//ll M[MAX][MAX], A[MIN];
 
 void solve() {
-   int A[100003];
-   int i, j, n, ans = 0;
    cin >> n;
-   for (i = 0; i < n; i++) {
-      cin >> A[i];
-   }
-   for (j = 0; j < n; j++) {
-      if (A[j]==0) ans++;
-      else break;
-   }
-   for (j; j < n; j++) {
-      if (A[j]==1) ans++;
-      else break;
-   }
-   if (ans==n) {
-      cout << "0\n";
-   } else {
-      ans = 0; j = 0;
-      for (i = n-1; i >= 0; i--) {
-         if (A[i]==0) {
-            for (j; j < n; j++) {
-               if (A[j]==1) {
-                  swap(A[j], A[i]);
-                  ans++;
-               }
+   vector<int> A(n);
+   for (auto &e : A) cin >> e;
+   if (is_sorted(all(A))) cout << "0\n";
+   else {
+      i = n-1, j = 0, ans = 0;
+      while (i > j) {
+         for (; i >= 0; i--) {
+            if (A[i]==0) break;
+            else continue;
+         }
+         for (; j < n; j++) {
+            if (A[j]==1) {
+               swap(A[i], A[j]);
+               ans++; break;
             }
          }
-         if (i==j) break;
       }
-      cout << ans << endl;
+      cout << --ans << endl;
+      return;
    }
 }
 
 int main() {
    SPEED_IO;
-   int t;
-   cin >> t;
-   while (t--) solve();
+   TEST_CASE(t);
+   PROGRAM_TIME;
    return 0;
 }
