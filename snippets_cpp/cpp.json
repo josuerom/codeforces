@@ -110,6 +110,13 @@
 		]
 	},
 
+	"program time()": {
+		"prefix": "time",
+		"body": [
+			"cerr << \"finished in \" << (float)clock()/(CLOCKS_PER_SEC/1000) << \" ms\\n\";$1"
+		]
+	},
+
 	"Plantilla c++ para competencias": {
 		"prefix": "cpp_template_to_compete",
 		"body": [
@@ -124,7 +131,7 @@
 			"#define readArray(vec) void template<typename T> void read(vector<T>&(vec)){int n=(vec).size();for(auto&e:vec) cin >> e;}",
 			"#define TESTING #ifndef ONLINE_JUDGE freopen(\"test/inp.in\", \"r\", stdin); freopen(\"test/out.ans\", \"w\", stdout); #endif",
 			"#define SPEED_IO ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);",
-			"#define PROGRAM_TIME cerr << \"max time \" << (int)clock()/(CLOCKS_PER_SEC/100) << \" ms\\n\"",
+			"#define PROGRAM_TIME cerr << \"max time \" << (int)clock()/(CLOCKS_PER_SEC/10) << \" ms\\n\"",
 			"#define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n+1);",
 			"#define binarySearch(vec, key) sort(all(vec)); binary_search(all(vec), (key));",
 			"#define VEREDICT(condition) cout << ((condition) ? \"YES\\n\" : \"NO\\n\") << endl",
@@ -157,7 +164,7 @@
 			"const ui MOD = 1000000007;",
 			"const ld PI = 3.1415926535897932384626433832795;",
 			"",
-			"ll t, n, m, c, i, j, ans$4;",
+			"int t, n, m, c, i, j, ans$4;",
 			"//ll M[MAX][MAX], A[MIN];",
 			"",
 			"void solve() {",
