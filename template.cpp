@@ -20,7 +20,7 @@
 #define TEST_CASE(tc) cin >> (tc); while((tc)--) { solve(); }
 #define all(vec) (vec).begin(), (vec).end()
 #define fore(e, vec) for (auto &(e): (vec))
-#define isOrdered(vec) is_heap(all(vec))
+#define isOrdered(vec) is_sorted(all(vec))
 #define rsort(vec) short(rall(vec))
 #define sz(vec) (int)(vec).size()
 #define sort(vec) sort(all(vec))
@@ -42,7 +42,7 @@ const ui MIN = 1e4;
 const ui MOD = 1000000007;
 const ld PI = 3.1415926535897932384626433832795;
 
-int t, n, i, j, ans$4;
+ll t, n, m, c, i, j, ans$4;
 //ll M[MAX][MAX], A[MIN];
 
 void solve() {
