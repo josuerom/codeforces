@@ -1,15 +1,15 @@
 /****************************************************
 * @author:                josuerom                  *
-* @date:               $1/11/22 $2               *
+* @date:               11/09/22 18:32               *
 * @institute: Minute Of God University Of Colombia  *
 ****************************************************/
-//$3#pragma GCC optimize("03,unroll-loops")
+#pragma GCC optimize("03,unroll-loops")
 #include <bits/stdc++.h>
 
 #define readArray(vec) void template<typename T> void read(vector<T>&(vec)){int n=(vec).size();for(auto&e:vec) cin >> e;}
 #define TESTING #ifndef ONLINE_JUDGE freopen("test/inp.in", "r", stdin); freopen("test/out.ans", "w", stdout); #endif
 #define SPEED_IO ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);
-#define PROGRAM_TIME cerr << "finished in " << (int)clock()/(CLOCKS_PER_SEC/100) << " ms\n"
+#define PROGRAM_TIME cerr << "finished in " << (int)clock()/(CLOCKS_PER_SEC/10) << " ms\n"
 #define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n+1);
 #define binarySearch(vec, key) sort(all(vec)); binary_search(all(vec), key);
 #define VEREDICT(condition) cout << ((condition) ? "YES\n" : "NO\n") << endl
@@ -42,11 +42,11 @@ const ui MIN = 1e4;
 const ui MOD = 1000000007;
 const ld PI = 3.1415926535897932384626433832795;
 
-ll t, n, m, c, i, j, ans$4;
+int t, n, m, c, i, j, ans;
 //ll M[MAX][MAX], A[MIN];
 
 void solve() {
-   $5
+   // solution comes here
 }
 
 int main() {
