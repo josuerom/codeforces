@@ -1,6 +1,6 @@
 { // @author josuerom
 	"#ifdef ONLINE_JUDGE": {
-		"prefix": "test",
+		"prefix": "testing",
 		"body": [
 			"#ifndef ONLINE_JUDGE",
       	"\tfreopen(\"TEST/$1input.txt\", \"r\", stdin);",
@@ -10,7 +10,7 @@
 	},
 
 	"ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);": {
-		"prefix": "io",
+		"prefix": "speed",
 		"body": [
 			"ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);\n"
 		]
@@ -96,15 +96,14 @@
 		"prefix": "/",
 		"body": [
 			"/****************************************************",
-			"* @Author:                josuerom                  *",
-			"* @Date:               $1/11/22 $2               *",
-			"* @Institute: Minute Of God University Of Colombia  *",
+			"* @author:                josuerom                  *",
+			"* @created:       $1/11/22 ${d/m/Y}              *",
 			"****************************************************/"
 		]
 	},
 
 	"#pragma GCC optimize(\"03,unroll-loops\")": {
-		"prefix": "pra",
+		"prefix": "gcc",
 		"body": [
 			"#pragma GCC optimize(\"03,unroll-loops\")\n"
 		]
@@ -113,7 +112,7 @@
 	"program time()": {
 		"prefix": "time",
 		"body": [
-			"cerr << \"finished in \" << (float)clock()/(CLOCKS_PER_SEC/1000) << \" ms\\n\";$1"
+			"cout << \"max time \" << (float)clock()/(CLOCKS_PER_SEC/10) << \" ms\\n\";$1"
 		]
 	},
 
@@ -121,17 +120,16 @@
 		"prefix": "cpp_template_to_compete",
 		"body": [
 			"/****************************************************",
-			"* @author:                josuerom                  *",
-			"* @date:               $1/11/22 $2               *",
-			"* @institute: Minute Of God University Of Colombia  *",
+			" * @author:                josuerom                 *",
+			" * @created:            $1/11/22 $2              *",
 			"****************************************************/",
 			"//$3#pragma GCC optimize(\"03,unroll-loops\")",
 			"#include <bits/stdc++.h>",
 			"",
 			"#define readArray(vec) void template<typename T> void read(vector<T>&(vec)){int n=(vec).size();for(auto&e:vec) cin >> e;}",
 			"#define TESTING #ifndef ONLINE_JUDGE freopen(\"test/inp.in\", \"r\", stdin); freopen(\"test/out.ans\", \"w\", stdout); #endif",
-			"#define SPEED_IO ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);",
-			"#define PROGRAM_TIME cerr << \"max time \" << (int)clock()/(CLOCKS_PER_SEC/10) << \" ms\\n\"",
+			"#define PROGRAM_TIME cout << \"max time \" << (int)clock()/(CLOCKS_PER_SEC/10) << \" ms\\n\"",
+			"#define SPEED_IO ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);",
 			"#define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n+1);",
 			"#define binarySearch(vec, key) sort(all(vec)); binary_search(all(vec), (key));",
 			"#define VEREDICT(condition) cout << ((condition) ? \"YES\\n\" : \"NO\\n\") << endl",
