@@ -3,8 +3,8 @@
 		"prefix": "testing",
 		"body": [
 			"#ifndef ONLINE_JUDGE",
-      	"\tfreopen(\"TEST/$1input.txt\", \"r\", stdin);",
-      	"\tfreopen(\"TEST/$1output.txt\", \"w\", stdout);",
+      	"\tfreopen(\"input.txt\", \"r\", stdin);",
+      	"\tfreopen(\"output.txt\", \"w\", stdout);",
    		"#endif"
 		]
 	},
@@ -12,14 +12,14 @@
 	"ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);": {
 		"prefix": "speed",
 		"body": [
-			"ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);\n"
+			"ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);$1"
 		]
 	},
 
 	"using namespace std;": {
 		"prefix": "u",
 		"body": [
-			"using namespace std;"
+			"using namespace std;$1"
 		]
 	},
 
@@ -31,7 +31,7 @@
 	},
 
 	"char or string getline()": {
-		"prefix": "readline",
+		"prefix": "readln",
 		"body": [
 			"cin.getline($1, ${2:size}, '\\n');"
 		]
@@ -56,7 +56,7 @@
 	"#include <bits/stdc++.h>": {
 		"prefix": "in",
 		"body": [
-			"#include <${1:bits/stdc++.h}>"
+			"#include <bits/stdc++.h>\n"
 		]
 	},
 
@@ -77,7 +77,8 @@
 	"void solve() { body }": {
 		"prefix": "solve",
 		"body": [
-			"void solve$1() {",
+			"void solve() {",
+			"\t$1",
 			"}"
 		]
 	},
@@ -95,10 +96,10 @@
 	"@author": {
 		"prefix": "/",
 		"body": [
-			"/****************************************************",
-			"* @author:                josuerom                  *",
-			"* @created:       $1/11/22 ${d/m/Y}              *",
-			"****************************************************/"
+			"/**************************************************",
+			" * @author:               josuerom                *",
+			" * @created:           $1/12/22 $2             *",
+			"**************************************************/"
 		]
 	},
 
@@ -127,17 +128,16 @@
 			"#include <bits/stdc++.h>",
 			"",
 			"#define readArray(vec) void template<typename T> void read(vector<T>&(vec)){int n=(vec).size();for(auto&e:vec) cin >> e;}",
-			"#define TESTING #ifndef ONLINE_JUDGE freopen(\"test/inp.in\", \"r\", stdin); freopen(\"test/out.ans\", \"w\", stdout); #endif",
 			"#define PROGRAM_TIME cout << \"max time \" << (int)clock()/(CLOCKS_PER_SEC/10) << \" ms\\n\"",
 			"#define SPEED_IO ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);",
+			"#define VEREDICT(condition) cout << ((condition) ? \"YES\\n\" : \"NO\\n\") << endl",
 			"#define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n+1);",
 			"#define binarySearch(vec, key) sort(all(vec)); binary_search(all(vec), (key));",
-			"#define VEREDICT(condition) cout << ((condition) ? \"YES\\n\" : \"NO\\n\") << endl",
 			"#define forr(i, vec) for(int i = (int)(vec).size()-1; i >= 0; i--)",
 			"#define mod(a, b, mod) ((((a) % (mod)) + ((b) % (mod))) % (mod))",
+			"#define TEST_CASE(tc) cin >> (tc); while((tc)--)",
 			"#define fori(i, b, c) for(int (i) = (b); (i) < (c); (i)++)",
 			"#define rall(vec) (vec).rbegin(), (vec).rend()",
-			"#define TEST_CASE(tc) cin >> (tc); while((tc)--) { solve(); }",
 			"#define all(vec) (vec).begin(), (vec).end()",
 			"#define fore(e, vec) for (auto &(e): (vec))",
 			"#define isOrdered(vec) is_sorted(all(vec))",
@@ -162,16 +162,14 @@
 			"const ui MOD = 1000000007;",
 			"const ld PI = 3.1415926535897932384626433832795;",
 			"",
-			"int t, n, m, c, i, j, ans$4;",
+			"ui t, n, m, c, i, j, ans$4;",
 			"//ll M[MAX][MAX], A[MIN];",
-			"",
-			"void solve() {",
-			"\t$5",
-			"}",
 			"",
 			"int main() {",
 			"\tSPEED_IO;",
-			"\tTEST_CASE(t);",
+			"\tTEST_CASE(t) {",
+			"\t\t$5",
+			"\t}",
 			"\t//PROGRAM_TIME;",
 			"\tFINISH;",
 			"}"
