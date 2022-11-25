@@ -123,7 +123,7 @@
 	"for simple": {
 		"prefix": "for",
 		"body": [
-			"for ($1) {$2",
+			"for (int i = 0; i < $1; i++) {",
 			"}"
 		],
 	},
@@ -139,7 +139,7 @@
 	"for each": {
 		"prefix": "fore",
 		"body": [
-			"for (${1:int} e : $2) {\n\t$3",
+			"for (${1:int} e : $2) {",
 			"}"
 		],
 	},
@@ -157,7 +157,7 @@
 	},
 
 	"Ternary operator": {
-		"prefix": "oter",
+		"prefix": "ter",
 		"body": [
 			"${1:boolean name} = (${2:condition}) ? $3 : $4;"
 		],
@@ -190,8 +190,8 @@
 	"JavaClass Template": {
 		"prefix": "javaclass",
 		"body": [
-			"public class ${2:nameClass} {",
-			"\t$3",
+			"public class ${TM_FILENAME_BASE} {",
+			"\t$1",
 			"}"
 		],
 		"description": "JavaClass template"
@@ -200,9 +200,9 @@
 	"JavaMainClass Template": {
 		"prefix": "javamainclass",
 		"body": [
-			"public class ${1:nameClass} {\n",
+			"public class ${TM_FILENAME_BASE} {\n",
 			"\tpublic static void main(String[] args) {",
-			"\t\t$2",
+			"\t\t$1",
 			"\t}",
 			"}"
 		],
@@ -214,52 +214,77 @@
 		"body": [
 			"/**",
 			" * @author josuerom",
-			" * @see $1/$2/2022 COL",
+			" * @created $1/$2/2022 $3",
 			"*/"
 		],
 		"description": "JavaDocs template"
 	},
 
 	"Arrays()": {
-		"prefix": "arrays",
+		"prefix": "arr",
 		"body": [
 			"Arrays.$1($2);"
 		],
 	},
 
-	"Plantilla java para competir": {
+	"Read Int Scanner()": {
+		"prefix": "rd",
+		"body": [
+			"sc.nextInt();"
+		],
+	},
+
+	"Plantilla No. 2": {
+		"prefix": "template.java",
+		"body": [
+			"/*********************************************",
+			" * @author:           josuerom               *",
+			" * @created:     ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}          *",
+			"*********************************************/",
+			"import java.util.*;",
+			"",
+			"public class ${TM_FILENAME_BASE} {",
+			"\tpublic static void main(String[] args) {",
+			"\t\tScanner sc = new Scanner(System.in);",
+			"\t\tint tc$3;",
+			"\t}",
+			"}"
+		],
+	},
+
+	"Plantilla No. 1": {
 		"prefix": "java_template_to_compete",
 		"body": [
+			"/*********************************************",
+			" * @author:           josuerom               *",
+			" * @created:     ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}          *",
+			"*********************************************/",
 			"import java.io.BufferedReader;",
 			"import java.io.IOException;",
 			"import java.io.InputStreamReader;",
-			"import java.util.Arrays;\n",
-			"/**",
-			" * @solution implemented for the problem ${1:problemName}",
-			" * @author josuerom",
-			"*/",
-			"public class ${TM_FILENAME_BASE} {\n",
+			"import java.util.Arrays;",
+			"",
+			"public class ${TM_FILENAME_BASE} {",
 			"\tpublic static void main(String[] args) {",
 			"\t\tpc2Read();",
 			"\t}",
 			"",
-			"\tpublic static void solve(${5:int int}Array) {",
+			"\tpublic static void solve() {",
 			"\t}",
 			"",
 			"\tpublic static void pc2Read() {",
-			"\t\tString strArray[], line;",
-			"\t\t${3:int int}Array[], tc;",
+			"\t\tString vec[], line;",
+			"\t\tint arr[], tc$1;",
 			"",
 			"\t\tBufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));",
 			"",
 			"\t\ttry {",
 			"\t\t\ttc = Integer.valueOf(buffer.readLine());\n",
-			"\t\t\twhile (tc-- >= 1) {",
+			"\t\t\twhile (tc-- > 0) {",
 			"\t\t\t\tline = buffer.readLine();",
-			"\t\t\t\tint$4Array = Arrays.stream(line.substring(0).split(\" \")).map(String::trim)",
+			"\t\t\t\tarr = Arrays.stream(line.substring(0).split(\" \")).map(String::trim)",
          		"\t\t\t\t\t.mapToInt(Integer::parseInt).toArray();",
-			"\t\t\t\t//Arrays.sort(vec);",
-			"\t\t\t\tsolve(int$4Array);$2",
+			"\t\t\t\tsolve(arr);$2",
 			"\t\t\t}",
 			"\t\t\tbuffer.close();",
 			"\t\t} catch (NullPointerException e) {",
