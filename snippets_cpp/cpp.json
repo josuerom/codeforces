@@ -31,7 +31,7 @@
 	},
 
 	"char or string getline()": {
-		"prefix": "readln",
+		"prefix": "rd",
 		"body": [
 			"cin.getline($1, ${2:size}, '\\n');"
 		]
@@ -48,8 +48,7 @@
 	"for (auto $e : vec)": {
 		"prefix": "fore",
 		"body": [
-			"for (auto &e : ${vector}) {",
-			"}",
+			"for (auto &e : ${1:vector}) cin >> e;",
 		]
 	},
 
@@ -84,7 +83,7 @@
 	},
 
 	"function main": {
-		"prefix": "m",
+		"prefix": "ma",
 		"body": [
 			"int main() {",
 			"\t$1",
@@ -98,15 +97,15 @@
 		"body": [
 			"/**************************************************",
 			" * @author:               josuerom                *",
-			" * @created:           $1/12/22 $2             *",
-			"**************************************************/"
+			" * @created:         ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}            *",
+			"**************************************************/",
 		]
 	},
 
 	"#pragma GCC optimize(\"03,unroll-loops\")": {
 		"prefix": "gcc",
 		"body": [
-			"#pragma GCC optimize(\"03,unroll-loops\")\n"
+			"#pragma GCC optimize(\"03,unroll-loops\")$1"
 		]
 	},
 
@@ -120,15 +119,14 @@
    "Plantilla CodeForces": {
 		"prefix": "template.cpp",
 		"body": [
-         "/****************************************************",
-			" * @author:                josuerom                 *",
-			" * @created:            $1/11/22 $2              *",
-			"****************************************************/",
-			"//$3#pragma GCC optimize(\"02,unroll-loops\")",
+			"/**************************************************",
+			" * @author:               josuerom                *",
+			" * @created:         ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}            *",
+			"**************************************************/",
+			"//$1#pragma GCC optimize(\"03,unroll-loops\")",
 			"#include <bits/stdc++.h>",
 			"",
 			"using namespace std;",
-			"#define ull unsigned long long int",
 			"#define ll long long",
 			"#define ui unsigned int",
 			"#define endl '\n'",
@@ -137,14 +135,14 @@
 			"void dbg_out(Head H, Tail... T) { cout << ' ' << H; dbg_out(T...); }",
 			"#define dbg(...) cout << \"(\" << #__VA_ARGS__ << \"):\", dbg_out(__VA_ARGS__)",
 			"",
-			"const ll MAX = 1e9;",
+			"const ui MAX = 1e9;",
 			"const ui MIN = 1e4;",
 			"",
-			"int tc, $4;",
+			"int tc$2;",
 			"",
 			"int main() {",
 			"\tios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);",
-			"\t$5",
+			"\t$3",
 			"\treturn 0;",
 			"}"
 		]
@@ -153,11 +151,11 @@
 	"Plantilla c++ para competencias": {
 		"prefix": "cpp_template_to_compete",
 		"body": [
-			"/****************************************************",
-			" * @author:                josuerom                 *",
-			" * @created:            $1/11/22 $2              *",
-			"****************************************************/",
-			"//$3#pragma GCC optimize(\"03,unroll-loops\")",
+			"/**************************************************",
+			" * @author:               josuerom                *",
+			" * @created:         ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}            *",
+			"**************************************************/",
+			"//$1#pragma GCC optimize(\"03,unroll-loops\")",
 			"#include <bits/stdc++.h>",
 			"",
 			"#define readArray(vec) void template<typename T> void read(vector<T>&(vec)){int n=(vec).size();for(auto&e:vec) cin >> e;}",
@@ -188,15 +186,14 @@
 			"void dbg_out(Head H, Tail... T) { cout << ' ' << H; dbg_out(T...); }",
 			"#define dbg(...) cout << \"[\" << #__VA_ARGS__ << \"]:\", dbg_out(__VA_ARGS__)",
 			"",
-			"const ll MAX = 1e9;",
+			"const ui MAX = 1e9;",
 			"const ui MIN = 1e4;",
 			"",
-			"int tc, $4;",
-			"//ll M[MAX][MAX], A[MIN];",
+			"int tc$2;",
 			"",
 			"int main() {",
 			"\tSPEED_IO;",
-			"\t$5",
+			"\t$3",
 			"\treturn 0;",
 			"}"
 		],
