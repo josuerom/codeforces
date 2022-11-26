@@ -1,11 +1,12 @@
-/*********************************************
- * @author:           josuerom               *
- * @created:     14/Nov/22 13:30:17          *
-*********************************************/
+/********************************************
+ * @author:          josuerom               *
+ * @created:     14/11/22 13:30:17          *
+********************************************/
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import static java.lang.Math.*;
 
 public class SolutionA {
    public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class SolutionA {
    }
 
    public static void pc2Read() {
-      String vec[], line;
+      String line;
       int arr[], tc;
 
       BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
