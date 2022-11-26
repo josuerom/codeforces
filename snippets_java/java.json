@@ -115,7 +115,7 @@
 	"while": {
 		"prefix": "wh",
 		"body": [
-			"while ($1) {$2",
+			"while ($1) {",
 			"}"
 		],
 	},
@@ -139,8 +139,7 @@
 	"for each": {
 		"prefix": "fore",
 		"body": [
-			"for (${1:int} e : $2) {",
-			"}"
+			"for (${1:int} e : $2) e = sc.nextInt();",
 		],
 	},
 
@@ -213,8 +212,8 @@
 		"prefix": "doc",
 		"body": [
 			"/**",
-			"  * @author josuerom",
-			"  * @created ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			" *  author:  josuerom",
+			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
 			"*/"
 		],
 		"description": "JavaDocs template"
@@ -238,16 +237,16 @@
 		"prefix": "template.java",
 		"body": [
 			"/**",
-			" * @author:          josuerom",
-			" * @created:     ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
-			"*/",
+			" *  author:  josuerom",
+			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			"**/",
 			"import java.util.*;",
 			"import static java.lang.Math.*;",
 			"",
 			"public class ${TM_FILENAME_BASE} {",
 			"\tpublic static void main(String[] args) {",
 			"\t\tScanner sc = new Scanner(System.in);",
-			"\t\tint $3;",
+			"\t\tint $1;",
 			"\t}",
 			"}"
 		],
@@ -256,15 +255,14 @@
 	"Plantilla No. 1": {
 		"prefix": "java_template_to_compete",
 		"body": [
-			"/*********************************************",
-			" * @author:           josuerom               *",
-			" * @created:     ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}          *",
-			"*********************************************/",
+			"/**",
+			" *  author:  josuerom",
+			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			"**/",
 			"import java.io.BufferedReader;",
 			"import java.io.IOException;",
 			"import java.io.InputStreamReader;",
-			"import java.util.Scanner;",
-			"import java.util.Arrays;",
+			"import java.util.*;",
 			"import static java.lang.Math.*;",
 			"",
 			"public class ${TM_FILENAME_BASE} {",
