@@ -14,7 +14,7 @@
 #define forr(i, vec) for(int i = (int)(vec).size()-1; i >= 0; i--)
 #define mod(a, b, mod) ((((a) % (mod)) + ((b) % (mod))) % (mod))
 #define fori(i, b, c) for(int (i) = (b); (i) < (c); (i)++)
-#define TEST_CASE(tc) cin >> (tc); while ((tc)--)
+#define TESTCASE(tc) cin >> (tc); while ((tc)--)
 #define rall(vec) (vec).rbegin(), (vec).rend()
 #define all(vec) (vec).begin(), (vec).end()
 #define fore(e, vec) for (auto &(e): (vec))
@@ -23,9 +23,9 @@
 #define sz(vec) (int)(vec).size()
 #define sort(vec) sort(all(vec))
 #define mcd(a, b) gcd(a, b)
+#define size(vec) (int) vec.size()
 #define ull unsigned long long int
 #define ll long long
-#define ui unsigned int
 #define endl '\n'
 using namespace std;
 
@@ -35,12 +35,11 @@ void dbg_out(Head H, Tail... T) { cout << ' ' << H; dbg_out(T...); }
 #define dbg(...) cout << "(" << #__VA_ARGS__ << "):", dbg_out(__VA_ARGS__)
 
 const ui MAX = 1e9;
-const ui MIN = 1e4;
 int tc, n, m, c=0, ans;
 
 int main() {
    SPEED_IO;
-   TEST_CASE(tc) {
+   TESTCASE(tc) {
       ${1:solution here!}
    }
    return 0;
