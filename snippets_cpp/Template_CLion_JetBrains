@@ -1,0 +1,22 @@
+/**
+ *   author:  josuerom
+ *   created: ${DAY}/${MONTH}/${YEAR} ${HOUR}:${MINUTE}:${SECOND}
+ **/
+#[[#include]]# <bits/stdc++.h>
+
+#[[#define]]# all(a) (a).begin(), (a).end()
+#[[#define]]# sz(a) (int) (a).size()
+#[[#define]]# debug(...) 42
+#[[#define]]# ll long long
+#[[#define]]# endl '\n'
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+#endif
+    int #[[$END$]]#;
+    return 0;
+}
