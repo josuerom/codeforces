@@ -4,7 +4,6 @@
 **/
 #[[#include]]# <bits/stdc++.h>
 
-#[[#define]]# DECIMALS(a) cout.setf(ios::fixed, ios::floatfield); cout.precision(a);
 #[[#define]]# VEREDICT(a) cout << (a ? "YES" : "NO") << endl
 #[[#define]]# TESTCASE(a) cin >> a; while ((a)--)
 #[[#define]]# all(a) a.begin(), a.end()
@@ -20,14 +19,14 @@ void dbg_out(Head H, Tail... T) { cerr << ' ' << H; dbg_out(T...); }
 #define debug(...) cerr << "(" << #__VA_ARGS__ << "):", dbg_out(__VA_ARGS__)
 
 const ll MAX = 1e9;
-int #[[$END$]]#;
+int #[[$INDEX$]]#;
 
 int main() {
-    ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-#ifndef ONLINE_JUDGE
-    freopen("inp.txt", "r", stdin);
-    //freopen("out.txt", "w", stdout);
-#endif
-    cin >> #[[$END$]]#;
-    return 0;
+   ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
+#[[#ifndef]]# ONLINE_JUDGE
+   freopen("inp.txt", "r", stdin);
+   //freopen("out.txt", "w", stdout);
+#[[#endif]]#
+   cin >> #[[$END$]]#;
+   return 0;
 }
