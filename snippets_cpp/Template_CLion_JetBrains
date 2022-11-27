@@ -4,6 +4,7 @@
 **/
 #[[#include]]# <bits/stdc++.h>
 
+#[[#define]]# DECIMALS(a) cout.setf(ios::fixed, ios::floatfield); cout.precision(a);
 #[[#define]]# VEREDICT(a) cout << (a ? "YES" : "NO") << endl
 #[[#define]]# TESTCASE(a) cin >> a; while ((a)--)
 #[[#define]]# all(a) a.begin(), a.end()
