@@ -161,7 +161,7 @@
 			"#define SPEED_IO ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);",
 			"#define PROGRAM_TIME cout << \"max time \" << (int)clock()/(CLOCKS_PER_SEC/10) << \" ms\\n\"",
 			"#define VEREDICT(condition) cout << ((condition) ? \"YES\\n\" : \"NO\\n\") << endl",
-			"#define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n+1);",
+			"#define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n);",
 			"#define binarySearch(vec, key) sort(all(vec)); binary_search(all(vec), (key));",
 			"#define forr(i, vec) for(int i = (int)(vec).size()-1; i >= 0; i--)",
 			"#define mod(a, b, mod) ((((a) % (mod)) + ((b) % (mod))) % (mod))",
