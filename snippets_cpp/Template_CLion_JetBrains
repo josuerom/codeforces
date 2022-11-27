@@ -8,7 +8,7 @@
 #[[#define]]# TESTCASE(a) cin >> a; while ((a)--)
 #[[#define]]# all(a) a.begin(), a.end()
 #[[#define]]# rall(a) a.rbegin(), a.rend()
-#[[#define]]# sz(a) (int) (a).size()
+#[[#define]]# sz(a) (int) a.size()
 #[[#define]]# ll long long
 #[[#define]]# endl '\n'
 
