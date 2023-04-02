@@ -2,14 +2,15 @@
  *  author:  josuerom
  *  created: ${DAY}/${MONTH}/${YEAR} ${HOUR}:${MINUTE}:${SECOND}
 **/
-//#[[#pragma]]# GCC optimize("03,unroll-loops")
+#[[#pragma]]# GCC optimize("03,unroll-loops")
+#[[#pragma]]# GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
 #[[#include]]# <bits/stdc++.h>
 using namespace std;
 
-void dbg() { cerr << endl; }
+void dbg() { cerr << '\n'; }
 template<typename Head, typename... Tail>
 void dbg(Head H, Tail... T) { cerr << ' ' << H; dbg(T...); }
-#[[#define]]# debug(...) cerr << "(" << #__VA_ARGS__ << "):", dbg_out(__VA_ARGS__)
+#[[#define]]# debug(...) cerr << "(" << #__VA_ARGS__ << "):", dbg(__VA_ARGS__)
 #[[#define]]# sz(a) (int) (a).size()
 #[[#define]]# ll long long
 
@@ -17,9 +18,9 @@ int main() {
    ios::sync_with_stdio(false);
    cin.tie(0);
 #[[#ifndef]]# ONLINE_JUDGE
-   freopen("testcases/sample.in", "r", stdin);
-   //freopen("testcases/result.ans", "w", stdout);
+   freopen("sample/inp.in", "r", stdin);
+   //freopen("sample/out.ans", "w", stdout);
 #[[#endif]]#
-   $END$
+   // Solution here
    return 0;
 }
