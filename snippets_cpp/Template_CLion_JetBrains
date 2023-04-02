@@ -1,32 +1,24 @@
 /**
- *   author:  josuerom
- *   created: ${DAY}/${MONTH}/${YEAR} ${HOUR}:${MINUTE}:${SECOND}
+ *  author:  josuerom
+ *  created: ${DAY}/${MONTH}/${YEAR} ${HOUR}:${MINUTE}:${SECOND}
 **/
 #[[#include]]# <bits/stdc++.h>
-
-#[[#define]]# VEREDICT(a) cout << (a ? "YES" : "NO") << endl
-#[[#define]]# TESTCASE(a) cin >> a; while ((a)--)
-#[[#define]]# all(a) a.begin(), a.end()
-#[[#define]]# rall(a) a.rbegin(), a.rend()
-#[[#define]]# sz(a) (int) a.size()
-#[[#define]]# ll long long
-#[[#define]]# endl '\n'
-
 using namespace std;
+
 void dbg_out() { cerr << endl; }
 template<typename Head, typename... Tail>
 void dbg_out(Head H, Tail... T) { cerr << ' ' << H; dbg_out(T...); }
 #define debug(...) cerr << "(" << #__VA_ARGS__ << "):", dbg_out(__VA_ARGS__)
-
-const ll MAX = 1e9;
-int #[[$INDEX$]]#;
+#[[#define]]# sz(a) (int) (a).size()
+#[[#define]]# ll long long
 
 int main() {
-   ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);
+   ios::sync_with_stdio(false);
+   cin.tie(0);
 #[[#ifndef]]# ONLINE_JUDGE
-   freopen("inp.txt", "r", stdin);
-   //freopen("out.txt", "w", stdout);
+   freopen("sample.in", "r", stdin);
+   //freopen("result.ans", "w", stdout);
 #[[#endif]]#
-   cin >> #[[$END$]]#;
+   #[[$END$]]#
    return 0;
 }
