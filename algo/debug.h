@@ -1,7 +1,5 @@
 #undef _GLIBCXX_DEBUG
-
 #include <bits/stdc++.h>
-
 using namespace std;
 
 template <typename A, typename B>
@@ -78,7 +76,7 @@ string to_string(tuple<A, B, C, D> p) {
    return "(" + to_string(get<0>(p)) + ", " + to_string(get<1>(p)) + ", " + to_string(get<2>(p)) + ", " + to_string(get<3>(p)) + ")";
 }
 
-void debug_out() { cerr << endl; }
+void debug_out() { cerr << '\n'; }
 
 template <typename Head, typename... Tail>
 void debug_out(Head H, Tail... T) {
