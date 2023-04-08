@@ -1,32 +1,30 @@
-/********************************************
- * @author:          josuerom               *
- * @created:     14/11/22 13:30:17          *
-********************************************/
+/**
+ *  author: josuerom
+ * created: 14/11/22 13:30:17
+**/
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import static java.lang.Math.*;
 
-public class SolutionA {
+public class Template {
    public static void main(String[] args) {
-      pc2Read();
+      standardInput();
    }
 
-   public static void solve() {
+   public static void solve() {$2
    }
 
-   public static void pc2Read() {
-      String line;
-      int arr[], tc;
+   public static void standardInput() {
+      String line = null;
+      int arr[], tt;
 
-      BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
+      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
       try {
-         tc = Integer.valueOf(buffer.readLine());
-
+         tt = Integer.valueOf(br.readLine());
          while (tc-- > 0) {
-            line = buffer.readLine();
+            line = br.readLine();$1
             arr = Arrays.stream(line.substring(0).split(" ")).map(String::trim)
                .mapToInt(Integer::parseInt).toArray();
             solve(arr);
