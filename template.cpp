@@ -15,13 +15,13 @@ using namespace std;
 #endif
 
 #define readArray(vec) void template<typename T> void read(vector<T>&(vec)){int n=(vec).size();for(auto&e:vec) cin >> e;}
+#define PROGRAM_TIME cout.precision(4); cout << "time: " << (int)clock()/(CLOCKS_PER_SEC/10) << " ms\n";
 #define SPEED_IO ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);
-#define PROGRAM_TIME cout << "max time " << (int)clock()/(CLOCKS_PER_SEC/10) << " ms\n";
 #define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n+1);
 #define binarySearch(vec, key) sort(all(vec)); binary_search(all(vec), (key));
 #define VEREDICT(condition) cout << ((condition) ? "YES" : "NO") << endl;
 #define forr(i, vec) for(int i = (int)(vec).size()-1; i >= 0; i--)
-#define mod(a, b, mod) ((((a) % (mod)) + ((b) % (mod))) % (mod))
+#define mod(a, b, MOD) ((((a) % (MOD)) + ((b) % (MOD))) % (MOD))
 #define fori(i, b, c) for(int (i) = (b); (i) < (c); (i)++)
 #define rall(vec) (vec).rbegin(), (vec).rend()
 #define all(vec) (vec).begin(), (vec).end()
@@ -37,13 +37,14 @@ using namespace std;
 #define ll long long
 #define endl '\n'
 
-const ui MAX = 1e9;
-int tt, ans;
+const int MAX = 1e9;
+const int MOD = 1e6+7;
+int tt, ans = 0, $1;
 
 int main() {
    SPEED_IO;
    TC(tt) {
-      $1
+      $2
    }
    END;
 }
