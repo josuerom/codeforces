@@ -1,18 +1,19 @@
+#parse("C File Header.h")
 /**
  *  author:  josuerom
  *  created: ${DAY}/${MONTH}/${YEAR} ${HOUR}:${MINUTE}:${SECOND}
 **/
 #[[#pragma]]# GCC optimize("03,unroll-loops")
 #[[#pragma]]# GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+
 #[[#include]]# <bits/stdc++.h>
 using namespace std;
 
-void dbg() { cerr << '\n'; }
-template<typename Head, typename... Tail>
-void dbg(Head H, Tail... T) { cerr << ' ' << H; dbg(T...); }
-#[[#define]]# debug(...) cerr << "(" << #__VA_ARGS__ << "):", dbg(__VA_ARGS__)
-#[[#define]]# sz(a) (int) (a).size()
-#[[#define]]# ll long long
+#[[#ifdef]]# LOCAL
+#[[#include]]# "data/degub.h"
+#[[#else]]#
+#[[#define]]# debug(...) 42
+#[[#endif]]#
 
 int main() {
    ios::sync_with_stdio(false);
@@ -21,6 +22,6 @@ int main() {
    freopen("sample/inp.in", "r", stdin);
    //freopen("sample/out.ans", "w", stdout);
 #[[#endif]]#
-   // Solution here
+   //Write solution
    return 0;
 }
