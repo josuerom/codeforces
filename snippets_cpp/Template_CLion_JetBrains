@@ -1,4 +1,3 @@
-#parse("C File Header.h")
 /**
  *  author:  josuerom
  *  created: ${DAY}/${MONTH}/${YEAR} ${HOUR}:${MINUTE}:${SECOND}
@@ -12,7 +11,7 @@ using namespace std;
 #[[#ifdef]]# LOCAL
 #[[#include]]# "data/degub.h"
 #[[#else]]#
-#[[#define]]# debug(...) 42
+#[[#define]]# debug(..) 42
 #[[#endif]]#
 
 int main() {
@@ -22,6 +21,6 @@ int main() {
    freopen("sample/inp.in", "r", stdin);
    //freopen("sample/out.ans", "w", stdout);
 #[[#endif]]#
-   //Write solution
+   
    return 0;
 }
