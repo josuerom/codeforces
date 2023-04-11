@@ -1,0 +1,102 @@
+{ //@author: josuerom
+  "terminal.integrated.gpuAcceleration": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.fontFamily": "'Cascadia Code', 'JetBrains Mono', 'UbuntuMono NF', 'Courier New', monospace",
+  "editor.fontSize": 14.8,
+  "editor.fontWeight": "375",
+  "extensions.ignoreRecommendations": true,
+  "workbench.editor.enablePreview": false,
+  "editor.fontLigatures": true,
+  "workbench.startupEditor": "none",
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 3,
+  "editor.padding.bottom": 0,
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "diffEditor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "editor.suggestSelection": "first",
+  "terminal.integrated.cursorStyle": "line",
+  "debug.terminal.clearBeforeReusing": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "explorer.confirmDelete": false,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+        "icon": "terminal-cmd"
+      },
+      "GitBash": {
+        "path": "D:\\Program Files\\Git\\bin\\bash.exe",
+        "icon": "terminal-bash",
+        "color": "terminal.ansiGreen"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.fontFamily": "'JetBrains Mono'",
+  "terminal.integrated.fontSize": 13.8,
+  "editor.stickyScroll.enabled": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "workbench.sideBar.location": "right",
+  "editor.cursorBlinking": "expand",
+
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.executorMap": {
+    "cpp": "cls && cd $dir && g++ -std=c++20 -O2 -Wall -c $fileName -o $fileNameWithoutExt && .\\$fileNameWithoutExt",
+    "c": "cls && cd $dir && gcc -std=c20 -c $fileName -o $fileNameWithoutExt && .\\$fileNameWithoutExt",
+    "java": "cls && cd $dir && java $fileName",
+    "python": "cls && cd $dir && python3 $fileName",
+    "javascript": "node $dir/$fileName",
+    "typescript": "node $dir/$fileName",
+    "kotlin": "kotlin -u"
+  },
+  //"workbench.activityBar.visible": false,
+  "window.commandCenter": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "debug.onTaskErrors": "debugAnyway",
+  "terminal.integrated.tabs.focusMode": "singleClick",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "cph.general.menuChoices": "cpp java c",
+  "cph.language.java.SubmissionCompiler": "Java 1.8.0_241",
+  "cph.language.cpp.SubmissionCompiler": "GNU G++20 11.2.0 (64 bit, winlibs)",
+  "cph.language.cpp.Command": "g++ -std=c++20 -Wall -O2 -c",
+  "cph.language.java.Command": "java",
+  "cph.general.defaultLanguage": "java",
+  "cph.language.python.SubmissionCompiler": "Python 3.7.2",
+  "cph.general.autoShowJudge": false,
+  "cph.general.firstTime": false,
+  "terminal.integrated.cursorBlinking": true,
+  "editor.linkedEditing": true,
+  "editor.guides.bracketPairs": true,
+  "breadcrumbs.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-19",
+      "path": "D:\\Program Files\\Java\\jdk-19.0.1",
+      "default": true
+    }
+  ],
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "workbench.colorTheme": "Darcula",
+}

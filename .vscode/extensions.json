@@ -1,0 +1,65 @@
+// Comparto las únicas 12 extensiones que manejo dentro de Visual Studio Code
+{
+   "listOfExtensions": [
+      {
+         "extesionName": "C/C++",
+         "author": "Microsoft",
+         "descripcion":  "Entrega sugerencias y autocompleta código para esos dos lenguajes"
+      },
+      {
+         "extesionName": "IntelliCode",
+         "author": "Microsoft",
+         "descripcion":  "Entrega de sugerencias rápidas para múltiples lenguajes y contiene inteligencia artificial"
+      },
+      {
+         "extesionName": "Super Default Dark Theme",
+         "author": "shpiglify",
+         "descripcion":  "Brinda un tema ligero y sencillo, el color de sintaxis me gusta mucho"
+      },
+      {
+         "extesionName": "Settings Sync",
+         "author": "Shan Khan",
+         "descripcion":  "Permite realizar copias de seguridad de toda la configuración de VSCode y guardarlas en la nube"
+      },
+      {
+         "extesionName": "Code Runner",   
+         "author": "Jun Han",
+         "descripcion":  "Permite compilar y ejecutar múltiples lenguajes solo presionando Ctrl + Alt + N"
+      },
+      {
+         "extesionName": "Language Support for Java",   
+         "author": "Red Hat,
+         "descripcion":  "Entrega sugerencias y da soporte para trabajar con Java"
+      },
+      {
+         "extesionName": "Trailing Space",
+         "author": "Shardul Mahadik",
+         "descripcion":  "Resalta con color rojo, las líneas que contenga espacios en blanco"
+      },
+      {
+         "extesionName": "Material Icon Theme",
+         "author": "Philipp Kief",
+         "descripcion":  "Brinda muchos iconos para cada tipo de archivo o directorio"
+      },
+      {
+         "extesionName": "Markdown All in One",
+         "author": "Yu Zhang",
+         "descripcion":  "Permite en los archivos .md (markdown) escribir a la velocidad de la luz brindando una variedad de atajos para todo lo que contiene"
+      },
+      {
+         "extesionName": "CodeTime",
+         "author": "Software",
+         "descripcion":  "Permite trabajar bajo con un cronometroen marcha, temporizador o tiempo libre, es de mucha utilidad en mi opinión"
+      },
+      {
+         "extesionName": "vscode-pdf",
+         "author": "tomoki1207",
+         "descripcion":  "Visualizados de documentos PDF dentro del editor"
+      },
+      {
+         "extesionName": "Seudev's VSCode Java snippets",
+         "author": "Seudev",
+         "descripcion":  "Incorpora una gran variedad de snippets para solo Java que con escribir algunos carácteres y presionar tab se autocompletará el bloque de código con más facilidad"
+      }
+   ]
+}

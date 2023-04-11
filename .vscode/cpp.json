@@ -1,0 +1,267 @@
+{ // @author josuerom
+	"#ifdef ONLINE_JUDGE": {
+		"prefix": "ifndef",
+		"body": [
+			"#ifndef ONLINE_JUDGE",
+      		"\tfreopen(\"sample/inp.in\", \"r\", stdin);",
+      		"\t//freopen(\"sample/out.ans\", \"w\", stdout);",
+   		"#endif$1"
+		]
+	},
+
+	"ios::sync_with_stdio(false); cin.tie(0);": {
+		"prefix": "ioc",
+		"body": [
+			"ios::sync_with_stdio(false);",
+			"cin.tie(0);$1"
+		]
+	},
+
+	"using namespace std;": {
+		"prefix": "uu",
+		"body": [
+			"using namespace std;$1"
+		]
+	},
+
+	"return": {
+		"prefix": "re",
+		"body": [
+			"return $1;"
+		]
+	},
+
+	"read char[]": {
+		"prefix": "rdchar",
+		"body": [
+			"cin.getline($1, ${2:size}, '\\n');"
+		]
+	},
+
+	"read string": {
+		"prefix": "rds",
+		"body": [
+			"getline(cin, ${1:string});"
+		]
+	},
+
+	"for (int i = 0; i < n; i++)": {
+		"prefix": "fori",
+		"body": [
+			"for (int ${1:i} = 0; ${1:i} < ${2:n}; ${1:i}++) {",
+			"}",
+		]
+	},
+
+	"for (auto $e : vec)": {
+		"prefix": "fore",
+		"body": [
+			"for (auto &e : ${1:vector}) cin >> e;",
+		]
+	},
+
+	"while tests case": {
+		"prefix": "tt",
+		"body": [
+			"int tt;",
+			"cin >> tt;",
+			"while (tt--) {",
+			"\t$1",
+			"}",
+		]
+	},
+
+	"#include <bits/stdc++.h>": {
+		"prefix": "ii",
+		"body": [
+			"#include <bits/stdc++.h>$1"
+		]
+	},
+
+	"typedef": {
+		"prefix": "typ",
+		"body": [
+			"typedef ${1:long long ll};$1"
+		]
+	},
+
+	"#define": {
+		"prefix": "de",
+		"body": [
+			"#define $1"
+		]
+	},
+
+	"cin": {
+		"prefix": "ci",
+		"body": [
+			"cin >> $1"
+		]
+	},
+
+	"cout": {
+		"prefix": "co",
+		"body": [
+			"cout << $1 << '\\n';"
+		]
+	},
+
+	"void solve() { body }": {
+		"prefix": "solve",
+		"body": [
+			"void solve() {",
+			"\t$1",
+			"}"
+		]
+	},
+
+	"function main": {
+		"prefix": "fm",
+		"body": [
+			"int main() {",
+			"\t$1",
+			"\treturn 0;",
+			"}"
+		]
+	},
+
+	"@author": {
+		"prefix": "author",
+		"body": [
+			"/**",
+			" *  author:  josuerom",
+			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			"**/",
+		]
+	},
+
+	"#pragma GCC": {
+		"prefix": "gcc",
+		"body": [
+			"#pragma GCC optimize(\"03,unroll-loops\")",
+			"#pragma GCC target(\"avx2,bmi,bmi2,lzcnt,popcnt\")$1",
+		]
+	},
+
+	"program time()": {
+		"prefix": "time",
+		"body": [
+			"cout << \"max time: \" << (float)clock()/(CLOCKS_PER_SEC/100) << \" ms\\n\";$1"
+		]
+	},
+
+	"Template 1 CP": {
+		"prefix": "template1.cpp",
+		"body": [
+			"/**",
+			" *  author:  josuerom",
+			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			"**/",
+			"#pragma GCC optimize(\"03,unroll-loops\")",
+			"#pragma GCC target(\"avx2,bmi,bmi2,lzcnt,popcnt\")",
+			"",
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"#ifdef LOCAL",
+			"#include \"data/debug.h\"",
+			"#else",
+			"#define debug(...) 42",
+			"#endif",
+			"",
+			"int main() {",
+			"\tios::sync_with_stdio(false);",
+			"\tcin.tie(0);",
+			"#ifndef ONLINE_JUDGE",
+			"\tfreopen(\"sample/inp.in\", \"r\", stdin);",
+			"\t//freopen(\"sample/out.ans\", \"w\", stdout);",
+			"#endif",
+			"\t$1",
+			"\treturn 0;",
+			"}",
+		]
+	},
+
+   "Template 2 CP": {
+		"prefix": "template2.cpp",
+		"body": [
+			"/**",
+			" *  author:  josuerom",
+			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			"**/",
+			"#include <bits/stdc++.h>",
+			"",
+			"void dbg_out() { cout << '\\n'; }",
+			"template<typename Head, typename... Tail>",
+			"void dbg_out(Head H, Tail... T) { cout << ' ' << H; dbg_out(T...); }",
+			"#define debug(...) cout << \"(\" << #__VA_ARGS__ << \"):\", dbg_out(__VA_ARGS__)",
+			"#define sz(a) (int) (a).size()",
+			"#define ull unsigned long long",
+			"#define ll long long",
+			"",
+			"int main() {",
+			"\tios::sync_with_stdio(false);",
+			"\tcin.tie(nullptr); cout.tie(nullptr);",
+			"\t$1",
+			"\treturn 0;",
+			"}"
+		]
+	},
+
+	"Template 3 CP": {
+		"prefix": "template3.cpp",
+		"body": [
+			"/**",
+			" *  author:  josuerom",
+			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			"**/",
+			"#pragma GCC optimize(\"03,unroll-loops\")",
+			"#pragma GCC target(\"avx2,bmi,bmi2,lzcnt,popcnt\")",
+			"",
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"#define readArray(vec) void template<typename T> void read(vector<T>&(vec)){int n=(vec).size();for(auto&e:vec) cin >> e;}",
+			"#define PROGRAM_TIME cout.precision(4); cout << \"max time \" << (int)clock()/(CLOCKS_PER_SEC/10) << \" ms\\n\"",
+			"#define SPEED_IO ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);",
+			"#define VEREDICT(condition) cout << ((condition) ? \"YES\" : \"NO\") << '\\n'",
+			"#define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n+1);",
+			"#define binarySearch(vec, key) sort(all(vec)); binary_search(all(vec), (key));",
+			"#define forr(i, vec) for(int i = (int)(vec).size()-1; i >= 0; i--)",
+			"#define mod(a, b, mod) ((((a) % (mod)) + ((b) % (mod))) % (mod))",
+			"#define fori(i, b, c) for(int (i) = (b); (i) < (c); (i)++)",
+			"#define TC(tt) int (tt); cin >> (tt); while((tt)--)",
+			"#define rall(vec) (vec).rbegin(), (vec).rend()",
+			"#define all(vec) (vec).begin(), (vec).end()",
+			"#define fore(e, vec) for (auto &(e): (vec))",
+			"#define isOrdered(vec) is_sorted(all(vec))",
+			"#define rsort(vec) short(rall(vec))",
+			"#define ull unsigned long long int",
+			"#define sz(vec) (int)(vec).size()",
+			"#define sort(vec) sort(all(vec))",
+			"#define mcd(a, b) gcd(a, b)",
+			"#define ll long long",
+			"#define endl '\\n'",
+			"",
+			"#ifdef LOCAL",
+			"#include \"data/debug.h",
+			"#else",
+			"#define debug(...) 42",
+			"#endif",
+			"",
+			"const int MAX = 1e9;",
+			"int $1;",
+			"",
+			"int main() {",
+			"\tSPEED_IO;",
+			"#ifndef ONLINE_JUDGE",
+      		"\tfreopen(\"sample/inp.in\", \"r\", stdin);",
+      		"\t//freopen(\"sample/out.ans\", \"w\", stdout);",
+   		"#endif$1",
+			"\t$2",
+			"\tEND;",
+			"}"
+		],
+		"description": "Plantilla de C++ para competencias"
+	}
+}

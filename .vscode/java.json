@@ -1,0 +1,447 @@
+{ // @author josuerom
+	"System.out.print()": {
+		"prefix": "s",
+		"body": [
+			"System.out.print($1);"
+		],
+		"description": "Standard data output"
+	},
+
+	"System.out.println()": {
+		"prefix": "ss",
+		"body": [
+			"System.out.println($1);"
+		],
+		"description": "Standard output with line break"
+	},
+
+	"System.out.prinf()": {
+		"prefix": "sf",
+		"body": [
+			"System.out.printf(\"%$1\", $2);"
+		],
+		"description": "Formatted standard output"
+	},
+
+	"Scanner(System.in)": {
+		"prefix": "sc",
+		"body": [
+			"Scanner sc = new Scanner(System.in);$1"
+		],
+		"description": "Standard input using the Scanner method"
+	},
+
+	"BufferedReader(new InputStreamReader(System.in))": {
+		"prefix": "buffer",
+		"body": [
+			"BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));$1"
+		],
+		"description": "Improved standard input using the (BufferedReader, InputStreamReader, IOException) methods"
+	},
+
+	"Main method": {
+		"prefix": "fm",
+		"body": [
+			"public static void main(String[] args) {",
+			"\t$1",
+			"}"
+		],
+		"description": "This is the main method that java executes"
+	},
+
+	"public static void nameMethod": {
+		"prefix": "psv",
+		"body": [
+			"public static void ${1:nameMethod}($2) {",
+			"}"
+		],
+		"description": "Method I use most often"
+	},
+
+	"Method template": {
+		"prefix": "me",
+		"body": [
+			"public ${1:static} ${2:void} ${3:name}($4) {",
+			"}"
+		],
+		"description": "Template for create methods"
+	},
+
+	"try catch": {
+		"prefix": "try",
+		"body": [
+			"try {",
+			"\t$1",
+			"} catch (${2:Exeption} e) {",
+			"\te.printStackTrace();",
+			"}"
+		],
+		"description": "Methods for handling exceptions"
+	},
+
+	"catch": {
+		"prefix": "cat",
+		"body": [
+			"catch ($1 e) {",
+			"}"
+		],
+	},
+
+	"if": {
+		"prefix": "if",
+		"body": [
+			"if (${1:condition}) $2"
+		],
+	},
+
+	"if else": {
+		"prefix": "ifel",
+		"body": [
+			"if ($1) {",
+			"} else {$2",
+			"}"
+		],
+	},
+
+	"do while": {
+		"prefix": "do",
+		"body": [
+			"do {\n\t$1",
+			"} while (${2:condition});"
+		],
+	},
+
+	"while": {
+		"prefix": "wh",
+		"body": [
+			"while ($1) {$2",
+			"}"
+		],
+	},
+
+	"read test cases": {
+		"prefix": "tt",
+		"body": [
+			"$int$1 tt = sc.nextInt();",
+			"while (tt-- > 0) {",
+			"\t$2",
+			"}"
+		],
+	},
+
+	"for simple": {
+		"prefix": "for",
+		"body": [
+			"for (int i = 0; i < $1; i++) {",
+			"}"
+		],
+	},
+
+	"for iterator": {
+		"prefix": "fori",
+		"body": [
+			"for (int ${1:i} = 0; ${1:i} < $2; ${1:i}++) {",
+			"}"
+		],
+	},
+
+	"for each": {
+		"prefix": "fore",
+		"body": [
+			"for (${1:int} e : $2) {",
+			"}"
+		],
+	},
+
+	"switch": {
+		"prefix": "sw",
+		"body": [
+			"switch ($1) {",
+			"\tcase 1: $2;",
+			"\t\tbreak;",
+			"\tdefault:",
+			"\t\tSystem.err.println('ERROR. Debe elegir una de las opción válidas.');",
+			"}"
+		],
+	},
+
+	"Ternary operator": {
+		"prefix": "ter",
+		"body": [
+			"${1:boolean name} = (${2:condition}) ? $3 : $4;"
+		],
+	},
+
+	"Object creation": {
+		"prefix": "obj",
+		"body": [
+			"${1:nameClass} ${2:value} = new ${1:nameConstructor}($3);"
+		],
+	},
+
+	"Constructor ()": {
+		"prefix": "constructor",
+		"body": [
+			"public ${1:nameClass}($2) {",
+			"\tthis.$3 = $3;",
+			"}"
+		],
+	},
+
+	"import": {
+		"prefix": "ii",
+		"body": [
+			"import java.$1;",
+		],
+		"description": "Import packages"
+	},
+
+	"JavaClass Template": {
+		"prefix": "class",
+		"body": [
+			"public class ${TM_FILENAME_BASE} {",
+			"\t$1",
+			"}"
+		],
+		"description": "JavaClass template"
+	},
+
+	"JavaMainClass Template": {
+		"prefix": "mainclass",
+		"body": [
+			"public class ${TM_FILENAME_BASE} {\n",
+			"\tpublic static void main(String[] args) {",
+			"\t\t$1",
+			"\t}",
+			"}"
+		],
+		"description": "JavaMainClass template"
+	},
+
+	"JavaDocs": {
+		"prefix": "author",
+		"body": [
+			"/**",
+			" *  author:  josuerom",
+			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			"**/"
+		],
+		"description": "Encabezado"
+	},
+
+	"Arrays()": {
+		"prefix": "arr",
+		"body": [
+			"Arrays.$1($2);"
+		],
+	},
+
+	"Read Int Scanner()": {
+		"prefix": "rdi",
+		"body": [
+			"sc.nextInt();"
+		],
+	},
+
+	"Read String Scanner()": {
+		"prefix": "rds",
+		"body": [
+			"sc.nextLine();"
+		],
+	},
+
+	"Read String-N Scanner()": {
+		"prefix": "rdsn",
+		"body": [
+			"sc.next();"
+		],
+	},
+
+	"Check execution time": {
+		"prefix": "time",
+		"body": [
+			"long time = System.currentTimeMillis();",
+			"System.err.println(\"Time: \" + System.currentTimeMillis()-time);"
+		],
+	},
+
+	"Template 1 for more efficient solutions": {
+		"prefix": "template1.java",
+		"body": [
+			"/**",
+			" *  author:  josuerom",
+			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			"**/",
+			"import java.io.BufferedReader;",
+			"import java.io.IOException;",
+			"import java.io.InputStreamReader;",
+			"import java.io.PrintWriter;",
+			"import java.util.Arrays;",
+			"import java.util.Random;",
+			"import java.util.StringTokenizer;",
+			"import java.util.Collections;",
+			"import java.util.ArrayList;\n",
+			"public class ${TM_FILENAME_BASE} {\n",
+			"\tpublic static void main(String[] args) {",
+			"\t\tFastScanner fs = new FastScanner();",
+			"\t\tPrintWriter pw = new PrintWriter(System.out);",
+			"\t\tint tt = fs.readInt();",
+			"\t\twhile (tt-- > 0) {$1",
+			"\t\t}",
+			"\t\tpw.close();",
+			"\t}\n",
+			"\tstatic final Random random = new Random();",
+			"\tstatic final int mod = 1_000_000_007;\n",
+			"\tstatic void ruffleSort(int[] a) {",
+			"\t\tint n = a.length;",
+			"\t\tfor (int i=0; i<n; i++) {",
+			"\t\t\tint oi = random.nextInt(n), temp = a[oi];",
+			"\t\t\ta[oi] = a[i]; a[i] = temp;",
+			"\t\t}",
+			"\t\tArrays.sort(a);",
+			"\t}\n",
+			"\tstatic long add(long a, long b) {",
+			"\t\treturn (a+b) % mod;",
+			"\t}",
+			"\tstatic long sub(long a, long b) {",
+			"\t\treturn ((a-b)%mod+mod)%mod;",
+			"\t}",
+			"\tstatic long mul(long a, long b) {",
+			"\t\treturn (a*b)%mod;",
+			"\t}",
+			"\tstatic long exp(long base, long exp) {",
+			"\t\tif (exp==0) return 1;",
+			"\t\tlong half=exp(base, exp/2);",
+			"\t\tif (exp%2==0) return mul(half, half);",
+			"\t\treturn mul(half, mul(half, base));",
+			"\t}\n",
+			"\tstatic long[] factorials=new long[2_000_001];",
+			"\tstatic long[] invFactorials=new long[2_000_001];\n",
+			"\tstatic void precompFacts() {",
+			"\t\tfactorials[0] = invFactorials[0] = 1;",
+			"\t\tfor (int i = 1; i < factorials.length; i++) factorials[i] = mul(factorials[i-1], i);",
+			"\t\tinvFactorials[factorials.length-1] = exp(factorials[factorials.length-1], mod-2);",
+			"\t\tfor (int i = invFactorials.length-2; i >= 0; i--) invFactorials[i] = mul(invFactorials[i+1], i+1);",
+			"\t}",
+			"\tstatic long nCk(int n, int k) {",
+			"\t\treturn mul(factorials[n], mul(invFactorials[k], invFactorials[n-k]));",
+			"\t}\n",
+			"\tstatic class FastScanner {",
+			"\t\tBufferedReader br = new BufferedReader(new InputStreamReader(System.in));",
+			"\t\tStringTokenizer st = new StringTokenizer(\"\");\n",
+			"\t\tString next() {",
+			"\t\t\twhile (!st.hasMoreTokens()) {",
+			"\t\t\t\ttry { st = new StringTokenizer(br.readLine()); }",
+			"\t\t\t\tcatch (IOException e) { e.printStackTrace(); }",
+			"\t\t\t}",
+			"\t\t\treturn st.nextToken();",
+			"\t\t}\n",
+			"\t\tint readInt() {",
+			"\t\t\treturn Integer.parseInt(next());",
+			"\t\t}\n",
+			"\t\tint[] readArray(int n) {",
+			"\t\t\tint[] a = new int[n];",
+			"\t\t\tfor (int i = 0; i < n; i++) {",
+			"\t\t\t\ta[i] = readInt();",
+			"\t\t\t}",
+			"\t\t\treturn a;",
+			"\t\t}",
+			"\t}",
+			"}",
+		],
+		"description": "Plantilla para soluciones más rápidas en java 1.8.0_241",
+	},
+
+	"Template 2 with use of Scanner": {
+		"prefix": "template2.java",
+		"body": [
+			"/**",
+			" *  author:  josuerom",
+			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			"**/",
+			"import java.util.Scanner;",
+			"import java.util.Arrays;",
+			"import java.math.BigInteger;\n",
+			"public class ${TM_FILENAME_BASE} {\n",
+			"\tstatic Scanner sc = new Scanner(System.in);",
+			"\tstatic boolean DEBUG = flase;\n",
+			"\tpublic static void main(String[] args) {",
+			"\t\tproblemInput();",
+			"\t}\n",
+			"\tpublic static void solve(int[] p) {$2",
+			"\t}\n",
+			"\tpublic static void problemInput() {",
+			"\t\tint tt, n, vi[];",
+			"\t\ttt = sc.nextInt();",
+			"\t\twhile (tt-- > 0) {",
+			"\t\t\tn = sc.nextInt();",
+			"\t\t\tvi = new int[n];",
+			"\t\t\tfor (int i = 0; i < n$1; i++) {",
+			"\t\t\t\tvi[i] = sc.nextInt();",
+			"\t\t\t}",
+			"\t\t\tsolve(vi);",
+			"\t\t}",
+			"\t\tsc.close();",
+			"\t\tSystem.out.close();",
+			"\t}",
+			"}"
+		],
+		"description": "Plantilla estructurada para depurar valores",
+	},
+
+	"Template 3 for quick explanations": {
+		"prefix": "template3.java",
+		"body": [
+			"/*",
+			"   name_problem: $1",
+			"  creation_date: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}",
+			"*/",
+			"import java.util.Scanner;\n",
+			"public class ${TM_FILENAME_BASE} {",
+			"\tpublic static void main(String[] args) {",
+			"\t\t//long start = System.currentTimeMillis();",
+			"\t\tScanner sc = new Scanner(System.in);",
+			"",
+			"\t\t$2",
+			"",
+			"\t\tsc.close();",
+			"\t\t//System.err.println(\"time: \" + System.currentTimeMillis()-time + \" ms\");",
+			"\t\tSystem.out.close();",
+			"\t}",
+			"}"
+		],
+		"description": "Plantilla para explicar soluciones",
+	},
+
+	"Template 4 for java version 11+": {
+		"prefix": "template4.java",
+		"body": [
+			"/**",
+			" *  author:  josuerom",
+			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			"**/",
+			"import java.util.Scanner;",
+			"import java.util.Arrays;\n",
+			"public class ${TM_FILENAME_BASE} {\n",
+			"\tpublic static void main(String[] args) {",
+			"\t\tScanner sc = new Scanner(System.in);",
+			"\t\tint tt, n, vi[];",
+			"\t\ttt = sc.nextInt();",
+			"\t\twhile (tt-- > 0) {",
+			"\t\t\tn = sc.nextInt();",
+			"\t\t\tvi = new int[n];",
+			"\t\t\tfor (int i = 0; i < n$1; i++) {",
+			"\t\t\t\tvi[i] = sc.nextInt();",
+			"\t\t\t}",
+			"\t\t\tsolution(vi);",
+			"\t\t}",
+			"\t\tsc.close();",
+			"\t\tSystem.out.close();",
+			"\t}\n",
+			"\tpublic static void solution(int[] p) {$2",
+			"\t}",
+			"}"
+		],
+		"description": "Plantilla para versiones superiores o iguales a Java 11.0.6",
+	},
+}
