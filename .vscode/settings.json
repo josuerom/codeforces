@@ -50,7 +50,6 @@
   "terminal.integrated.fontFamily": "'JetBrains Mono'",
   "terminal.integrated.fontSize": 13.8,
   "editor.stickyScroll.enabled": true,
-  "workbench.iconTheme": "material-icon-theme",
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
   "workbench.sideBar.location": "right",
@@ -59,14 +58,25 @@
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
   "code-runner.executorMap": {
-    "cpp": "cls && cd $dir && g++ -std=c++20 -O2 -Wall -c $fileName -o $fileNameWithoutExt && .\\$fileNameWithoutExt",
-    "c": "cls && cd $dir && gcc -std=c20 -c $fileName -o $fileNameWithoutExt && .\\$fileNameWithoutExt",
+    "cpp": "cls && cd $dir && g++ -std=c++23 -O2 -Wall $fileName -o $fileNameWithoutExt && .\\$fileNameWithoutExt",
+    "c": "cls && cd $dir && gcc -std=c23 -O2 -Wall $fileName -o $fileNameWithoutExt && .\\$fileNameWithoutExt",
     "java": "cls && cd $dir && java $fileName",
     "python": "cls && cd $dir && python3 $fileName",
     "javascript": "node $dir/$fileName",
     "typescript": "node $dir/$fileName",
-    "kotlin": "kotlin -u"
+    "kotlin": "cls && cd $dir && kotlin -u $fileName"
   },
+  "code-runner.temporaryFileName": "fileTempError",
+  "code-runner.defaultLanguage": "cpp",
+  "cph.general.menuChoices": "cpp java c python",
+  "cph.language.java.SubmissionCompiler": "Java 1.8.0_241",
+  "cph.language.cpp.SubmissionCompiler": "GNU G++23 12.2.0 (64 bit, winlibs)",
+  "cph.language.java.Command": "java",
+  "cph.general.defaultLanguage": "cpp",
+  "cph.language.python.SubmissionCompiler": "Python 3.7.2",
+  "cph.general.autoShowJudge": false,
+  "cph.general.firstTime": false,
+
   //"workbench.activityBar.visible": false,
   "window.commandCenter": true,
   "editor.inlineSuggest.enabled": true,
@@ -74,15 +84,6 @@
   "debug.onTaskErrors": "debugAnyway",
   "terminal.integrated.tabs.focusMode": "singleClick",
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "cph.general.menuChoices": "cpp java c",
-  "cph.language.java.SubmissionCompiler": "Java 1.8.0_241",
-  "cph.language.cpp.SubmissionCompiler": "GNU G++20 11.2.0 (64 bit, winlibs)",
-  "cph.language.cpp.Command": "g++ -std=c++20 -Wall -O2 -c",
-  "cph.language.java.Command": "java",
-  "cph.general.defaultLanguage": "java",
-  "cph.language.python.SubmissionCompiler": "Python 3.7.2",
-  "cph.general.autoShowJudge": false,
-  "cph.general.firstTime": false,
   "terminal.integrated.cursorBlinking": true,
   "editor.linkedEditing": true,
   "editor.guides.bracketPairs": true,
@@ -91,12 +92,12 @@
   "java.configuration.runtimes": [
     {
       "name": "JavaSE-19",
-      "path": "D:\\Program Files\\Java\\jdk-19.0.1",
+      "path": "D:\\Program Files\\Compilers\\jdk-19.0.2",
       "default": true
     }
   ],
   "git.enableSmartCommit": true,
   "git.autofetch": true,
   "git.confirmSync": false,
-  "workbench.colorTheme": "Darcula",
+  "workbench.iconTheme": "material-icon-theme",
 }
