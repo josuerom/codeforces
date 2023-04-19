@@ -1,6 +1,6 @@
 /**
  *  author:  josuerom
- *  created: 16/04/23 22:42:23
+ *  created: 17/04/23 00:18:12
 **/
 #pragma GCC optimize("03,unroll-loops")
 #pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
@@ -15,13 +15,10 @@ int main() {
 #endif
    ios::sync_with_stdio(false);
    cin.tie(0);
-   int tt;
-   cin >> tt;
-   while (tt--) {
-      int a, b, ans = 0;
-      cin >> a >> b;
-      if (a!=b) ans = (abs(a-b)%10!=0 ? 1 + abs(a-b)/10 : abs(a-b)/10);
-      cout << ans << '\n';
-   }
+   int n, k, l, c, d, p, nl, np, ans = 0;
+   cin >> n >> k >> l >> c >> d >> p >> nl >> np;
+   ans = min((k*l)/nl, c*d);
+   ans = min(ans, p/np) / n;
+   cout << ans << '\n';
    return 0;
 }
