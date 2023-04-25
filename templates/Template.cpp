@@ -15,7 +15,7 @@ using namespace std;
 #define readArray(vec) void template<typename T> void read(vector<T>&(vec)){int n=(vec).size();for(auto&e:vec) cin >> e;}
 #define PROGRAM_TIME cout.precision(4); cout << "time: " << (int)clock()/(CLOCKS_PER_SEC/10) << " ms\n";
 #define SPEED_IO ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);
-#define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n+1);
+#define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n);
 #define binarySearch(vec, key) sort(all(vec)); binary_search(all(vec), (key));
 #define VEREDICT(condition) cout << ((condition) ? "YES" : "NO") << '\n';
 #define forr(i, vec) for(int i = (int)(vec).size()-1; i >= 0; i--)
@@ -35,13 +35,22 @@ using namespace std;
 #define us unsigned short
 #define END return 0
 #define ll long long
+#define pb push_back
+#define mp make_pair
+#define fi first
+#define se second
+
+clock_t startTime;
+double getCurrentTime() {
+	return (double)(clock() - startTime) / CLOCKS_PER_SEC;
+}
 
 const int MAX = 1e9;
 const int MOD = 1e6+7;
 
 int main() {
    SPEED_IO;
-   TC() {
+   TC {
       // Write code here
    }
    END;
