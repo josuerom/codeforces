@@ -11,78 +11,105 @@ import java.util.Random;
 import java.util.StringTokenizer;
 import java.util.Collections;
 import java.util.ArrayList;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 
 public class Solution {
    public static void main(String[] args) {
-      FastScanner fs = new FastScanner();
+      FastReader fr = new FastReader();
       PrintWriter pw = new PrintWriter(System.out);
-      // Write code here
-      pw.flush();
-      pw.close();
+      
+      pw.flush(); pw.close();
    }
    
    static final Random random = new Random();
    static final int MOD = 1_000_000_007;
    static final int MAX = 1_000_000_000;
+   static final boolean DEBUG = false;
    
-   static void ruffleSort(int[] a) {
-      int n = a.length;
-      for (int i = 0; i < n; i++) {
-         int oi = random.readInt(n), temp = a[oi];
-         a[oi] = a[i]; a[i] = temp;
+   static class Treasure {
+      public Treasure() { }
+      
+      void shuffle(int[] a) {
+         int n = a.length;
+   		for (int i = 0; i < n; i++) {
+   			int r = random.nextInt(a.length), temp = a[i];
+   			a[i] = a[r]; a[r] = temp;
+   		}
+   	}
+   
+      void ruffleSort(int[] a) {
+         int n = a.length;
+         for (int i = 0; i < n; i++) {
+            int r = random.nextInt(n), temp = a[r];
+            a[r] = a[i]; a[i] = temp;
+         }
+         Arrays.sort(a);
       }
-      Arrays.sort(a);
+      
+      long add(long a, long b) {
+         return (a+b) % MOD;
+      }
+      
+      long sub(long a, long b) {
+         return ((a-b) % MOD + MOD) % MOD;
+      }
+      
+      long mul(long a, long b) {
+         return (a*b) % MOD;
+      }
+      
+      long exp(long base, long exp) {
+         if (exp==0) return 1;
+         long half=exp(base, exp/2);
+         if (exp%2==0) return mul(half, half);
+         return mul(half, mul(half, base));
+      }
+      
+      long[] factorials = new long[2_000_010];
+      long[] invFactorials = new long[2_000_010];
+      
+      void precompFacts() {
+         factorials[0] = invFactorials[0] = 1;
+         for (int i = 1; i < factorials.length; i++) factorials[i] = mul(factorials[i-1], i);
+         invFactorials[factorials.length-1] = exp(factorials[factorials.length-1], MOD-2);
+         for (int i = invFactorials.length-2; i >= 0; i--) invFactorials[i] = mul(invFactorials[i+1], i+1);
+      }
+      
+      long nCr(int n, int r) {
+         return mul(factorials[n], mul(invFactorials[r], invFactorials[n-r]));
+      }
+
+      long nPr(int n, int r) {
+         return mul(factorials[n], mul(invFactorials[r], invFactorials[n]));
+      }
    }
-   
-   static long add(long a, long b) {
-      return (a+b) % MOD;
-   }
-   
-   static long sub(long a, long b) {
-      return ((a-b) % MOD + MOD) % MOD;
-   }
-   
-   static long mul(long a, long b) {
-      return (a*b) % MOD;
-   }
-   
-   static long exp(long base, long exp) {
-      if (exp==0) return 1;
-      long half=exp(base, exp/2);
-      if (exp%2==0) return mul(half, half);
-      return mul(half, mul(half, base));
-   }
-   
-   static long[] factorials = new long[2_000_010];
-   static long[] invFactorials = new long[2_000_010];
-   
-   static void precompFacts() {
-      factorials[0] = invFactorials[0] = 1;
-      for (int i = 1; i < factorials.length; i++) factorials[i] = mul(factorials[i-1], i);
-      invFactorials[factorials.length-1] = exp(factorials[factorials.length-1], MOD-2);
-      for (int i = invFactorials.length-2; i >= 0; i--) invFactorials[i] = mul(invFactorials[i+1], i+1);
-   }
-   
-   static long nCr(int n, int r) {
-      return mul(factorials[n], mul(invFactorials[r], invFactorials[n-r]));
-   }
-   
-   static long nPr(int n, int r) {
-      return mul(factorials[n], mul(invFactorials[r], invFactorials[n]));
-   }
-   
-   static class FastScanner {
-      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-      StringTokenizer st = new StringTokenizer("");
+
+   static class FastReader {
+      BufferedReader br;
+      StringTokenizer st;
+      
+      public FastReader() {
+         br = new BufferedReader(new InputStreamReader(System.in));
+      }
+      public FastReader(String txt) throws FileNotFoundException {
+         br = new BufferedReader(new FileReader(new File(txt)));
+      }
       
       String next() {
-         while (!st.hasMoreTokens()) {
+         while (st==null || !st.hasMoreTokens()) {
             try { st = new StringTokenizer(br.readLine()); }
             catch (IOException e) { e.printStackTrace(); }
          }
          return st.nextToken();
       }
-      
+      String readLine() {
+         String line = null;
+			try { line = br.readLine(); }
+			catch (IOException e) { e.printStackTrace(); }
+			return line;
+      }
       int readInt() {
          return Integer.parseInt(next());
       }
