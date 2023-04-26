@@ -1,3 +1,4 @@
+#parse("File Header.cpp")
 /**
  *  author:  josuerom
  *  created: ${DAY}/${MONTH}/${YEAR} ${HOUR}:${MINUTE}:${SECOND}
@@ -8,18 +9,16 @@
 #[[#include]]# <bits/stdc++.h>
 using namespace std;
 
-#[[#ifdef]]# LOCAL
-#[[#include]]# "data/degub.h"
-#[[#else]]#
-#[[#define]]# debug(..) 42
+#[[#ifdef]]# josuerom
+   #[[#include]]# "data/degub.h"
 #[[#endif]]#
 
 int main() {
    ios::sync_with_stdio(false);
    cin.tie(0);
 #[[#ifndef]]# ONLINE_JUDGE
-   freopen("sample/inp.in", "r", stdin);
-   //freopen("sample/out.ans", "w", stdout);
+   // freopen("sample/input.in", "r", stdin);
+   // freopen("sample/output.ans", "w", stdout);
 #[[#endif]]#
    
    return 0;
