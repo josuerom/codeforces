@@ -10,7 +10,7 @@
 using namespace std;
 
 #ifdef josuerom
-   #include "../data/debug.h"
+   #include "data/debug.h"
 #endif
 
 #define readArray(vec) void template<typename T> void read(vector<T>&(vec)){int n=(vec).size();for(auto&e:vec) cin >> e;}
@@ -38,21 +38,19 @@ using namespace std;
 #define pb push_back
 #define mp make_pair
 #define END return 0
-#define fi first
 #define se second
+#define fi first
 
 clock_t startTime;
 double getCurrentTime() {
-	return (double)(clock() - startTime) / CLOCKS_PER_SEC;
+   return (double)(clock() - startTime) / CLOCKS_PER_SEC;
 }
 
-const int MAX = 1e9;
-const int MOD = 1e6+7;
+constexpr int MAX = (int) 1e6+10;
 
 int main() {
    SPEED_IO();
-   TC {
-      //$1
+   TC {$1
    }
    END;
 }

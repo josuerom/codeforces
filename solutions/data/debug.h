@@ -84,4 +84,4 @@ void debug_out(Head H, Tail... T) {
    debug_out(T...);
 }
 
-#define debug(...) cerr << "(" << #__VA_ARGS__ << "):", debug_out(__VA_ARGS__)
+#define debug(...) cout << "(" << #__VA_ARGS__ << "):", debug_out(__VA_ARGS__)
