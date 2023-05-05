@@ -19,7 +19,7 @@ public class H_PetyaAndStrings {
       String a = fs.next();
       String b = fs.next();
       pw.println(a.compareToIgnoreCase(b)==0 ? 0 : a.compareToIgnoreCase(b)>0 ? 1 : -1);
-      pw.close();
+      pw.flush(); pw.close();
    }
 
    static final Random random = new Random();

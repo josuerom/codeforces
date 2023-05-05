@@ -4,7 +4,7 @@
 **/
 import java.util.*;
 
-public class BeautifulYear {
+public class A_Beautiful_Year {
    public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
       int n = sc.nextInt();

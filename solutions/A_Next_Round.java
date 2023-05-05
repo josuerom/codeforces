@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
 import java.util.Collections;
 import java.util.ArrayList;
 
-public class D_NextRound {
+public class A_Next_Round {
    public static void main(String[] args) {
       FastScanner fs = new FastScanner();
       PrintWriter pw = new PrintWriter(System.out);
