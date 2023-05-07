@@ -6,8 +6,8 @@
 using namespace std;
 
 int main() {
-   int w = 0; cin >> w;
-   if (w > 3) cout << (w%2==0) ? "YES" : "NO";
-   else cout << "NO";
+   int w;
+   cin >> w;
+   cout << (w>3 && w%2==0 ? "YES" : "NO") << '\n';
    return 0;
 }
