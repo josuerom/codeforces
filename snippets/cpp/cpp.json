@@ -3,8 +3,8 @@
 		"prefix": "online",
 		"body": [
 			"#ifndef ONLINE_JUDGE",
-      		"\tfreopen(\"sample/input.in\", \"r\", stdin);",
-      		"\t// freopen(\"sample/output.ans\", \"w\", stdout);",
+      		"\tfreopen(\"sample/input\", \"r\", stdin);",
+      		"\t// freopen(\"sample/output\", \"w\", stdout);",
    		"#endif"
 		]
 	},
@@ -136,8 +136,8 @@
 		"prefix": "author",
 		"body": [
 			"/**",
-			" *  author:  josuerom",
-			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			" *   author:  josuerom",
+			" *   created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
 			"**/",
 		]
 	},
@@ -166,70 +166,47 @@
 		]
 	},
 
-	"Template 1 CP": {
+   "Template 1 PC": {
 		"prefix": "template1.cpp",
 		"body": [
 			"/**",
-			" *  author:  josuerom",
-			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			" *   author:  josuerom",
+			" *   created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
 			"**/",
 			"#pragma GCC optimize(\"03,unroll-loops\")",
 			"#pragma GCC target(\"avx2,bmi,bmi2,lzcnt,popcnt\")",
 			"",
 			"#include <bits/stdc++.h>",
+			"",
 			"using namespace std;",
 			"",
-			"#ifdef LOCAL",
+			"#ifdef josuerom",
 			"\t#include \"data/debug.h\"",
 			"#endif",
+			"",
+			"#define all(a) (a).begin(),(a).end()",
+			"#define len(a) (int) (a).size()",
+			"#define ll long long",
+			"#define pb push_back",
+			"#define mp make_pair",
+			"#define ss second",
+			"#define ff first",
 			"",
 			"int main() {",
 			"\tios::sync_with_stdio(false);",
 			"\tcin.tie(0);",
 			"\t$1",
 			"\treturn 0;",
-			"}",
-		]
-	},
-
-   "Template 2 CP": {
-		"prefix": "template2.cpp",
-		"body": [
-			"/**",
-			" *  author:  josuerom",
-			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
-			"**/",
-			"#pragma GCC optimize(\"03,unroll-loops\")",
-			"#pragma GCC target(\"avx2,bmi,bmi2,lzcnt,popcnt\")",
-			"",
-			"#include <bits/stdc++.h>",
-			"using namespace std;",
-			"",
-			"#ifdef josuerom",
-			"\t#define \"data/debug.h\"",
-			"#endif",
-			"",
-			"#define all(a) (a).begin(), (a).end()",
-			"#define len(a) int(size((a)))",
-			"#define sz(a) int((a).size())",
-			"#define ull unsigned long long",
-			"#define ll long long",
-			"",
-			"int main() {",
-			"\tios::sync_with_stdio(false);",
-			"\tcin.tie(nullptr); cout.tie(nullptr);",
-			"\t$1",
-			"\treturn 0;",
 			"}"
 		]
 	},
 
-	"Template 3 CP": {
-		"prefix": "template3.cpp",
+	"Template 2 PC": {
+		"prefix": "template2.cpp",
 		"body": [
 			"/**",
-			" *  author:  josuerom",
-			" *  created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			" *   author:  josuerom",
+			" *   created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
 			"**/",
 			"#pragma GCC optimize(\"03,unroll-loops\")",
 			"#pragma GCC target(\"avx2,bmi,bmi2,lzcnt,popcnt\")",
@@ -253,8 +230,8 @@
 			"#define isOrdered(vec) is_sorted(all(vec))",
 			"#define rsort(vec) short(rall(vec))",
 			"#define ull unsigned long long int",
-			"#define sz(vec) (int)(vec).size()",
-			"#define sort(vec) sort(all(vec))",
+			"#define len(a) (int)(a).size()",
+			"#define sort(a) sort(all(a))",
 			"#define mcd(a, b) gcd(a, b)",
 			"#define ll long long",
 			"#define endl '\\n'",
@@ -264,7 +241,7 @@
 			"\treturn (double) (clock() - startTime)/CLOCKS_PER_SEC;",
 			"}",
 			"",
-			"#ifdef LOCAL",
+			"#ifdef josuerom",
 			"\t#include \"data/debug.h\"",
 			"#endif",
 			"",
@@ -272,8 +249,8 @@
 			"",
 			"int main() {",
 			"\tstartTime = clock();",
-      	"\t// freopen(\"sample/input.in\", \"r\", stdin);",
-      	"\t// freopen(\"sample/output.ans\", \"w\", stdout);",
+      	"\t// freopen(\"sample/input\", \"r\", stdin);",
+      	"\t// freopen(\"sample/output\", \"w\", stdout);",
 			"\tSPEED_IO;",
 			"\t$1$3",
 			"\t//printf(\"time = %.5lf\n\", getCurrentTime());",
@@ -281,5 +258,28 @@
 			"}"
 		],
 		"description": "Plantilla de C++ para competencias"
-	}
+	},
+
+	"Template 3 Free": {
+		"prefix": "template3.cpp",
+		"body": [
+			"/**",
+			" *   author:  josuerom",
+			" *   created: ${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+			"**/",
+			"#include <bits/stdc++.h>\n",
+			"using namespace std;",
+			"constexpr int MAX = (int) 1e6+7;\n",
+			"void solve($2) {",
+			"}\n",
+			"int main() {",
+			"\tios::sync_with_stdio(false);",
+			"\tcin.tie(0); cout.tie(0);",
+			"\tint tt;$1",
+			"\tcin >> tt;",
+			"\twhile (tt--) solve();",
+			"\treturn 0;",
+			"}"
+		]
+	},
 }
