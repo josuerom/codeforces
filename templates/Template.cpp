@@ -1,12 +1,11 @@
 /**
- *  author:  josuerom
- *  created: 14/11/22 13:28:51
+ *   author:  josuerom
+ *   created: 14/11/22 13:28:51
 **/
 #pragma GCC optimize("03,unroll-loops")
 #pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 #ifdef josuerom
@@ -50,7 +49,8 @@ constexpr int MAX = (int) 1e6+10;
 
 int main() {
    SPEED_IO();
-   TC {$1
+   TC {
+      
    }
    END;
 }

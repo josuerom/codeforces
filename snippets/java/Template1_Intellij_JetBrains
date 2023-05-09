@@ -1,7 +1,7 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
 
 /**
- *    author: josuerom
+ *   author:  josuerom
  *   created: ${DAY}/${MONTH}/23 ${HOUR}:${MINUTE}:${SECOND}
 **/
 import java.io.BufferedReader;
