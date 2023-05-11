@@ -32,17 +32,22 @@ snippet in
 #include <$0>
 endsnippet
 
-snippet u
-using namespace std;
-$0
+snippet ii
+#include <bits/stdc++.h>
 endsnippet
 
-snippet ios
-ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);$0
+snippet uu
+using namespace std;
+endsnippet
+
+snippet ioc
+ios::sync_with_stdio(false);
+cin.tie(0);
 endsnippet
 
 snippet gcc
-#pragma GCC optimize("03,unroll-loops");$0
+#pragma GCC optimize("03,unroll-loops")
+#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
 endsnippet
 
 snippet de
@@ -53,33 +58,39 @@ snippet typ
 typedef ${0:long long ll;}
 endsnippet
 
-snippet test
+snippet online
 #ifndef ONLINE_JUGDE
-	freopen("inp.txt", "r", stdin);
-	freopen("out.txt", "w", stdout);
+   // freopen("sample/input", "r", stdin);
+   // freopen("sample/output", "w", stdout);
 #endif
 endsnippet
 
 snippet re
-return$0;
+return $0;
 endsnippet
 
-snippet ci
+snippet cii
 cin >> $0;
 endsnippet
 
-snippet co
+snippet coo
 cout << $0 << '\n';
 endsnippet
 
-snippet tc
-while ($1) ${2:solve();}
+snippet tt
+int tt;
+cin >> tt;
+while (tt--) {
+   $0
+}
 endsnippet
 
-snippet main
+snippet fm
 int main() {
-	${0}
-	return 0;
+   ios::sync_with_stdio(false);
+   cin.tie(0);
+   $0
+   return 0;
 }
 endsnippet
 
@@ -124,11 +135,11 @@ if (FILE *fp = fopen(${1:"filename"}, "r"))
 endsnippet
 
 snippet map "std::map (map)"
-std::map<${1:key}, ${2:value}> map$0;
+map<${1:key}, ${2:value}> map$0;
 endsnippet
 
 snippet vector "std::vector (v)"
-std::vector<${1:char}> v$0;
+vector<${1:char}> v$0;
 endsnippet
 
 snippet tp "template <typename ..> (template)"
@@ -388,7 +399,7 @@ int solve() {
 endsnippet
 
 snippet tree "read tree"
-const int N = ;
+constexpr int N = (int) 1e6+10;
 
 vector<int> g[N];
 int used[N];

@@ -68,12 +68,12 @@ snippet inst "instanceof" b
 instanceof$0
 endsnippet
 
-snippet pc "package" b
+snippet pk "package" b
 package $0
 endsnippet
 
 snippet re "return" b
-return -1$0;
+return $0;
 endsnippet
 
 snippet as "assert" b
@@ -92,26 +92,21 @@ snippet ae "assert equals" b
 assertEquals(${1:expected}, ${2:actual});
 endsnippet
 
-snippet cs "case" b
-case ${1:1}: $2
-	break;
-endsnippet
-
 snippet ca "catch" b
 catch (${1:Exception} ${2:e})`!p nl(snip)`{
-	$0
+   $0
 }
 endsnippet
 
 snippet cle "class extends" b
 public class `!p snip.rv = snip.basename` extends ${1:parentClass}{
-	$0
+   $0
 }
 endsnippet
 
 snippet cli "class implements" b
 public class `!p snip.rv = snip.basename` implements ${1:parentClass} }{
-	$0
+   $0
 }
 endsnippet
 
@@ -163,95 +158,90 @@ if len(args) == 0:
 endsnippet
 
 ## JavaMainClass
-snippet jmc "Plantilla JavaMainClass" b
+snippet mainclass "Plantilla JavaMainClass" b
 package ${1:interfaz};
-
-${3://import java libraries}
-
 /**
-  * @author Josué Romero
-  * @param `!v strftime("%e/%B/%Y - %R")` COL
-*/
+ *  author:  josuerom
+ *  created: `!v strftime("%e/%B/%Y - %R")`
+**/
+$2
+
 public class `!p snip.rv = snip.basename` {
-	
-	public static void main(String[] args) {
-		${2:¡Empieza a Codear!}
-		${4}
-	}
+   public static void main (String[] args) {
+      $3
+   }
 }
 endsnippet
 
 ## JavaClass
-snippet jc "Plantilla JavaClass" b
+snippet class "Plantilla JavaClass" b
 package ${1:mundo};
 
 public class `!p snip.rv = snip.basename` {
-	/* Atributos */
-	$2
+   /* Atributos */
+   $2
 
-	/* Constructor */
-	public `!p snip.rv = snip.basename`($3) {
-		this.$4 = $4;
-	}
+   /* Constructor */
+   public `!p snip.rv = snip.basename`($3) {
+      this.$4 = $4;
+   }
 
-	/* Métodos */
-	$5
+   /* Métodos */
+   $5
 }
 endsnippet
 
 snippet pcl "public class" b
 public class `!p snip.rv = snip.basename` {
-	$0
+   $0
 }
 endsnippet
 
 snippet cl "class" b
 class `!p snip.rv = snip.basename` {
-	$0
+   $0
 }
 endsnippet
 
-snippet cos "atributo constante de tipo String" b
+snippet co "atributo constante de tipo String" b
 public static final String ${1:var} = "$2";$0
 endsnippet
 
-snippet co "declarar variale constante" b
-public static final ${1:String} ${2:var} = $3;$0
+snippet const "declarar variale constante" b
+public static final ${1:int} ${2:var} = $3;
 endsnippet
 
 snippet de "default" b
 default:
-	${1:System.err.println("ERROR. Debe ingrese una opción válida.");}
+   ${1:System.err.println("ERROR. Ingrese una opción válida.");}
 endsnippet
 
 ## Estructuras de condicionales
-snippet elseif "else if"
+snippet eli "else if"
 else if ($1)`!p nl(snip)`{
 	$0${VISUAL}
 }
 endsnippet
 
-snippet else "else" w
+snippet el "else" w
 else`!p nl(snip)`{
 	$0${VISUAL}
 }
 endsnippet
 
 snippet if "if" b
-if ($1) {
-	$2
-}
+if ($1) $2
 endsnippet
 
 ## Estructuras de bucles
 snippet fore "for (each)" b
-for (${1:int} e : ${2:array})`!p nl(snip)`{
+for (${1:int} e : ${2:array})`!p nl(snip)` {
 	$0
 }
 endsnippet
 
 snippet fori "fori" b
-for (int ${1:i} = 0; $1 < ${2:10}; $1++)`!p nl(snip)`{
+for (int i$1 = 0; i$1 < ${2:n}; i$1++)`!p nl(snip)`{
 	$0
 }
 endsnippet
@@ -285,8 +275,8 @@ snippet set "Collections Set" b
 Set<${1:String}> ${2:set} = new ${3:Hash}Set<$1>();
 endsnippet
 
-snippet st "String" b
-String $0
+snippet S "String" b
+String $1 = "";
 endsnippet
 
 snippet cons "Constructor" b
@@ -314,31 +304,31 @@ endsnippet
 snippet im "import" b
 import $0;
 endsnippet
-snippet jb "java.beans." i
+snippet ijb "java.beans." i
 import java.beans.$0;
 endsnippet
-snippet ji "java.io" i
+snippet iji "java.io" i
 import java.io.$0;
 endsnippet
-snippet jm "java.math" i
+snippet ijm "java.math" i
 import java.math.$0;
 endsnippet
-snippet jn "java.net." i
+snippet ijn "java.net." i
 import java.net.$0;
 endsnippet
-snippet ju "java.util."  i
+snippet iju "java.util."  i
 import java.util.$0;
 endsnippet
-snippet js "javax.swing."  i
+snippet ijs "javax.swing."  i
 import javax.swing.$0;
 endsnippet
-snippet jt "java.text.DecimalFormat"  i
+snippet decimal "java.text.DecimalFormat"  i
 import java.text.DecimalFormat;$0
 endsnippet
 
-snippet main "método principal" b
-public static void main(String[] args)`!p nl(snip)`{
-	${1:¡A Codear!}
+snippet fm "método principal" b
+public static void main (String[] args)`!p nl(snip)`{
+   ${1:¡A Codear!}
 }
 endsnippet
 
@@ -356,13 +346,13 @@ ${1:private} ${2:void} ${3:method}($4) ${5:throws $6 }{
 }
 endsnippet
 
-snippet me  "estructura de métodos" b
+snippet fpv  "estructura de métodos" b
 ${1:public} ${2:void} ${3:nameMethod}($4) {
 	$0
 }
 endsnippet
 
-snippet me "método con JavaDoc" b
+snippet fdoc "método con JavaDoc" b
 /**
  * ${7:Short Description}`!p
 for i in getArgs(t[4]):
@@ -405,20 +395,32 @@ public $2 get$1() {
 endsnippet
 
 ## Salida de datos por consola
-snippet s "System.out.print('')" b
-System.out.print("$1");$0
+snippet s "System.out.print()" b
+System.out.print("$1");
 endsnippet
 
-snippet ss "System.out.println('')"  b
-System.out.println($1);$0
+snippet ss "System.out.println()"  b
+System.out.println($1);
 endsnippet
 
-snippet err "System.err.println('')"  b
-System.err.println($1);$0
+snippet se "System.err.println()"  b
+System.err.println($1);
 endsnippet
 
-snippet sp "System.out.println('')"  b
+snippet sf "System.out.println()"  b
 System.out.printf($1);$0
+endsnippet
+
+snippet p "pw.print()"  b
+pw.print($1);
+endsnippet
+
+snippet pp "pw.println()"  b
+pw.println($1);
+endsnippet
+
+snippet pf "pw.printf()"  b
+pw.printf("%$1", $2);
 endsnippet
 
 ## Modificadores de acceso
@@ -442,20 +444,6 @@ snippet fi "final" b
 final $0
 endsnippet
 
-# Estructuras Switch
-snippet sw "switch" b
-switch ($1)`!p nl(snip)`{
-	case 1: $2
-		break;
-	case 2: $2
-		break;
-	case 3: $2
-		break;
-	default:
-		System.err.println("ERROR. Debe ingresar una opción válida.");
-}
-endsnippet
-
 snippet sy "synchronized"
 synchronized$0
 endsnippet
@@ -472,29 +460,27 @@ snippet t "test" b
 }
 endsnippet
 
-snippet tt "test throws" b
-`!p junit(snip)`public void test${1:Name}() ${2:throws Exception }{
-	$0
-}
-endsnippet
-
 snippet th "throw" b
 throw new $0
 endsnippet
 
 snippet wh "while" b
-while ($1)`!p nl(snip)`{
-	$0
+while ($1) {
+   $2
 }
 endsnippet
 
 ## Otros snippets fundamentales
-snippet ar "declarar un arreglo" b
-${1:int} ${2:name}[] = new $1[${3:10}];$0
+snippet ar "declarar un arreglo estático" b
+${1:int} ${2:name}[] = new $1[${3:N}];$0
 endsnippet
 
-snippet arr "definir un arreglo"
-${1:int} ${2:name}[] = new ${1:int}[] {$3};$0
+snippet arr "Array.funtion()"
+Arrays.$1();
+endsnippet
+
+snippet tostr "Arrays.toString()"
+Arrays.toString($1)
 endsnippet
 
 snippet sc "Scanner sc = new Scanner(System.in)" b
@@ -502,7 +488,7 @@ Scanner sc = new Scanner(System.in);$0
 endsnippet
 
 snippet df "DecimalFormat df = new DecimalFormat(###,###.##)" b
-DecimalFormat df = new DecimalFormat("###,###.##");$0
+DecimalFormat df = new DecimalFormat("#.#########"); // EA 10^-9
 endsnippet
 
 snippet joi "JOptionPane.showInputDialog()" b
@@ -513,28 +499,32 @@ snippet jom "JOptionPane.showMessageDialog()" b
 JOptionPane.showMessageDialog(null, "$1");$0
 endsnippet
 
-snippet .n ".nextInt()" b
-.nextInt();$0
+snippet ri "fr.readInt()" b
+fr.readInt();
 endsnippet
 
-snippet .n ".nextFloat()" b
-.nextFloat();$0
+snippet rl "fr.readLong()" b
+fr.readLong();
 endsnippet
 
-snippet .n ".nextLine()" b
-.nextLine();$0
+snippet rd "fr.readDouble()" b
+fr.readDouble();
 endsnippet
 
-snippet .n ".nextDouble()" b
-.nextDouble();$0
+snippet ra "fr.readArray()" b
+fr.readArray():
 endsnippet
 
-snippet .n ".nextByte()" b
-.nextByte();$0
+snippet rac "fr.next().toCharArray()" b
+fr.next().toCharArray();
 endsnippet
 
-snippet .n ".nextShort()" b
-.nextShort();$0
+snippet rn "fr.next()" b
+fr.next();
+endsnippet
+
+snippet rl "fr.readLine()" b
+fr.readLine();
 endsnippet
 
 snippet parseo "{Type}.parse{Type}()" b
@@ -553,16 +543,16 @@ snippet .eq "equals(Object)" b
 .equals();$0
 endsnippet
 
-snippet .toString "toString" b
+snippet .toString "pS toString" b
 public String toString() {
-	return "$1";	
+   return "$1";	
 }
 endsnippet
 
 snippet pcla "public abstract class nameClass" b
 public abstract class`!p snip.rv = snip.basename` extends ${1:parentClass} {
-	
-	public abstract void get${2:Name}();$0
+
+   public abstract void get${2:Name} ();$0
 }
 endsnippet
 
@@ -601,6 +591,167 @@ try {
 }
 endsnippet
 
-snippet st "String" b
-String $1 = " ";$0
+snippet tt "Read test case" b
+int tt = fr.readInt$1();
+while (tt-- > 0) {
+   $2
+}
+endsnippet
+
+snippet temp1.java "Template 1 Java" b
+/**
+ *   author:  josuerom
+ *   created: `!v strftime("%e/%B/%Y - %R")`
+**/
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.StringTokenizer;
+import java.util.Collections;
+import java.util.ArrayList;
+import static java.lang.Math.*;
+
+public class `!p snip.rv = snip.basename` {
+   public static void main(String[] args) {
+      FastReader fr = new FastReader();
+      PrintWriter pw = new PrintWriter(System.out);
+      $0
+      pw.flush(); pw.close();
+   }
+
+   static final Random random = new Random();
+   static final int MOD = 1_000_000_007;
+   static final int MAX = 1_000_000; // MAX 10^6
+   static final boolean DEBUG = false;
+
+   static void ruffleSort(int[] a) {
+      int n = a.length;
+      for (int i = 0; i < n; i++) {
+         int oi = random.nextInt(n), temp = a[oi];
+         a[oi] = a[i]; a[i] = temp;
+      }
+      Arrays.sort(a);
+   }
+
+   static long add(long a, long b) {
+      return (a+b) % MOD;
+   }
+   static long sub(long a, long b) {
+      return ((a-b) % MOD + MOD) % MOD;
+   }
+   static long mul(long a, long b) {
+      return (a*b) % MOD;
+   }
+   static long exp(long base, long exp) {
+      if (exp==0) return 1;
+      long half=exp(base, exp/2);
+      if (exp%2==0) return mul(half, half);
+      return mul(half, mul(half, base));
+   }
+
+   static long[] factorials = new long[2_000_007];
+   static long[] invFactorials = new long[2_000_007];
+
+   static void precompFacts() {
+      factorials[0] = invFactorials[0] = 1;
+      for (int i = 1; i < factorials.length; i++) factorials[i] = mul(factorials[i-1], i);
+      invFactorials[factorials.length-1] = exp(factorials[factorials.length-1], MOD-2);
+      for (int i = invFactorials.length-2; i >= 0; i--) invFactorials[i] = mul(invFactorials[i+1], i+1);
+   }
+   static long nCr(int n, int r) {
+      return mul(factorials[n], mul(invFactorials[r], invFactorials[n-r]));
+   }
+
+   static class FastReader {
+      BufferedReader br;
+      StringTokenizer st;
+
+      public FastReader() {
+         br = new BufferedReader(new InputStreamReader(System.in));
+         st = new StringTokenizer("");
+      }
+
+      String next() {
+         while (!st.hasMoreTokens()) {
+            try { st = new StringTokenizer(br.readLine()); }
+            catch (IOException e) { e.printStackTrace(); }
+         }
+         return st.nextToken();
+      }
+      String readLine() {
+         String line = null;
+         try { line = br.readLine(); }
+         catch (IOException e) { e.printStackTrace(); }
+         return line;
+      }
+
+      double readDouble() { return Double.parseDouble(next()); }
+      long readLong() { return Long.parseLong(next()); }
+      int readInt() { return Integer.parseInt(next()); }
+      int[] readArray(int n) {
+         int[] a = new int[n];
+         for (int i = 0; i < n; i++) { a[i] = readInt(); }
+         return a;
+      }
+   }
+}
+endsnippet
+
+snippet temp2.java "Template 2 Java" b
+/**
+ *   author:  josuerom
+ *   created: `!v strftime("%e/%B/%Y - %R")`
+**/
+import java.util.Scanner;
+import java.util.Arrays;
+import static java.lang.Math.*;
+
+public class `!p snip.rv = snip.basename` {
+   private final boolean DEBUG = false;
+
+   public static void main(String[] args) {
+      readInput();
+   }
+
+   public static void solution(int[] vi) {$
+   }
+
+   public static void readInput() {
+      Scanner sc = new Scanner(System.in);
+      int tt, vi[];
+      tt = sc.nextInt();
+      while (tt-- > 0) {
+         int N = sc.nextInt();
+         vi = new int[N];
+         for (int i = 0; i < N$1; i++) {
+            vi[i] = sc.nextInt();
+         }
+         solution(vi);
+      }
+      sc.close(); System.out.close();
+   }
+}
+endsnippet
+
+snippet tem3.java "Template 3 Java" b
+/**
+ *   author:  josuerom
+ *   created: `!v strftime("%e/%B/%Y - %R")`
+**/
+import java.util.Scanner;
+import java.util.Arrays;
+import static java.lang.Math.*;
+
+public class `!p snip.rv = snip.basename` {
+   private final boolean DEBUG = false;
+
+   public static void main(String[] args) {
+	  Scanner sc = new Scanner(System.in);
+	  $1
+      sc.close(); System.out.close();
+   }
+}
 endsnippet

@@ -1,6 +1,6 @@
 /**
- *  author: josuerom
- * created: 14/01/23 13:30:17
+ *   author:  josuerom
+ *   created: 14/01/23 13:30:17
 **/
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -25,7 +25,7 @@ public class Solution {
    
    static final Random random = new Random();
    static final int MOD = 1_000_000_007;
-   static final int MAX = 1_000_000_000;
+   static final int MAX = 1_000_000_000; // MAX 10^9
    static final boolean DEBUG = false;
    
    static class Treasure {
