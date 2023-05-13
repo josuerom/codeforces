@@ -11,21 +11,23 @@ import java.util.Random;
 import java.util.StringTokenizer;
 import java.util.Collections;
 import java.util.ArrayList;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import static java.lang.Math.*;
 
-public class Solution {
+public class {NAME} {
    public static void main(String[] args) {
       FastReader fr = new FastReader();
       PrintWriter pw = new PrintWriter(System.out);
-      
+      $CURSOR$
       pw.flush(); pw.close();
    }
    
    static final Random random = new Random();
    static final int MOD = 1_000_000_007;
+<<<<<<< HEAD
    static final int MAX = 1_000_000_000; // MAX 10^9
+=======
+   static final int MAX = 1_000_007; // EPS 10^6 + 7
+>>>>>>> 9684e8e (Update files)
    static final boolean DEBUG = false;
    
    static class Treasure {
@@ -51,15 +53,12 @@ public class Solution {
       long add(long a, long b) {
          return (a+b) % MOD;
       }
-      
       long sub(long a, long b) {
          return ((a-b) % MOD + MOD) % MOD;
       }
-      
       long mul(long a, long b) {
          return (a*b) % MOD;
       }
-      
       long exp(long base, long exp) {
          if (exp==0) return 1;
          long half=exp(base, exp/2);
@@ -80,10 +79,6 @@ public class Solution {
       long nCr(int n, int r) {
          return mul(factorials[n], mul(invFactorials[r], invFactorials[n-r]));
       }
-
-      long nPr(int n, int r) {
-         return mul(factorials[n], mul(invFactorials[r], invFactorials[n]));
-      }
    }
 
    static class FastReader {
@@ -92,11 +87,9 @@ public class Solution {
       
       public FastReader() {
          br = new BufferedReader(new InputStreamReader(System.in));
+         st = new StringTokenizer("");
       }
-      public FastReader(String txt) throws FileNotFoundException {
-         br = new BufferedReader(new FileReader(new File(txt)));
-      }
-      
+
       String next() {
          while (st==null || !st.hasMoreTokens()) {
             try { st = new StringTokenizer(br.readLine()); }
@@ -110,17 +103,13 @@ public class Solution {
 			catch (IOException e) { e.printStackTrace(); }
 			return line;
       }
-      int readInt() {
-         return Integer.parseInt(next());
-      }
-      long readLong() {
-         return Long.parseLong(next());
-      }
+
+      double readDouble() { return Double.parseDouble(next()); }
+      int readInt() { return Integer.parseInt(next()); }
+      long readLong() { return Long.parseLong(next()); }
       int[] readArray(int n) {
          int[] a = new int[n];
-         for (int i = 0; i < n; i++) {
-            a[i] = readInt();
-         }
+         for (int i = 0; i < n; i++) { a[i] = readInt(); }
          return a;
       }
    }
