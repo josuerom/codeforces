@@ -28,21 +28,12 @@ int main() {
    while (tt--) {
       int n;
       cin >> n;
-      vector<int> vec(n);
-      int ans = 0;
-      for (auto &e : vec) cin >> e;
-      for (int i = 0; i < n; i++) {
-         if (i%2 != vec[i]%2) ans++;
-      }
-      cout << (ans==0 ? -1 : ans) << '\n';
       vector<int> a(n);
       bool flag = 1;
       int good = 0, bad = 0;
       for (int i = 0; i < n; i++) {
-         int x;
-         cin >> x;
-         a.pb(x);
-         if (i%2 != x%2) { flag = 0; bad++; }
+         cin >> a[i];
+         if (i%2 != a[i]%2) { flag = 0; bad++; }
          else good++;
       }
       debug(bad, good);

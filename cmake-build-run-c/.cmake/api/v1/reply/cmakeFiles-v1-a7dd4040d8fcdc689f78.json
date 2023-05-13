@@ -16,7 +16,12 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeSystem.cmake"
+			"path" : "cmake-build-run-c/CMakeFiles/3.25.2/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeUnixFindMake.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -270,7 +275,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake"
+			"path" : "cmake-build-run-c/CMakeFiles/3.25.2/CMakeCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -514,7 +519,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
+			"path" : "cmake-build-run-c/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -638,7 +643,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake"
+			"path" : "cmake-build-run-c/CMakeFiles/3.25.2/CMakeCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -732,13 +737,13 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
+			"path" : "cmake-build-run-c/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/jr3/workspace/codeforces/cmake-build-debug",
+		"build" : "/home/jr3/workspace/codeforces/cmake-build-run-c",
 		"source" : "/home/jr3/workspace/codeforces"
 	},
 	"version" : 
