@@ -1,3 +1,0 @@
-/home/jr3/workspace/codeforces/cmake-build-run-c/CMakeFiles/codeforces.dir
-/home/jr3/workspace/codeforces/cmake-build-run-c/CMakeFiles/edit_cache.dir
-/home/jr3/workspace/codeforces/cmake-build-run-c/CMakeFiles/rebuild_cache.dir

@@ -12,14 +12,6 @@ using namespace std;
    #include "data/debug.h"
 #endif
 
-#define all(a) (a).begin(),(a).end()
-#define len(a) (int) (a).size()
-#define ll long long
-#define pb push_back
-#define mp make_pair
-#define ss second
-#define ff first
-
 int main() {
    ios::sync_with_stdio(false);
    cin.tie(0);

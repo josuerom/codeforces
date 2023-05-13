@@ -47,10 +47,10 @@ endsnippet
 
 snippet gcc
 #pragma GCC optimize("03,unroll-loops")
-#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+#pragma GCC target("avx2")
 endsnippet
 
-snippet de
+snippet def
 #define $0
 endsnippet
 
@@ -60,13 +60,13 @@ endsnippet
 
 snippet online
 #ifndef ONLINE_JUGDE
-   // freopen("sample/input", "r", stdin);
+   freopen("sample/input", "r", stdin);
    // freopen("sample/output", "w", stdout);
 #endif
 endsnippet
 
 snippet re
-return $0;
+return$0;
 endsnippet
 
 snippet cii
@@ -90,6 +90,153 @@ int main() {
    ios::sync_with_stdio(false);
    cin.tie(0);
    $0
+   return 0;
+}
+endsnippet
+
+snippet fm
+void solve() {
+   $0
+}
+endsnippet
+
+snippet fore
+for (auto &e : $1) cin >> e;$2
+endsnippet
+
+snippet fori
+for (int i$1 = 0; i < N$2; i$1++) {
+   $3
+}
+endsnippet
+
+snippet wh
+while ($1) {
+   $2
+}
+endsnippet dowh
+do {
+   $1
+} while ($2);
+snippet
+endsnippet
+
+snippet if
+if ($1) $2
+endsnippet
+
+snippet el
+else $1
+endsnippet
+
+snippet eli
+else if ($1) $2
+endsnippet
+
+snippet josuerom
+#ifdef josuerom
+   #include "debug.h"
+#endif
+endsnippet
+
+snippet templateT
+template <typename T>
+endsnippet
+
+snippet stru
+struct $1 {
+   $2
+}
+endsnippet
+
+snippet bl
+$1'\n';
+endsnippet
+
+snippet dg
+debug($1);
+endsnippet
+
+snippet rac
+cin.getline($1, N$2, '\n');
+endsnippet
+
+snippet rstr
+getline(cin, s$1);
+endsnippet
+
+snippet time
+clock_t startTime;
+double getCurrentTime() {
+   return (double)(clock() - startTime) / CLOCKS_PER_SEC;
+}
+$1startTime = clock();
+printf("\ntime = %.5lf\n", getCurrentTime());
+endsnippet
+
+snippet MAX
+constexpr int MAX = (int) 1e6$1+7;$2
+endsnippet
+
+snippet vec
+vector<$1> $2;
+endsnippet
+
+snippet pai
+pair<$1, $2>$3
+endsnippet
+
+snippet tem1.cpp
+/**
+ *   author:  josuerom
+ *   created: `!v strftime("%e/%B/%Y - %R")`
+**/
+#pragma GCC optimize("03,unroll-loops")
+#pragma GCC target("avx2")
+
+#include <bits/stdc++.h>
+using namespace std;
+
+#ifdef josuerom
+   #include "debug.h"
+#endif
+
+#define all(a) (a).begin(),(a).end()
+#define ull unsigned long long int
+#define len(a) (int) (a).size()
+#define ll long long int
+#define pb push_back
+#define mp make_pair
+#define ss second
+#define ff first
+
+int main() {
+   ios::sync_with_stdio(false);
+   cin.tie(0);
+   $1
+   return 0;
+}
+endsnippet
+
+snippet tem2.cpp
+/**
+ *   author:  josuerom
+ *   created: `!v strftime("%e/%B/%Y - %R")`
+**/
+#include <bits/stdc++.h>
+
+using namespace std;
+
+#ifdef josuerom
+   #include "debug.h"
+#else
+   #define debug(...) 42
+#endif
+
+int main() {
+   ios::sync_with_stdio(false);
+   cin.tie(0);
+   $1
    return 0;
 }
 endsnippet
@@ -143,7 +290,7 @@ vector<${1:char}> v$0;
 endsnippet
 
 snippet tp "template <typename ..> (template)"
-template <typename ${1:_InputIter}>
+template <typename T>$1
 endsnippet
 
 snippet cla "An entire .h generator" b
@@ -314,7 +461,7 @@ int32_t main() {
 		#endif
 	}
 	#ifdef ONPC
-		cerr << endl << "finished in " << clock() * 1.0 / CLOCKS_PER_SEC << " sec" << endl;
+		cerr << endl << "time " << clock() * 1.0 / CLOCKS_PER_SEC << " sec" << endl;
 	#endif
 }
 endsnippet
@@ -331,8 +478,8 @@ int32_t main() {
 endsnippet
 
 snippet for "for"
-for (int ${1:i} = 0; $1 < ${2:n}; $1++) {
-	$0
+for (int ${1:i} = 0; $1 < ${2:N}; ${1:i}++) {
+	$3
 }
 endsnippet
 
@@ -369,7 +516,7 @@ push_back($1);$0
 endsnippet
 
 snippet graph "read graph"
-const int N = ;
+const int N = (int) 1e6+7;
 
 vector<int> g[N];
 int used[N];
@@ -388,8 +535,7 @@ int solve() {
 	for (int i = 0; i < m; i++) {
 		int x, y;
 		cin >> x >> y;
-		x--;
-		y--;
+		x--; y--;
 		g[x].push_back(y);
 		g[y].push_back(x);
 	}
@@ -399,7 +545,7 @@ int solve() {
 endsnippet
 
 snippet tree "read tree"
-constexpr int N = (int) 1e6+10;
+constexpr int N = (int) 1e6+7;
 
 vector<int> g[N];
 int used[N];
@@ -416,8 +562,7 @@ int solve() {
 	for (int i = 1; i < n; i++) {
 		int x, y;
 		cin >> x >> y;
-		x--;
-		y--;
+		x--; y--;
 		g[x].push_back(y);
 		g[y].push_back(x);
 	}
@@ -1582,82 +1727,4 @@ struct DSU {
 		}
 	}
 };
-endsnippet
-
-snippet deb "debug output"
-#ifdef ONPC
-	void debug_print(string s) {
-		cerr << "\"" << s << "\"";
-	}
-
-	void debug_print(const char* s) {
-		debug_print((string)s);
-	}
-
-	void debug_print(bool val) {
-		cerr << (val ? "true" : "false");
-	}
-
-	void debug_print(int val) {
-		cerr << val;
-	}
-
-	void debug_print(ll val) {
-		cerr << val;
-	}
-
-	template<typename F, typename S>
-	void debug_print(pair<F, S> val) {
-		cerr << "(";
-		debug_print(val.first);
-		cerr << ", ";
-		debug_print(val.second);
-		cerr << ")";
-	}
-
-	void debug_print(vector<bool> val) {
-		cerr << "{";
-		bool first = true;
-		for (bool x : val) {
-			if (!first) {
-				cerr << ", ";
-			} else {
-				first = false;
-			}
-			debug_print(x);
-		}
-		cerr << "}";
-	}
-
-	template<typename T>
-	void debug_print(T val) {
-		cerr << "{";
-		bool first = true;
-		for (const auto &x : val) {
-			if (!first) {
-				cerr << ", ";
-			} else {
-				first = false;
-			}
-			debug_print(x);
-		}
-		cerr << "}";
-	}
-
-	void debug_print_collection() {
-		cerr << endl;
-	}
-
-	template<typename First, typename... Args>
-	void debug_print_collection(First val, Args... args) {
-		cerr << " ";
-		debug_print(val);
-		debug_print_collection(args...);
-	}
-
-#define debug(...) cerr << "@@@ " << #__VA_ARGS__ << " ="; debug_print_collection(__VA_ARGS__);
-
-#else
-	#define debug(...) 
-#endif
 endsnippet

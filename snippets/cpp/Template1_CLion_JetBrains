@@ -2,17 +2,20 @@
  *   author:  josuerom
  *   created: ${DAY}/${MONTH}/23 ${HOUR}:${MINUTE}:${SECOND}
 **/
-#[[#include]]# <bits/stdc++.h>
+#[[#pragma]]# GCC optimize("03,unroll-loops")
+#[[#pragma]]# GCC target("avx2")
 
+#[[#include]]# <bits/stdc++.h>
 using namespace std;
 
 #[[#ifdef]]# josuerom
    #[[#include]]# "debug.h"
 #[[#endif]]#
 
-#[[#define]]# all(a) (a).begin(),(a).end()
-#[[#define]]# len(a) (int) (a).size()
-#[[#define]]# ll long long
+#[[#define]]# all(x) (x).begin(),(x).end()
+#[[#define]]# ull unsigned long long int
+#[[#define]]# len(x) (int) (x).size()
+#[[#define]]# ll long long int
 #[[#define]]# pb push_back
 #[[#define]]# mp make_pair
 #[[#define]]# ss second
