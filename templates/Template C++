@@ -5,53 +5,68 @@
 #pragma GCC optimize("03,unroll-loops")
 #pragma GCC target("avx2")
 
-#include <bits/stdc++.h>
-using namespace std;
+#include <bits/stdc++.h>            //         ──▀ █▀▀█ █▀▀ █──█ █▀▀ █▀▀█ █▀▀█ █▀▄▀█ █
+                                    //         ──█ █──█ ▀▀█ █──█ █▀▀ █▄▄▀ █──█ █─▀─█ ▀
+using namespace std;                //         █▄█ ▀▀▀▀ ▀▀▀ ─▀▀▀ ▀▀▀ ▀─▀▀ ▀▀▀▀ ▀───▀ ▄
 
 #ifdef josuerom
    #include "debug.h"
 #endif
 
-#define readArray(vec) void template<typename T> void read(vector<T>&(vec)){int n=(vec).size();for(auto&e:vec) cin >> e;}
+#define readArray(x) void template<typename T> void read(xtor<T>&(x)){int n=(x).size();for(auto&e:x) cin >> e;}
 #define SPEED_IO() ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);
+#define VEREDICT(condition) cout << ((condition) ? "YES" : "NO") << '\n'
 #define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n);
 #define binarySearch(vec, key) sort(all(vec)); binary_search(all(vec), (key));
-#define VEREDICT(condition) cout << ((condition) ? "YES" : "NO") << '\n';
 #define forr(i, vec) for(int i = (int)(vec).size()-1; i >= 0; i--)
-#define mod(a, b, MOD) ((((a) % (MOD)) + ((b) % (MOD))) % (MOD))
+#define uniq(x) sort(all(x)); (x).erase(unique(all(x)),(x).end())
+#define mod(a, b, mod) ((((a) % (mod)) + ((b) % (mod))) % (mod))
 #define fori(i, b, c) for(int (i) = (b); (i) < (c); (i)++)
-#define rall(vec) (vec).rbegin(), (vec).rend()
-#define all(vec) (vec).begin(), (vec).end()
+#define memset(a, v) memset((a),(v), sizeof(a))
+#define countbits(x) __builtin_popcountll(x)
+#define TC int tt; cin >> tt; while((tt)--)
 #define fore(e, vec) for (auto &(e): (vec))
 #define isOrdered(vec) is_sorted(all(vec))
-#define TC int tt; cin >> tt; while (tt--)
-#define rsort(vec) sort(rall(vec))
+#define rall(x) (x).rbegin(),(x).rend()
+#define lbd(x, y) lower_bound(all(x), y)
+#define ubd(x, y) upper_bound(all(x), y)
+#define log(x) 63 - __builtin_clzll(x)
+#define all(x) (x).begin(),(x).end()
 #define ull unsigned long long int
-#define mcm(a, b) (a*b) / gcd(a,b)
-#define mcd(a, b) (int) gcd(a,b)
-#define sort(vec) sort(all(vec))
-#define sz(vec) int(vec.size())
-#define len(a) int(size((a)))
-#define ll long long
+#define PI 3.14159265358979323846L;
+#define EU 2.71828182845904523536L;
+#define mcm(a, b) (a*b)/gcd(a, b)
+#define mcd(a, b) (int) gcd(a, b)
+#define rsort(x) short(rall(x))
+#define len(x) (int)(x).size()
+#define sort(x) sort(all(x))
+#define lowbit(x) (x & (-x))
+#define MOD (int) 1000000007
+#define sbl(x, b) (x << b)
+#define sbr(x, b) (x >> b)
+#define ll long long int
+#define MAX (int) 1e6+7
+#define eb emplace_back
+#define mxe max_element
+#define mne min_element
+#define vi vector<int>
+#define END return 0
 #define pb push_back
-#define mp make_pair
-#define se second
-#define fi first
-#define bl '\n'
+#define mb make_pair
+#define ss second
+#define ff first
 
 clock_t startTime;
 double getCurrentTime() {
-   return (double)(clock() - startTime) / CLOCKS_PER_SEC;
+   return (double) (clock() - startTime)/CLOCKS_PER_SEC;
 }
 
-constexpr int MAX = (int) 1e6+10;
-int N;
-
 int main() {
-//   startTime = clock();
+   startTime = clock();
    SPEED_IO();
-   TC {
-      $CURSOR$
-   }
-//   printf("\ntime %.5lf\n", getCurrentTime());
+   
+   #ifdef josuerom
+      printf("\ntime = %.5lf ms\n", getCurrentTime());
+   #endif
+   return 0;
 }
