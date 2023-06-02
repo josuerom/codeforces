@@ -3,11 +3,10 @@
  *   created: 14/11/22 13:28:51
 **/
 #pragma GCC optimize("03,unroll-loops")
-#pragma GCC target("avx2")
 
-#include <bits/stdc++.h>            //         ──▀ █▀▀█ █▀▀ █──█ █▀▀ █▀▀█ █▀▀█ █▀▄▀█ █
-                                    //         ──█ █──█ ▀▀█ █──█ █▀▀ █▄▄▀ █──█ █─▀─█ ▀
-using namespace std;                //         █▄█ ▀▀▀▀ ▀▀▀ ─▀▀▀ ▀▀▀ ▀─▀▀ ▀▀▀▀ ▀───▀ ▄
+#include <bits/stdc++.h>              //         ──▀ █▀▀█ █▀▀ █──█ █▀▀ █▀▀█ █▀▀█ █▀▄▀█ █
+                                      //         ──█ █──█ ▀▀█ █──█ █▀▀ █▄▄▀ █──█ █─▀─█ ▀
+using namespace std;                  //         █▄█ ▀▀▀▀ ▀▀▀ ─▀▀▀ ▀▀▀ ▀─▀▀ ▀▀▀▀ ▀───▀ ▄
 
 #ifdef josuerom
    #include "debug.h"
@@ -53,8 +52,8 @@ using namespace std;                //         █▄█ ▀▀▀▀ ▀▀▀ 
 #define END return 0
 #define pb push_back
 #define mb make_pair
-#define ss second
-#define ff first
+#define s second
+#define f first
 
 clock_t startTime;
 double getCurrentTime() {
@@ -66,7 +65,7 @@ int main() {
    SPEED_IO();
    
    #ifdef josuerom
-      printf("\ntime = %.5lf ms\n", getCurrentTime());
+      printf("time = %.5lf ms\n", getCurrentTime());
    #endif
-   return 0;
+   END;
 }
