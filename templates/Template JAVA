@@ -1,6 +1,9 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
 /**
- *   author:  josuerom
- *   created: {DAY}/{MONTH}/{YEAR} {HOUR}:{MINUTE}:{SECOND}
+   ░░█ █▀█ █▀ █░█ █▀▀ █▀█ █▀█ █▀▄▀█
+   █▄█ █▄█ ▄█ █▄█ ██▄ █▀▄ █▄█ █░▀░█
+   created: {DAY}/{MONTH}/23 {HOUR}:{MINUTE}:{SECOND}
 **/
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,18 +16,26 @@ import java.util.Collections;
 import static java.lang.Math.*;
 
 public class {NAME} {
-   static FastReader fr = new FastReader();
-   static PrintWriter pw = new PrintWriter(System.out);
+   static FastReader fr;
+   static PrintWriter pw;
+   static final int MAX;
+   static final boolean DEBUG;
+
+   public {NAME}() {
+      fr = new FastReader();
+      pw = new PrintWriter(System.out);
+      MAX = 1_000_007; //EPS 10^6 + 7
+      DEBUG = false;
+   }
 
    public static void main(String[] args) {
-      $1
+      solve();
       pw.flush(); pw.close();
    }
    
-   static final int MAX = 1_000_007; //EPS 10^6 + 7
-   static final boolean DEBUG = false;
    
    public static void solve() {
+      // solution here
    }
 
    static class Treasure {

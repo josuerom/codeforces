@@ -1,12 +1,11 @@
 /**
  *   author:  josuerom
- *   created: {DAY}/{MONTH}/{YEAR} {HOUR}:{MINUTE}:{SECOND}
+ *   created: {DAY}/{MONTH}/23 {HOUR}:{MINUTE}:{SECOND}
 **/
 #pragma GCC optimize("03,unroll-loops")
 
-#include <bits/stdc++.h>                  //    ──▀ █▀▀█ █▀▀ █──█ █▀▀ █▀▀█ █▀▀█ █▀▄▀█ █
-                                          //    ──█ █──█ ▀▀█ █──█ █▀▀ █▄▄▀ █──█ █─▀─█ ▀
-using namespace std;                      //    █▄█ ▀▀▀▀ ▀▀▀ ─▀▀▀ ▀▀▀ ▀─▀▀ ▀▀▀▀ ▀───▀ ▄
+#include <bits/stdc++.h>            //    ░░█ █▀█ █▀ █░█ █▀▀ █▀█ █▀█ █▀▄▀█
+using namespace std;                //    █▄█ █▄█ ▄█ █▄█ ██▄ █▀▄ █▄█ █░▀░█
 
 #ifdef josuerom
    #include "debug.h"
@@ -62,9 +61,9 @@ double getCurrentTime() {
 int main() {
    startTime = clock();
    SPEED_IO();
-   $1
+   // solution here
    #ifdef josuerom
-      printf("time = %.5lf ms\n", getCurrentTime());
+      cout << "time = "<< setprecision(5) << getCurrentTime() << " ms" << '\n';
    #endif
    END;
 }

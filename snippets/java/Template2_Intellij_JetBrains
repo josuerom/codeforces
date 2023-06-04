@@ -1,16 +1,25 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
 
-/*  @team: josuerom  @created: ${DAY}/${MONTH}/23 ${HOUR}:${MINUTE}:${SECOND} */
+/**
+   ░░█ █▀█ █▀ █░█ █▀▀ █▀█ █▀█ █▀▄▀█
+   █▄█ █▄█ ▄█ █▄█ ██▄ █▀▄ █▄█ █░▀░█
+   created: ${DAY}/${MONTH}/23 ${HOUR}:${MINUTE}:${SECOND}
+**/
 import java.util.Scanner;
 import java.util.Arrays;
 import static java.lang.Math.*;
 
 public class ${NAME} {
-   private static final boolean DEBUG = false;
+   private static final boolean DEBUG;
+   private static Scanner sc;
+
+   public ${NAME}() {
+      sc = new Scanner(System.in);
+      DEGUG = false;
+   }
 
    public static void main(String[] args) {
-      Scanner sc = new Scanner(System.in);
-
+      // solution here
       sc.close(); System.out.close();
    }
 }
