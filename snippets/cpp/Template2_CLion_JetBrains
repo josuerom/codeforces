@@ -1,6 +1,7 @@
 /**
- *   author:  josuerom
- *   created: ${DAY}/${MONTH}/23 ${HOUR}:${MINUTE}:${SECOND}
+   ░░█ █▀█ █▀ █░█ █▀▀ █▀█ █▀█ █▀▄▀█
+   █▄█ █▄█ ▄█ █▄█ ██▄ █▀▄ █▄█ █░▀░█
+   created: ${DAY}/${MONTH}/23 ${HOUR}:${MINUTE}:${SECOND}
 **/
 #[[#include]]# <bits/stdc++.h>
 
@@ -8,13 +9,11 @@ using namespace std;
 
 #[[#ifdef]]# josuerom
    #[[#include]]# "debug.h"
-#[[#else]]#
-   #[[#define]]# debug(...) 42
 #[[#endif]]#
 
 int main () {
    ios::sync_with_stdio(false);
-   cin.tie(0);
-   
+   cin.tie(nullptr); cout.tie(nullptr);
+   // solution here   
    return 0;
 }

@@ -1,4 +1,4 @@
-# Problemas resueltos de CodeForces
+# Mi hobby es codeforces
 
 ## Tabla de Salidas en la PC (Programación Competitiva)
  | Mensaje | Número de prueba | Descripcion |

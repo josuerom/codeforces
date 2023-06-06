@@ -1,13 +1,11 @@
 /**
  *   author:  josuerom
- *   created: 14/11/22 13:28:51
+ *   created: {DAY}/{MONTH}/23 {HOUR}:{MINUTE}:{SECOND}
 **/
 #pragma GCC optimize("03,unroll-loops")
-#pragma GCC target("avx2")
 
-#include <bits/stdc++.h>            //         ──▀ █▀▀█ █▀▀ █──█ █▀▀ █▀▀█ █▀▀█ █▀▄▀█ █
-                                    //         ──█ █──█ ▀▀█ █──█ █▀▀ █▄▄▀ █──█ █─▀─█ ▀
-using namespace std;                //         █▄█ ▀▀▀▀ ▀▀▀ ─▀▀▀ ▀▀▀ ▀─▀▀ ▀▀▀▀ ▀───▀ ▄
+#include <bits/stdc++.h>            //    ░░█ █▀█ █▀ █░█ █▀▀ █▀█ █▀█ █▀▄▀█
+using namespace std;                //    █▄█ █▄█ ▄█ █▄█ ██▄ █▀▄ █▄█ █░▀░█
 
 #ifdef josuerom
    #include "debug.h"
@@ -18,14 +16,14 @@ using namespace std;                //         █▄█ ▀▀▀▀ ▀▀▀ 
 #define VEREDICT(condition) cout << ((condition) ? "YES" : "NO") << '\n'
 #define decimals(n) cout.setf(ios::fixed, ios::floatfield); cout.precision(n);
 #define binarySearch(vec, key) sort(all(vec)); binary_search(all(vec), (key));
-#define forr(i, vec) for(int i = (int)(vec).size()-1; i >= 0; i--)
+#define FORR(i, vec) for(int i = (int)(vec).size()-1; i >= 0; i--)
 #define uniq(x) sort(all(x)); (x).erase(unique(all(x)),(x).end())
 #define mod(a, b, mod) ((((a) % (mod)) + ((b) % (mod))) % (mod))
-#define fori(i, b, c) for(int (i) = (b); (i) < (c); (i)++)
+#define FORI(i, b, c) for(int (i) = (b); (i) < (c); (i)++)
 #define memset(a, v) memset((a),(v), sizeof(a))
 #define countbits(x) __builtin_popcountll(x)
 #define TC int tt; cin >> tt; while((tt)--)
-#define fore(e, vec) for (auto &(e): (vec))
+#define FORE(e, vec) for (auto &(e): (vec))
 #define isOrdered(vec) is_sorted(all(vec))
 #define rall(x) (x).rbegin(),(x).rend()
 #define lbd(x, y) lower_bound(all(x), y)
@@ -49,12 +47,11 @@ using namespace std;                //         █▄█ ▀▀▀▀ ▀▀▀ 
 #define eb emplace_back
 #define mxe max_element
 #define mne min_element
-#define vi vector<int>
 #define END return 0
 #define pb push_back
 #define mb make_pair
-#define ss second
-#define ff first
+#define s second
+#define f first
 
 clock_t startTime;
 double getCurrentTime() {
@@ -64,9 +61,9 @@ double getCurrentTime() {
 int main() {
    startTime = clock();
    SPEED_IO();
-   
+   // solution here
    #ifdef josuerom
-      printf("\ntime = %.5lf ms\n", getCurrentTime());
+      cout << "time = "<< setprecision(5) << getCurrentTime() << " ms" << '\n';
    #endif
-   return 0;
+   END;
 }
