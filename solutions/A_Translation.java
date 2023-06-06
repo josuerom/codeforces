@@ -29,7 +29,6 @@ public class A_Translation {
             }
          }
       }
-      if (DEBUG) pw.println("IF DEBUG");
       pw.println((ans ? "YES" : "NO"));
       pw.flush(); pw.close();
    }
