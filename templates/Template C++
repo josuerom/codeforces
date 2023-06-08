@@ -50,8 +50,8 @@ using namespace std;                //    █▄█ █▄█ ▄█ █�
 #define END return 0
 #define pb push_back
 #define mb make_pair
-#define s second
-#define f first
+#define ss second
+#define ff first
 
 clock_t startTime;
 double getCurrentTime() {
@@ -63,7 +63,7 @@ int main() {
    SPEED_IO();
    // solution here
    #ifdef josuerom
-      cout << "time = "<< setprecision(5) << getCurrentTime() << " ms" << '\n';
+      cout << "time: "<< setprecision(5) << getCurrentTime() << " ms" << '\n';
    #endif
    END;
 }
