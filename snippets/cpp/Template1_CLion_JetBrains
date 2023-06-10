@@ -12,15 +12,15 @@ using namespace std;
    #[[#include]]# "debug.h"
 #[[#endif]]#
 
-#[[#define]]# rall(x) (x).begin(),(x).end()
+#[[#define]]# rall(x) (x).rbegin(),(x).rend()
 #[[#define]]# all(x) (x).begin(),(x).end()
 #[[#define]]# ull unsigned long long int
 #[[#define]]# len(x) (int) (x).size()
 #[[#define]]# ll long long int
 #[[#define]]# pb push_back
 #[[#define]]# mp make_pair
-#[[#define]]# s second
-#[[#define]]# f first
+#[[#define]]# se second
+#[[#define]]# fi first
 
 int main () {
    ios::sync_with_stdio(false);
