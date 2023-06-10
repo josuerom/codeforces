@@ -23,7 +23,8 @@ public class A_Cipher_Shifer {
       while (tt-- > 0) {
          solve();
       }
-      pw.flush(); pw.close();
+      pw.flush();
+      pw.close();
    }
 
    public static void solve() {
@@ -33,11 +34,12 @@ public class A_Cipher_Shifer {
       b[0] = a[0];
       String ans = String.valueOf(a[0]);
       for (int i = 0, l = 0; i < n; i++) {
-         for (int j = i+1; j < n; j++) {
-            if (a[j] == b[l] && (j+1 < n)) {
-               b[l+1] = a[j+1];
-               ans += String.valueOf(a[j+1]);
-               i = j; l++;
+         for (int j = i + 1; j < n; j++) {
+            if (a[j] == b[l] && (j + 1 < n)) {
+               b[l + 1] = a[j + 1];
+               ans += String.valueOf(a[j + 1]);
+               i = j;
+               l++;
                break;
             }
          }
@@ -49,33 +51,41 @@ public class A_Cipher_Shifer {
       static final Random random = new Random();
       static final int MOD = 1_000_000_007;
 
-      public Treasure() { }
+      public Treasure() {
+      }
 
       static void ruffleSort(int[] a) {
          int n = a.length;
          for (int i = 0; i < n; i++) {
             int oi = random.nextInt(n), temp = a[oi];
-            a[oi] = a[i]; a[i] = temp;
+            a[oi] = a[i];
+            a[i] = temp;
          }
          Arrays.sort(a);
       }
 
       static long add(long a, long b) {
-         return (a+b) % MOD;
+         return (a + b) % MOD;
       }
+
       static long sub(long a, long b) {
-         return ((a-b) % MOD + MOD) % MOD;
+         return ((a - b) % MOD + MOD) % MOD;
       }
+
       static long mul(long a, long b) {
-         return (a*b) % MOD;
+         return (a * b) % MOD;
       }
+
       static long div(long a, long b) {
-         return (a/b) % MOD;
+         return (a / b) % MOD;
       }
+
       static long exp(long base, long exp) {
-         if (exp==0) return 1;
-         long half=exp(base, exp/2);
-         if (exp%2==0) return mul(half, half);
+         if (exp == 0)
+            return 1;
+         long half = exp(base, exp / 2);
+         if (exp % 2 == 0)
+            return mul(half, half);
          return mul(half, mul(half, base));
       }
 
@@ -84,12 +94,15 @@ public class A_Cipher_Shifer {
 
       static void precompFacts() {
          factorials[0] = invFactorials[0] = 1;
-         for (int i = 1; i < factorials.length; i++) factorials[i] = mul(factorials[i-1], i);
-         invFactorials[factorials.length-1] = exp(factorials[factorials.length-1], MOD-2);
-         for (int i = invFactorials.length-2; i >= 0; i--) invFactorials[i] = mul(invFactorials[i+1], i+1);
+         for (int i = 1; i < factorials.length; i++)
+            factorials[i] = mul(factorials[i - 1], i);
+         invFactorials[factorials.length - 1] = exp(factorials[factorials.length - 1], MOD - 2);
+         for (int i = invFactorials.length - 2; i >= 0; i--)
+            invFactorials[i] = mul(invFactorials[i + 1], i + 1);
       }
+
       static long nCr(int n, int r) {
-         return mul(factorials[n], mul(invFactorials[r], invFactorials[n-r]));
+         return mul(factorials[n], mul(invFactorials[r], invFactorials[n - r]));
       }
    }
 
@@ -104,38 +117,63 @@ public class A_Cipher_Shifer {
 
       String next() {
          while (!st.hasMoreTokens()) {
-            try { st = new StringTokenizer(br.readLine()); }
-            catch (IOException e) { e.printStackTrace(); }
+            try {
+               st = new StringTokenizer(br.readLine());
+            } catch (IOException e) {
+               e.printStackTrace();
+            }
          }
          return st.nextToken();
       }
+
       String readLine() {
          String line = null;
-         try { line = br.readLine(); }
-         catch (IOException e) { e.printStackTrace(); }
+         try {
+            line = br.readLine();
+         } catch (IOException e) {
+            e.printStackTrace();
+         }
          return line;
       }
 
-      double readDouble() { return Double.parseDouble(next()); }
-      long readLong() { return Long.parseLong(next()); }
-      int readInt() { return Integer.parseInt(next()); }
+      double readDouble() {
+         return Double.parseDouble(next());
+      }
+
+      long readLong() {
+         return Long.parseLong(next());
+      }
+
+      int readInt() {
+         return Integer.parseInt(next());
+      }
 
       char[] readArrayChar() {
-         return next().toCharArray();;
+         return next().toCharArray();
+         ;
       }
+
       double[] readArrayDouble(int N) {
          double[] a = new double[N];
-         for (int i = 0; i < N; i++) { a[i] = readDouble(); }
+         for (int i = 0; i < N; i++) {
+            a[i] = readDouble();
+         }
          return a;
       }
+
       long[] readArrayLong(int N) {
          long[] a = new long[N];
-         for (int i = 0; i < N; i++) { a[i] = readLong(); }
+         for (int i = 0; i < N; i++) {
+            a[i] = readLong();
+         }
          return a;
       }
+
       int[] readArrayInt(int N) {
          int[] a = new int[N];
-         for (int i = 0; i < N; i++) { a[i] = readInt(); }
+         for (int i = 0; i < N; i++) {
+            a[i] = readInt();
+         }
          return a;
       }
    }
