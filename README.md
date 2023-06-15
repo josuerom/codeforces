@@ -1,4 +1,6 @@
-# Mi hobby es codeforces
+# CodeForces
+
+Si deseas ver mis envíos, puedes hacerlo desde aquí [codeforces](https://codeforces.com/submissions/josuerom)
 
 ## Tabla de Salidas en la PC (Programación Competitiva)
  | Mensaje | Número de prueba | Descripcion |
