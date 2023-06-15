@@ -1,11 +1,15 @@
 /**
  *   author:  josuerom
- *   created: 14/06/23 13:22:05
+ *   created: 15/06/23 14:36:24
 **/
 #pragma GCC optimize("O3,unroll-loops")
 
 #include <bits/stdc++.h>
 using namespace std;
+
+#ifdef josuerom
+   #include "debug.h"
+#endif
 
 #define rall(x) (x).rbegin(),(x).rend()
 #define all(x) (x).begin(),(x).end()
@@ -17,64 +21,32 @@ using namespace std;
 #define se second
 #define fi first
 
-// const int MAX = 300, N = 490002;
-const int MAX = 100, N = 90002;
-ll a[MAX + 2], b[N + 2];
-
-void cribaEratostenes() {
-   bool primes[MAX + 2];
-   memset(primes, true, sizeof(primes));
-   primes[0] = primes[1] = false;
-   for (ll p = 2, j = 0; j != MAX; p++) {
-      if (primes[p]) {
-         a[j++] = p;
-         for (ll i = p*p; i <= N; i += p) {
-            primes[i] = false;
-         }
-      }
-   }
-}
+const ll MAX = (ll) 1e12;
 
 bool solve(ll t) {
-   // ll b[N];
-   memset(b, 0, sizeof(b));
-   while (t != 1) {
-      for (ll i = 0; i < N; i++) {
-         if (t % a[i] == 0) {
-            b[a[i]] += 1;
-            t /= a[i];
-            break;
-         }
-      }
+   if (t%2 == 0 && t != 4)
+      return 0;
+   ll add = 4;
+   for (ll i = 5, j = 0; j < MAX; i++, ++j) {
+      if (add == t)
+         return 1;
+      if (add > t)
+         return 0;
+      add += i;
+      // debug(ans);
    }
-   sort(b, b+N);
-   cout << binary_search(b, b+N, 2) << '\n';
-   return binary_search(b, b+N, 2);
-}
-
-void printContentArrays() {
-   for (int i = 0; i < MAX; i++) {
-      cout << a[i] << " ";
-   }
-   cout << "\n---------------\n";
-   for (int i = 0; i < MAX; i++) {
-      cout << b[i] << " ";
-   }
+   return 0;
 }
 
 int main() {
    ios::sync_with_stdio(false);
    cin.tie(nullptr); cout.tie(nullptr);
-   memset(a, 0, sizeof(a));
-   cribaEratostenes();
    int n;
    cin >> n;
    for (int i = 1; i <= n; i++) {
       ll x; cin >> x;
-      if (x > 3) {
-         printContentArrays();
-         // cout << (solve(x) ? "YES" : "NO") << '\n';
-      } else cout << "NO\n";
+      if (x < 4) cout << "NO\n";
+      else cout << (solve(x) ? "YES" : "NO") << '\n';
    }
    return 0;
 }

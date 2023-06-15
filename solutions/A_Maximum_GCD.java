@@ -15,7 +15,7 @@ public class A_Maximum_GCD {
    }
 
    public static void solve(int x) {
-      System.out.println((x/2));
+      System.out.println(x/2);
    }
 
    public static void readInput() {
