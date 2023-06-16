@@ -1,6 +1,6 @@
 /**
  *   author:  josuerom
- *   created: 07/05/23 00:05:59
+ *   created: 10/04/23 22:55:00
 **/
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,36 +9,25 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.StringTokenizer;
-import java.util.Collections;
-import java.util.ArrayList;
-import static java.lang.Math.*;
+import java.util.stream.Collectors;
 
-public class B_Borze {
+public class A_BoyOrGirl {
    public static void main(String[] args) {
-      FastReader fr = new FastReader();
+      FastScanner fs = new FastScanner();
       PrintWriter pw = new PrintWriter(System.out);
-      char[] s = fr.next().toCharArray();
-      String ans = "";
-      int n = s.length;
-      for (int i = 0; i < n; i++) {
-         if (s[i]=='-' && s[i+1]=='.') {
-            ans += "1"; i += 1;
-         } else if (s[i]=='-' && s[i+1]=='-') {
-            ans += "2"; i += 1;
-         } else ans += "0";
-      }
-      pw.println(ans);
-      pw.flush(); pw.close();
+      String s = fs.next();
+      String[] vs = s.split("");
+      String user = Arrays.stream(vs).distinct().collect(Collectors.joining(""));
+      pw.println(user.length()%2==0 ? "CHAT WITH HER!" : "IGNORE HIM!");
+      pw.close();
    }
 
    static final Random random = new Random();
-   static final int MOD = 1_000_000_007;
-   static final int MAX = 1_000_000_000;
-   static final boolean DEBUG = false;
+   static final int mod = 1_000_000_007;
 
    static void ruffleSort(int[] a) {
       int n = a.length;
-      for (int i = 0; i < n; i++) {
+      for (int i=0; i<n; i++) {
          int oi = random.nextInt(n), temp = a[oi];
          a[oi] = a[i]; a[i] = temp;
       }
@@ -46,13 +35,13 @@ public class B_Borze {
    }
 
    static long add(long a, long b) {
-      return (a+b) % MOD;
+      return (a+b) % mod;
    }
    static long sub(long a, long b) {
-      return ((a-b) % MOD + MOD) % MOD;
+      return ((a-b)%mod+mod)%mod;
    }
    static long mul(long a, long b) {
-      return (a*b) % MOD;
+      return (a*b)%mod;
    }
    static long exp(long base, long exp) {
       if (exp==0) return 1;
@@ -61,27 +50,22 @@ public class B_Borze {
       return mul(half, mul(half, base));
    }
 
-   static long[] factorials = new long[2_000_007];
-   static long[] invFactorials = new long[2_000_007];
+   static long[] factorials=new long[2_000_001];
+   static long[] invFactorials=new long[2_000_001];
 
    static void precompFacts() {
       factorials[0] = invFactorials[0] = 1;
       for (int i = 1; i < factorials.length; i++) factorials[i] = mul(factorials[i-1], i);
-      invFactorials[factorials.length-1] = exp(factorials[factorials.length-1], MOD-2);
+      invFactorials[factorials.length-1] = exp(factorials[factorials.length-1], mod-2);
       for (int i = invFactorials.length-2; i >= 0; i--) invFactorials[i] = mul(invFactorials[i+1], i+1);
    }
-   static long nCr(int n, int r) {
-      return mul(factorials[n], mul(invFactorials[r], invFactorials[n-r]));
+   static long nCk(int n, int k) {
+      return mul(factorials[n], mul(invFactorials[k], invFactorials[n-k]));
    }
 
-   static class FastReader {
-      BufferedReader br;
-      StringTokenizer st;
-
-      public FastReader() {
-         br = new BufferedReader(new InputStreamReader(System.in));
-         st = new StringTokenizer("");
-      }
+   static class FastScanner {
+      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+      StringTokenizer st = new StringTokenizer("");
 
       String next() {
          while (!st.hasMoreTokens()) {
@@ -90,16 +74,11 @@ public class B_Borze {
          }
          return st.nextToken();
       }
-      String readLine() {
-         String line = null;
-         try { line = br.readLine(); }
-         catch (IOException e) { e.printStackTrace(); }
-         return line;
-      }
 
       int readInt() {
          return Integer.parseInt(next());
       }
+
       int[] readArray(int n) {
          int[] a = new int[n];
          for (int i = 0; i < n; i++) {

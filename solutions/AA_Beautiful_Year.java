@@ -17,7 +17,6 @@ public class AA_Beautiful_Year {
    static FastReader fr = new FastReader();
    static PrintWriter pw = new PrintWriter(System.out);
    static final int MAX = 1_000_007;
-   static final boolean DEBUG = false;
 
    public static void main(String[] authorJosuerom) {
       int year = fr.readInt();

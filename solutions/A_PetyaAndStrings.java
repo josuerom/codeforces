@@ -1,6 +1,6 @@
 /**
  *  author:  josuerom
- *  created: 10/04/23 21:45:35
+ *  created: 10/04/23 22:01:08
 **/
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,20 +12,14 @@ import java.util.StringTokenizer;
 import java.util.Collections;
 import java.util.ArrayList;
 
-public class G_BeautifulMatrix {
+public class A_PetyaAndStrings {
    public static void main(String[] args) {
       FastScanner fs = new FastScanner();
       PrintWriter pw = new PrintWriter(System.out);
-      int i = 0, j = 0;
-      for (int k = 0; k < 5; k++) {
-         for (int l = 0; l < 5; l++) {
-            if (fs.readInt()==1) {
-               i = k; j = l;
-            }
-         }
-      }
-      pw.print(Math.abs(2-i)+Math.abs(2-j));
-      pw.close();
+      String a = fs.next();
+      String b = fs.next();
+      pw.println(a.compareToIgnoreCase(b)==0 ? 0 : a.compareToIgnoreCase(b)>0 ? 1 : -1);
+      pw.flush(); pw.close();
    }
 
    static final Random random = new Random();

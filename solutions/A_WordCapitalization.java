@@ -1,6 +1,6 @@
 /**
  *  author:  josuerom
- *  created: 10/04/23 21:38:12
+ *  created: 10/04/23 22:24:54
 **/
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,18 +12,16 @@ import java.util.StringTokenizer;
 import java.util.Collections;
 import java.util.ArrayList;
 
-public class F_BitPlusPlus {
+public class A_WordCapitalization {
    public static void main(String[] args) {
       FastScanner fs = new FastScanner();
       PrintWriter pw = new PrintWriter(System.out);
-      int tt = fs.readInt();
-      int ans = 0;
-      while (tt-- > 0) {
-         String x = fs.next();
-         if (x.charAt(1) == '+') ++ans;
-         else --ans;
-      }
-      pw.print(ans);
+      String s = fs.next();
+      char x = s.charAt(0);
+      if (x>=97&&x<=122) {
+         x -= 32;
+         pw.printf("%c%s", x, s.substring(1,s.length()));
+      } else pw.println(s);
       pw.close();
    }
 

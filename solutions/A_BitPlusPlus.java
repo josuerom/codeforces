@@ -1,6 +1,6 @@
 /**
- *   author:  josuerom
- *   created: 10/04/23 22:55:00
+ *  author:  josuerom
+ *  created: 10/04/23 21:38:12
 **/
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,16 +9,21 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.StringTokenizer;
-import java.util.stream.Collectors;
+import java.util.Collections;
+import java.util.ArrayList;
 
-public class K_BoyOrGirl {
+public class A_BitPlusPlus {
    public static void main(String[] args) {
       FastScanner fs = new FastScanner();
       PrintWriter pw = new PrintWriter(System.out);
-      String s = fs.next();
-      String[] vs = s.split("");
-      String user = Arrays.stream(vs).distinct().collect(Collectors.joining(""));
-      pw.println(user.length()%2==0 ? "CHAT WITH HER!" : "IGNORE HIM!");
+      int tt = fs.readInt();
+      int ans = 0;
+      while (tt-- > 0) {
+         String x = fs.next();
+         if (x.charAt(1) == '+') ++ans;
+         else --ans;
+      }
+      pw.print(ans);
       pw.close();
    }
 

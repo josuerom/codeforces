@@ -1,6 +1,6 @@
 /**
  *  author:  josuerom
- *  created: 10/04/23 21:27:19
+ *  created: 10/04/23 22:04:54
 **/
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,13 +12,17 @@ import java.util.StringTokenizer;
 import java.util.Collections;
 import java.util.ArrayList;
 
-public class E_DominoPiling {
+public class A_HelpfulMaths {
    public static void main(String[] args) {
       FastScanner fs = new FastScanner();
       PrintWriter pw = new PrintWriter(System.out);
-      int M = fs.readInt();
-      int N = fs.readInt();
-      pw.println(M+N==2 ? 0 : M*N/2);
+      String s = fs.next();
+      String[] vs = s.split("\\+");
+      Arrays.sort(vs);
+      int n = vs.length;
+      for (int i = 0; i < n; i++) {
+         pw.print(i!=n-1 ? vs[i]+"+" : vs[i]);
+      }
       pw.close();
    }
 

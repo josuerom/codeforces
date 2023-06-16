@@ -1,6 +1,6 @@
 /**
  *  author:  josuerom
- *  created: 10/04/23 22:24:54
+ *  created: 10/04/23 21:45:35
 **/
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,16 +12,19 @@ import java.util.StringTokenizer;
 import java.util.Collections;
 import java.util.ArrayList;
 
-public class J_WordCapitalization {
+public class A_BeautifulMatrix {
    public static void main(String[] args) {
       FastScanner fs = new FastScanner();
       PrintWriter pw = new PrintWriter(System.out);
-      String s = fs.next();
-      char x = s.charAt(0);
-      if (x>=97&&x<=122) {
-         x -= 32;
-         pw.printf("%c%s", x, s.substring(1,s.length()));
-      } else pw.println(s);
+      int i = 0, j = 0;
+      for (int k = 0; k < 5; k++) {
+         for (int l = 0; l < 5; l++) {
+            if (fs.readInt()==1) {
+               i = k; j = l;
+            }
+         }
+      }
+      pw.print(Math.abs(2-i)+Math.abs(2-j));
       pw.close();
    }
 
