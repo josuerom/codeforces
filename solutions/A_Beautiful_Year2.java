@@ -13,7 +13,7 @@ import static java.lang.Math.*;
 import java.util.HashSet;
 import java.util.Set;
 
-public class AA_Beautiful_Year {
+public class A_Beautiful_Year2 {
    static FastReader fr = new FastReader();
    static PrintWriter pw = new PrintWriter(System.out);
    static final int MAX = 1_000_007;
