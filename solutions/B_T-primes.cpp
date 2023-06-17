@@ -26,17 +26,6 @@ using namespace std;
 const ll MAX = (ll) 1e12;
 
 bool solve(ll t) {
-   if (t % 2 == 0 && t != 4)
-      return 0;
-   ll add = 4;
-   for (ll i = 5, j = 0; j < MAX; i++, ++j) {
-      if (add == t)
-         return 1;
-      if (add > t)
-         return 0;
-      add += i;
-      debug(add);
-   }
    return 0;
 }
 
@@ -47,10 +36,8 @@ int main() {
    cin >> n;
    for (int i = 1; i <= n; i++) {
       ll x; cin >> x;
-      if (x < 4)
-         cout << "NO\n";
-      else
-         cout << (solve(x) ? "YES" : "NO") << '\n';
+      if (x < 4) cout << "NO\n";
+      else cout << (solve(x) ? "YES" : "NO") << '\n';
    }
    return 0;
 }

@@ -8,7 +8,9 @@
 using namespace std;
 
 #ifdef josuerom
-   #include "debug.h"
+#include "debug.h"
+#else
+#define debug(...) 42
 #endif
 
 #define rall(x) (x).rbegin(),(x).rend()
@@ -21,6 +23,16 @@ using namespace std;
 #define ss second
 #define ff first
 
+void solve(int x, int y, int n) {
+   int a = n - n%x + y, c = n - n%x - abs(x-y);
+   if (a <= 0 || c <= 0) cout << max(a, c) << '\n';
+   else {
+      int b = min(a, c);
+      a = max(a, c);
+      cout << "max: "<<a <<" min: "<<b<< '\n';
+   }
+}
+
 int main() {
    ios::sync_with_stdio(false);
    cin.tie(nullptr); cout.tie(nullptr);
@@ -29,8 +41,7 @@ int main() {
    while (tt--) {
       int x, y, n;
       cin >> x >> y >> n;
-      int a = n - n%x + y, b = n - n%x - abs(x-y);
-      cout << (a%x == y ? a : b) << '\n';
+      solve(x, y, n);
    }
    return 0;
 }
