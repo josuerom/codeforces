@@ -252,19 +252,13 @@ int main() {
         }
         int pi = (i + n - 1) % n;
         if (a[order[pi]] == len || a[order[pi]] == -1) {
-//          if (order[i] + order[pi] == 2 * order[j]) {
-//          debug(i, j, pi, j, "check");
           if (!is_seg[i][j] || !is_seg[pi][j]) {
-//            debug(i, j, pi, j);
             dp[pi][j] += dp[i][j];
           }
         }
         int pj = (j + 1) % n;
         if (a[order[pj]] == len || a[order[pj]] == -1) {
-//          if (order[j] + order[pj] == 2 * order[i]) {
-//          debug(i, j, i, pj, "check");
           if (!is_seg[i][j] || !is_seg[i][pj]) {
-//            debug(i, j, i, pj);
             dp[i][pj] += dp[i][j];
           }
         }
