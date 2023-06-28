@@ -5,6 +5,7 @@
 **/
 
 #undef NDEBUG
+
 #include <algorithm>
 #include <array>
 #include <bitset>
