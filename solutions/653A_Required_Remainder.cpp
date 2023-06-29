@@ -1,6 +1,6 @@
 /**
  *   author:  josuerom
- *   created: 05/06/23 22:46:41
+ *   created: 21/06/23 13:23:06
 **/
 #pragma GCC optimize("O3,unroll-loops")
 
@@ -26,11 +26,9 @@ using namespace std;
 void solve(int x, int y, int n) {
    int a = n - n%x + y, c = n - n%x - abs(x-y);
    if (a <= 0 || c <= 0) cout << max(a, c) << '\n';
-   else {
-      int b = min(a, c);
-      a = max(a, c);
-      cout << "max: "<<a <<" min: "<<b<< '\n';
-   }
+   else if (a > n) cout << c << '\n';
+   else if (c > n) cout << a << '\n';
+   else cout << max(a, c) << '\n';
 }
 
 int main() {
