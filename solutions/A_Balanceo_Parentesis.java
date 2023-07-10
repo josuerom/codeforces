@@ -6,7 +6,7 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-public class BalanceoParentesis {
+public class A_Balanceo_Parentesis {
    public static void main(String[] authorJosuerom) {
       readInput();
    }
@@ -32,7 +32,6 @@ public class BalanceoParentesis {
          }
       }
       System.out.println((pila.size() == 1) ? "Error en " + index : "Balanceada");
-      // System.out.println(pila.toString());
    }
 
    static void readInput() {

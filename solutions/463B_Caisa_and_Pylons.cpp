@@ -1,6 +1,6 @@
 /**
  *   author:  josuerom
- *   created: 05/07/23 14:56:32
+ *   created: 05/07/23 16:05:26
 **/
 #include <bits/stdc++.h>
 using namespace std;
@@ -19,36 +19,22 @@ using namespace std;
 #define se      second
 #define fi      first
 
+const int MAX = 1e5+7;
+int a[MAX];
+int n;
+
 void solve() {
-   string s;
-   cin >> s;
-   int n = (int) s.size();
-   if (n == 1) cout << "1\n" << s << '\n';
-   else {
-      int distinct = 0;
-      for (int i = 0; i < n; i++) if (s[i] != '0') {
-         distinct++;
-      }
-      cout << distinct << '\n';
-      string ans;
-      for (int i = 0; i < n; i++) {
-         ans.clear();
-         if (s[i] != '0') {
-            ans += s[i];
-            for (int j = (i + 1); j < n; j++)
-               ans += '0';
-            cout << ans << " ";
-         }
-      }
-      cout << '\n';
-   }
+   cin >> n;
+   for (int i = 0; i < n; i++)
+      cin >> a[i];
+   cout << *max_element(a, a + n) << '\n';
 }
 
 int main() {
    ios::sync_with_stdio(false);
    cin.tie(nullptr); cout.tie(nullptr);
    int tt = 1;
-   cin >> tt;
+   // cin >> tt;
 #ifdef josuerom
    for (int nc = 1; nc <= tt; nc++) {
       cout << "----- Case #" << nc << " -----\n";
