@@ -1,144 +1,122 @@
 
 /**
  *   author:  josuerom
- *   created: 18/07/23 20:10:18
+ *   created: 25/07/23 16:41:29
 **/
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.util.Arrays;
-import java.util.Random;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 import static java.lang.Math.*;
 
 public class A_Historical_TV_Remote_Control {
-   static FastReader fr = new FastReader();
-   static PrintWriter pw = new PrintWriter(System.out);
-   static final Random random = new Random();
-   static final int MOD = 1_000_000_007;
-   static final int MAX = 1_000_007;
-   static final boolean DEBUG = true;
+   static FastReader io = new FastReader();
 
    public static void main(String[] authorJosuerom) {
-      int n = fr.readInt();
-      int[] nb = fr.readArray(n);
-      String c = fr.next();
-      solve(nb, c);
-      fr.close();
-      pw.close();
+      int n = io.nextInt();
+      int[] cn = io.readArray(n);
+      String channel = io.next();
+      solve(n, cn, channel);
+      io.close();
+      System.exit(0);
    }
 
-   static void solve(int nb[], String c) {
-      Arrays.sort(nb);
-      int n = c.length();
-      boolean no_this = true;
-      int[] b = new int[n];
-      for (int i = 0; i < n; i++) {
-         int x = Integer.parseInt(String.valueOf(c.charAt(i)));
-         int j = Arrays.binarySearch(nb, x);
-         if (j >= 0) {
-            b[i] = nb[j];
-            no_this = false;
+   public static void solve(int n, int cn[], String channel) {
+      String[] digits = channel.split("");
+      int dg = digits.length;
+      Arrays.sort(cn);
+      int in1 = 0, in2 = 0, in3 = 0;
+      if (dg == 1) {
+         in1 = Arrays.binarySearch(cn, Integer.parseInt(digits[0]));
+         if (in1 < 0) {
+            io.println(0);
+            return;
+         }
+      } else if (dg == 2) {
+         in1 = Arrays.binarySearch(cn, Integer.parseInt(digits[0]));
+         in2 = Arrays.binarySearch(cn, Integer.parseInt(digits[1]));
+         if (in1 < 0 && in2 < 0) {
+            io.println(0);
+            return;
+         }
+      } else {
+         in1 = Arrays.binarySearch(cn, Integer.parseInt(digits[0]));
+         in2 = Arrays.binarySearch(cn, Integer.parseInt(digits[1]));
+         in3 = Arrays.binarySearch(cn, Integer.parseInt(digits[2]));
+         if (in1 < 0 && in2 < 0 && in3 < 0) {
+            io.println(0);
+            return;
          }
       }
-      if (!no_this) {
-         String ch_jump = "";
-         for (int l = 0; l < n; l++) {
-            if (l == 0 && b[l] == 0)
-               ch_jump += String.valueOf(c.charAt(l));
-            else {
-               // TODO
+      int[] ch_jumps = new int[1001];
+      for (int k = 1, l = 0; k <= 1000; k++) {
+         String[] m = String.valueOf(k).split("");
+         Arrays.sort(m);
+         dg = m.length;
+         if (dg == 1) {
+            in1 = Arrays.binarySearch(cn, k);
+            if (in1 < 0) {
+               ch_jumps[l] = k;
+               l++;
+            }
+         } else if (dg == 2) {
+            in1 = Arrays.binarySearch(cn, Integer.parseInt(m[0]));
+            in2 = Arrays.binarySearch(cn, Integer.parseInt(m[1]));
+            if (in1 < 0 && in2 < 0) {
+               ch_jumps[l] = k;
+               l++;
+            }
+         } else {
+            in1 = Arrays.binarySearch(cn, Integer.parseInt(m[0]));
+            in2 = Arrays.binarySearch(cn, Integer.parseInt(m[1]));
+            in3 = Arrays.binarySearch(cn, Integer.parseInt(m[2]));
+            if (in1 < 0 && in2 < 0 && in3 < 0) {
+               ch_jumps[l] = k;
+               l++;
             }
          }
-         pw.println("channel jump: " + ch_jump);
-         int ans = abs(Integer.parseInt(c) - Integer.parseInt(ch_jump));
-         pw.println(ans);
-         return;
       }
-      pw.println(0);
-   }
-
-   static void ruffleSort(int[] a) {
-      int n = a.length;
-      for (int i = 0; i < n; i++) {
-         int oi = random.nextInt(n), temp = a[oi];
-         a[oi] = a[i];
-         a[i] = temp;
+      // io.println(Arrays.toString(ch_jumps));
+      int i = 0, j = 0, c = Integer.parseInt(channel);
+      boolean flag = false;
+      int ans = 1000;
+      for (; i < 1001; i++) {
+         ans = min(ans, abs(c - ch_jumps[i]));
+         if (i > 0 && ch_jumps[i] == 0) {
+            break;
+         }
       }
-      Arrays.sort(a);
+      io.println(ans);
    }
 
-   static long add(long a, long b) {
-      return (a + b) % MOD;
-   }
-
-   static long sub(long a, long b) {
-      return ((a - b) % MOD + MOD) % MOD;
-   }
-
-   static long mul(long a, long b) {
-      return (a * b) % MOD;
-   }
-
-   static long div(long a, long b) {
-      return (a / b) % MOD;
-   }
-
-   static long exp(long base, long exp) {
-      if (exp == 0)
-         return 1;
-      long half = exp(base, exp / 2);
-      if (exp % 2 == 0)
-         return mul(half, half);
-      return mul(half, mul(half, base));
-   }
-
-   static long[] factorials = new long[2_000_007];
-   static long[] invFactorials = new long[2_000_007];
-
-   static void precompFacts() {
-      factorials[0] = invFactorials[0] = 1;
-      for (int i = 1; i < factorials.length; i++)
-         factorials[i] = mul(factorials[i - 1], i);
-      invFactorials[factorials.length - 1] = exp(factorials[factorials.length - 1], MOD - 2);
-      for (int i = invFactorials.length - 2; i >= 0; i--)
-         invFactorials[i] = mul(invFactorials[i + 1], i + 1);
-   }
-
-   static long nCr(int n, int r) {
-      return mul(factorials[n], mul(invFactorials[r], invFactorials[n - r]));
-   }
-
-   static class FastReader {
-      BufferedReader br;
-      StringTokenizer st;
+   static class FastReader extends PrintWriter {
+      private BufferedReader br;
+      private StringTokenizer st;
 
       public FastReader() {
-         br = new BufferedReader(new InputStreamReader(System.in));
-         st = new StringTokenizer("");
+         this(System.in, System.out);
       }
 
-      void close() {
+      public FastReader(InputStream i, OutputStream o) {
+         super(o);
+         br = new BufferedReader(new InputStreamReader(i));
+      }
+
+      public FastReader(String problemName) throws IOException {
+         super(problemName + ".out");
+         br = new BufferedReader(new FileReader(problemName + ".in"));
+      }
+
+      public String next() {
          try {
-            br.close();
-         } catch (IOException e) {
+            while (st == null || !st.hasMoreTokens())
+               st = new StringTokenizer(br.readLine());
+            return st.nextToken();
+         } catch (Exception e) {
             e.printStackTrace();
          }
+         return null;
       }
 
-      String next() {
-         while (!st.hasMoreTokens()) {
-            try {
-               st = new StringTokenizer(br.readLine());
-            } catch (IOException e) {
-               e.printStackTrace();
-            }
-         }
-         return st.nextToken();
-      }
-
-      String readLine() {
+      public String nextLine() {
          String line = null;
          try {
             line = br.readLine();
@@ -148,30 +126,22 @@ public class A_Historical_TV_Remote_Control {
          return line;
       }
 
-      double readDouble() {
-         return Double.parseDouble(next());
-      }
-
-      long readLong() {
-         return Long.parseLong(next());
-      }
-
-      int readInt() {
+      public int nextInt() {
          return Integer.parseInt(next());
       }
 
-      long[] readArrayLong(int N) {
-         long[] a = new long[N];
-         for (int i = 0; i < N; i++) {
-            a[i] = readLong();
-         }
-         return a;
+      public long nextLong() {
+         return Long.parseLong(next());
       }
 
-      int[] readArray(int N) {
-         int[] a = new int[N];
-         for (int i = 0; i < N; i++) {
-            a[i] = readInt();
+      public double nextDouble() {
+         return Double.parseDouble(next());
+      }
+
+      public int[] readArray(int n) {
+         int[] a = new int[n];
+         for (int i = 0; i < n; i++) {
+            a[i] = io.nextInt();
          }
          return a;
       }
