@@ -1,7 +1,7 @@
 
 /**
  *   author:  josuerom
- *   created: 25/07/23 16:41:29
+ *   created: 26/07/23 16:58:02
 **/
 import java.io.*;
 import java.util.*;
@@ -22,7 +22,6 @@ public class A_Historical_TV_Remote_Control {
    public static void solve(int n, int cn[], String channel) {
       String[] digits = channel.split("");
       int dg = digits.length;
-      Arrays.sort(cn);
       int in1 = 0, in2 = 0, in3 = 0;
       if (dg == 1) {
          in1 = Arrays.binarySearch(cn, Integer.parseInt(digits[0]));
@@ -46,8 +45,8 @@ public class A_Historical_TV_Remote_Control {
             return;
          }
       }
-      int[] ch_jumps = new int[1001];
-      for (int k = 1, l = 0; k <= 1000; k++) {
+      int[] ch_jumps = new int[820];
+      for (int k = 1, l = 0; k <= 999; k++) {
          String[] m = String.valueOf(k).split("");
          Arrays.sort(m);
          dg = m.length;
@@ -74,16 +73,13 @@ public class A_Historical_TV_Remote_Control {
             }
          }
       }
-      // io.println(Arrays.toString(ch_jumps));
-      int i = 0, j = 0, c = Integer.parseInt(channel);
-      boolean flag = false;
-      int ans = 1000;
-      for (; i < 1001; i++) {
-         ans = min(ans, abs(c - ch_jumps[i]));
-         if (i > 0 && ch_jumps[i] == 0) {
+      int destination = Integer.parseInt(channel), ans = 999;
+      for (int i = 0; i < 819; i++) {
+         if (i > 1 && ch_jumps[i] == 0)
             break;
-         }
+         ans = min(ans, abs(destination - ch_jumps[i]));
       }
+      // io.println(Arrays.toString(ch_jumps));
       io.println(ans);
    }
 

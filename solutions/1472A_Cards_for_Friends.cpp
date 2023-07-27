@@ -1,6 +1,6 @@
 /**
  *   author:  josuerom
- *   created: 24/07/23 23:12:42
+ *   created: 26/07/23 17:40:58
 **/
 #include <bits/stdc++.h>
 using namespace std;
@@ -26,38 +26,14 @@ void solve() {
       cout << "YES\n";
       return;
    }
-   if (w%2 != 0 && h%2 != 0 && n > 1) {
-      cout << "NO\n";
-      return;
+   int ans = 1;
+   while (w%2 == 0) {
+      w /= 2;
+      ans *= 2;
    }
-   int ans = 0;
-   if (w%2 == 0 && h%2 == 0) {
-      for (int i = 0; true; i++) {
-         w /= 2;
-         ans += 2;
-         if (w%2 != 0 || ans >= n)
-            break;
-      }
-      for (int i = 0; true; i++) {
-         h /= 2;
-         ans += 2;
-         if (h%2 != 0 || ans >= n)
-            break;
-      }
-   } else if (w%2 == 0 && h%2 != 0) {
-      for (int i = 0; true; i++) {
-         w /= 2;
-         ans += 2;
-         if (w%2 != 0 || ans >= n)
-            break;
-      }
-   } else if (w%2 != 0 && h%2 == 0) {
-      for (int i = 0; true; i++) {
-         h /= 2;
-         ans += 2;
-         if (h%2 != 0 || ans >= n)
-            break;
-      }
+   while (h%2 == 0) {
+      h /= 2;
+      ans *= 2;
    }
    cout << (ans >= n ? "YES" : "NO") << '\n';
 }

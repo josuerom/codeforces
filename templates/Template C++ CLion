@@ -9,16 +9,14 @@ using namespace std;                 //          ██║██╔══██�
 #define debug(...) 42                //                         created: {DAY}/{MONTH}/23 {HOUR}:{MINUTE}:{SECOND}
 #endif
 
-#define readArray(x)        void template<typename T> void read(xtor<T>&(x)){int n=(x).size();for(auto&e:x) cin >> e;}
-#define io_speed()          ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);
+#define IO_SPEED()          ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); cerr.tie(nullptr);
 #define decimals(x)         cout.setf(ios::fixed, ios::floatfield); cout.precision(x);
 #define uniq(x)             sort(all(x)); (x).erase(unique(all(x)),(x).end())
-#define TC                  int tt; cin >> tt; for (int i = 1; i <= tt; i++)
 #define FORR(i, x)          for(int i = (int)(x).size()-1; i >= 0; i--)
 #define mod(a, b, mod)      ((((a) % (mod)) + ((b) % (mod))) % (mod))
 #define FORI(i, b, c)       for(int (i) = (b); (i) < (c); (i)++)
 #define veredict(x)         cout << ((x) ? "YES" : "NO") << '\n'
-#define binary_search(x, y) sort(x); binary_search(all(x), (y))
+#define binarySearch(x, y) sort(x); binary_search(all(x), (y))
 #define memset(a, v)        memset((a),(v),sizeof(a))
 #define rall(x)             (x).rbegin(),(x).rend()
 #define PI                  3.14159265358979323846L
@@ -50,19 +48,23 @@ using namespace std;                 //          ██║██╔══██�
 #define se                  second
 #define fi                  first
 
-const int MAX = 1e6+7;
+const int N = 1e6+7;
 
 void solve() {
 }
 
 int main() {
-   io_speed();
-   TC {
-      #ifdef josuerom
-         cout << "----- Case #" << i << " -----\n";
-         solve();
-      #else
-         solve();
-      #endif
+   IO_SPEED();
+   int tt = 1;
+   cin >> tt;
+#ifdef josuerom
+   FORI (i, 0, tt) {
+      cout << "----- Case #" << i << " -----\n";
+      solve();
    }
+#else
+   while (tt--)
+      solve();
+#endif
+   return 0;
 }
