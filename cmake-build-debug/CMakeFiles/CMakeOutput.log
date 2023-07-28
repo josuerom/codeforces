@@ -1,6 +1,6 @@
-The system is: Linux - 6.2.0-20-generic - x86_64
+The system is: Windows - 10.0.23506 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
+Compiler: D:/Program Files/Compilers/Mingw64/bin/gcc.exe 
 Build flags: 
 Id flags:  
 
@@ -8,446 +8,364 @@ The output was:
 0
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "/home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/g++ 
-Build flags: -std=c++20;-Djosuerom;-Wall;-Wextra;-Wpedantic;-Werror;-Weffc++;-Wconversion;;-Wno-unused-result;-Wno-char-subscripts;-Wfloat-equal;-Wvla;-Wduplicated-cond;-Wlogical-op;-Wredundant-decls;-ggdb3;-D_GLIBCXX_DEBUG;-D_GLIBCXX_DEBUG_PEDANTIC;-D_FORTIFY_SOURCE=2;-fsanitize=address;-fdiagnostics-color=always
+Compiler: D:/Program Files/Compilers/Mingw64/bin/g++.exe 
+Build flags: 
 Id flags:  
 
 The output was:
 0
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "/home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/a.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t9FptC
+Change Dir: D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cxuujc
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_55232/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_55232.dir/build.make CMakeFiles/cmTC_55232.dir/build
-gmake[1]: Entering directory '/home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t9FptC'
-Building C object CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o -c /snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCCompilerABI.c
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.2.0-17ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
-Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 12.2.0 (Ubuntu 12.2.0-17ubuntu1) 
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_55232.dir/'
- /usr/lib/gcc/x86_64-linux-gnu/12/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_55232.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc67QHTF.s
-GNU C17 (Ubuntu 12.2.0-17ubuntu1) version 12.2.0 (x86_64-linux-gnu)
-	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.25-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
-#include "..." search starts here:
-#include <...> search starts here:
- /usr/lib/gcc/x86_64-linux-gnu/12/include
- /usr/local/include
- /usr/include/x86_64-linux-gnu
- /usr/include
-End of search list.
-GNU C17 (Ubuntu 12.2.0-17ubuntu1) version 12.2.0 (x86_64-linux-gnu)
-	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.25-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: c6bbaacf224652295c1b40b8f3bb9554
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_55232.dir/'
- as -v --64 -o CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o /tmp/cc67QHTF.s
-GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.40
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.'
-Linking C executable cmTC_55232
-/snap/clion/235/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55232.dir/link.txt --verbose=1
-/usr/bin/cc  -v CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o -o cmTC_55232 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.2.0-17ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
-Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 12.2.0 (Ubuntu 12.2.0-17ubuntu1) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_55232' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_55232.'
- /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccN9iWfx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_55232 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_55232' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_55232.'
-gmake[1]: Leaving directory '/home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t9FptC'
+Run Build Command(s):D:/Program Files/JetBrains/CLion 2023.1.2/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_e6dcd/fast && D:/Program Files/JetBrains/CLion 2023.1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_e6dcd.dir\build.make CMakeFiles/cmTC_e6dcd.dir/build
+mingw32-make[1]: Entering directory 'D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cxuujc'
+Building C object CMakeFiles/cmTC_e6dcd.dir/CMakeCCompilerABI.c.obj
+"D:\Program Files\Compilers\Mingw64\bin\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.obj -c "D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c"
+Using built-in specs.
+COLLECT_GCC=D:\Program Files\Compilers\Mingw64\bin\gcc.exe
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-w64-mingw32
+Configured with: ../configure --prefix=/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders' --with-tune=generic --enable-checking=release --enable-threads=mcf --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --with-stabs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/d/Prog/winlibs64ucrt_stage/custombuilt --with-mpfr=/d/Prog/winlibs64ucrt_stage/custombuilt --with-gmp=/d/Prog/winlibs64ucrt_stage/custombuilt --with-isl=/d/Prog/winlibs64ucrt_stage/custombuilt --enable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs64ucrt_stage/gcc-13.1.0/build_mingw/mingw-w64 CFLAGS='-I/d/Prog/winlibs64ucrt_stage/custombuilt/include/libdl-win32 -Wno-int-conversion' CXXFLAGS=-Wno-int-conversion LDFLAGS='-pthread -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware'
+Thread model: mcf
+Supported LTO compression algorithms: zlib zstd
+gcc version 13.1.0 (MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders) 
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_e6dcd.dir\'
+ D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\cmTC_e6dcd.dir\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\Users\jr3\AppData\Local\Temp\ccBBJC8a.s
+GNU C17 (MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders) version 13.1.0 (x86_64-w64-mingw32)
+	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+ignoring nonexistent directory "R:/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc/include"
+ignoring nonexistent directory "/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc/include"
+ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+ignoring nonexistent directory "/mingw/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+End of search list.
+Compiler executable checksum: f612cbecaf7ca937647cbe132409c258
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_e6dcd.dir\'
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.obj C:\Users\jr3\AppData\Local\Temp\ccBBJC8a.s
+GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64, built by Brecht Sanders) 2.40
+COMPILER_PATH=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.'
+Linking C executable cmTC_e6dcd.exe
+"D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e6dcd.dir\link.txt --verbose=1
+"D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_e6dcd.dir/objects.a
+"D:\Program Files\Compilers\Mingw64\bin\ar.exe" qc CMakeFiles\cmTC_e6dcd.dir/objects.a @CMakeFiles\cmTC_e6dcd.dir\objects1
+"D:\Program Files\Compilers\Mingw64\bin\gcc.exe"  -v -Wl,--whole-archive CMakeFiles\cmTC_e6dcd.dir/objects.a -Wl,--no-whole-archive -o cmTC_e6dcd.exe -Wl,--out-implib,libcmTC_e6dcd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=D:\Program Files\Compilers\Mingw64\bin\gcc.exe
+COLLECT_LTO_WRAPPER=D:/Program\ Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-w64-mingw32
+Configured with: ../configure --prefix=/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders' --with-tune=generic --enable-checking=release --enable-threads=mcf --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --with-stabs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/d/Prog/winlibs64ucrt_stage/custombuilt --with-mpfr=/d/Prog/winlibs64ucrt_stage/custombuilt --with-gmp=/d/Prog/winlibs64ucrt_stage/custombuilt --with-isl=/d/Prog/winlibs64ucrt_stage/custombuilt --enable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs64ucrt_stage/gcc-13.1.0/build_mingw/mingw-w64 CFLAGS='-I/d/Prog/winlibs64ucrt_stage/custombuilt/include/libdl-win32 -Wno-int-conversion' CXXFLAGS=-Wno-int-conversion LDFLAGS='-pthread -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware'
+Thread model: mcf
+Supported LTO compression algorithms: zlib zstd
+gcc version 13.1.0 (MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders) 
+COMPILER_PATH=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6dcd.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e6dcd.'
+ D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\jr3\AppData\Local\Temp\ccT7SqgD.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -m i386pep -Bdynamic -o cmTC_e6dcd.exe D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\cmTC_e6dcd.dir/objects.a --no-whole-archive --out-implib libcmTC_e6dcd.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6dcd.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e6dcd.'
+mingw32-make[1]: Leaving directory 'D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cxuujc'
 
 
 
 Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/lib/gcc/x86_64-linux-gnu/12/include]
-    add: [/usr/local/include]
-    add: [/usr/include/x86_64-linux-gnu]
-    add: [/usr/include]
+    add: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+    add: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+    add: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+    add: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
   end of search list found
-  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/12/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/12/include]
-  collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-  collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/12/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+  collapse include dir [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [D:/Program Files/Compilers/Mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+  collapse include dir [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [D:/Program Files/Compilers/Mingw64/include]
+  collapse include dir [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [D:/Program Files/Compilers/Mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+  collapse include dir [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [D:/Program Files/Compilers/Mingw64/x86_64-w64-mingw32/include]
+  implicit include dirs: [D:/Program Files/Compilers/Mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include;D:/Program Files/Compilers/Mingw64/include;D:/Program Files/Compilers/Mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;D:/Program Files/Compilers/Mingw64/x86_64-w64-mingw32/include]
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t9FptC]
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cxuujc]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_55232/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_55232.dir/build.make CMakeFiles/cmTC_55232.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-t9FptC']
-  ignore line: [Building C object CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o -c /snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):D:/Program Files/JetBrains/CLion 2023.1.2/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_e6dcd/fast && D:/Program Files/JetBrains/CLion 2023.1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_e6dcd.dir\build.make CMakeFiles/cmTC_e6dcd.dir/build]
+  ignore line: [mingw32-make[1]: Entering directory 'D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cxuujc']
+  ignore line: [Building C object CMakeFiles/cmTC_e6dcd.dir/CMakeCCompilerABI.c.obj]
+  ignore line: ["D:\Program Files\Compilers\Mingw64\bin\gcc.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.obj -c "D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c"]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.2.0-17ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
-  ignore line: [Thread model: posix]
+  ignore line: [COLLECT_GCC=D:\Program Files\Compilers\Mingw64\bin\gcc.exe]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../configure --prefix=/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders' --with-tune=generic --enable-checking=release --enable-threads=mcf --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --with-stabs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/d/Prog/winlibs64ucrt_stage/custombuilt --with-mpfr=/d/Prog/winlibs64ucrt_stage/custombuilt --with-gmp=/d/Prog/winlibs64ucrt_stage/custombuilt --with-isl=/d/Prog/winlibs64ucrt_stage/custombuilt --enable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs64ucrt_stage/gcc-13.1.0/build_mingw/mingw-w64 CFLAGS='-I/d/Prog/winlibs64ucrt_stage/custombuilt/include/libdl-win32 -Wno-int-conversion' CXXFLAGS=-Wno-int-conversion LDFLAGS='-pthread -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware']
+  ignore line: [Thread model: mcf]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 12.2.0 (Ubuntu 12.2.0-17ubuntu1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_55232.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1 -quiet -v -imultiarch x86_64-linux-gnu /snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_55232.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc67QHTF.s]
-  ignore line: [GNU C17 (Ubuntu 12.2.0-17ubuntu1) version 12.2.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: [gcc version 13.1.0 (MinGW-W64 x86_64-ucrt-mcf-seh  built by Brecht Sanders) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_e6dcd.dir\']
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\cmTC_e6dcd.dir\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\Users\jr3\AppData\Local\Temp\ccBBJC8a.s]
+  ignore line: [GNU C17 (MinGW-W64 x86_64-ucrt-mcf-seh  built by Brecht Sanders) version 13.1.0 (x86_64-w64-mingw32)]
+  ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+  ignore line: [ignoring nonexistent directory "R:/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc/include"]
+  ignore line: [ignoring nonexistent directory "/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc/include"]
+  ignore line: [ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+  ignore line: [ignoring nonexistent directory "/mingw/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/include]
-  ignore line: [ /usr/local/include]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
-  ignore line: [ /usr/include]
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C17 (Ubuntu 12.2.0-17ubuntu1) version 12.2.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.25-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: c6bbaacf224652295c1b40b8f3bb9554]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_55232.dir/']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o /tmp/cc67QHTF.s]
-  ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.40]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.']
-  ignore line: [Linking C executable cmTC_55232]
-  ignore line: [/snap/clion/235/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55232.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o -o cmTC_55232 ]
+  ignore line: [Compiler executable checksum: f612cbecaf7ca937647cbe132409c258]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_e6dcd.dir\']
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.obj C:\Users\jr3\AppData\Local\Temp\ccBBJC8a.s]
+  ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64  built by Brecht Sanders) 2.40]
+  ignore line: [COMPILER_PATH=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_e6dcd.dir\CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_e6dcd.exe]
+  ignore line: ["D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e6dcd.dir\link.txt --verbose=1]
+  ignore line: ["D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_e6dcd.dir/objects.a]
+  ignore line: ["D:\Program Files\Compilers\Mingw64\bin\ar.exe" qc CMakeFiles\cmTC_e6dcd.dir/objects.a @CMakeFiles\cmTC_e6dcd.dir\objects1]
+  ignore line: ["D:\Program Files\Compilers\Mingw64\bin\gcc.exe"  -v -Wl --whole-archive CMakeFiles\cmTC_e6dcd.dir/objects.a -Wl --no-whole-archive -o cmTC_e6dcd.exe -Wl --out-implib libcmTC_e6dcd.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.2.0-17ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
-  ignore line: [Thread model: posix]
+  ignore line: [COLLECT_GCC=D:\Program Files\Compilers\Mingw64\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=D:/Program\ Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../configure --prefix=/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders' --with-tune=generic --enable-checking=release --enable-threads=mcf --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --with-stabs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/d/Prog/winlibs64ucrt_stage/custombuilt --with-mpfr=/d/Prog/winlibs64ucrt_stage/custombuilt --with-gmp=/d/Prog/winlibs64ucrt_stage/custombuilt --with-isl=/d/Prog/winlibs64ucrt_stage/custombuilt --enable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs64ucrt_stage/gcc-13.1.0/build_mingw/mingw-w64 CFLAGS='-I/d/Prog/winlibs64ucrt_stage/custombuilt/include/libdl-win32 -Wno-int-conversion' CXXFLAGS=-Wno-int-conversion LDFLAGS='-pthread -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware']
+  ignore line: [Thread model: mcf]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 12.2.0 (Ubuntu 12.2.0-17ubuntu1) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_55232' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_55232.']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccN9iWfx.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_55232 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccN9iWfx.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-znow] ==> ignore
-    arg [-zrelro] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_55232] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..]
-    arg [CMakeFiles/cmTC_55232.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [-lc] ==> lib [c]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12] ==> [/usr/lib/gcc/x86_64-linux-gnu/12]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> [/usr/lib]
-  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/12;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  ignore line: [gcc version 13.1.0 (MinGW-W64 x86_64-ucrt-mcf-seh  built by Brecht Sanders) ]
+  ignore line: [COMPILER_PATH=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6dcd.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e6dcd.']
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\jr3\AppData\Local\Temp\ccT7SqgD.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -m i386pep -Bdynamic -o cmTC_e6dcd.exe D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\cmTC_e6dcd.dir/objects.a --no-whole-archive --out-implib libcmTC_e6dcd.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6dcd.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e6dcd.']
+  ignore line: [mingw32-make[1]: Leaving directory 'D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cxuujc']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
   implicit fwks: []
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jub0Jy
+Change Dir: D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1ouwed
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fd2cf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fd2cf.dir/build.make CMakeFiles/cmTC_fd2cf.dir/build
-gmake[1]: Entering directory '/home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jub0Jy'
-Building CXX object CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/g++   -std=c++20 -Djosuerom -Wall -Wextra -Wpedantic -Wconversion  -Wno-unused-result -Wno-char-subscripts -Wfloat-equal -Wvla -Wduplicated-cond -Wlogical-op -Wredundant-decls -ggdb3 -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fdiagnostics-color=always  -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp
-Using built-in specs.
-COLLECT_GCC=/usr/bin/g++
-OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.2.0-17ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
-Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 12.2.0 (Ubuntu 12.2.0-17ubuntu1) 
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=c++20' '-D' 'josuerom' '-Wall' '-Wextra' '-Wpedantic' '-Wconversion' '-Wno-unused-result' '-Wno-char-subscripts' '-Wfloat-equal' '-Wvla' '-Wduplicated-cond' '-Wlogical-op' '-Wredundant-decls' '-ggdb3' '-D' '_GLIBCXX_DEBUG' '-D' '_GLIBCXX_DEBUG_PEDANTIC' '-D' '_FORTIFY_SOURCE=2' '-fsanitize=address' '-v' '-o' 'CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd2cf.dir/'
- /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -dD -D_GNU_SOURCE -D josuerom -D _GLIBCXX_DEBUG -D _GLIBCXX_DEBUG_PEDANTIC -D _FORTIFY_SOURCE=2 /snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_fd2cf.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -ggdb3 -Wall -Wextra -Wpedantic -Wconversion -Wno-unused-result -Wno-char-subscripts -Wfloat-equal -Wvla -Wduplicated-cond -Wlogical-op -Wredundant-decls -std=c++20 -version -fdiagnostics-color=always -fsanitize=address -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccanuMEo.s
-GNU C++20 (Ubuntu 12.2.0-17ubuntu1) version 12.2.0 (x86_64-linux-gnu)
-	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.25-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/12"
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"
-#include "..." search starts here:
-#include <...> search starts here:
- /usr/include/c++/12
- /usr/include/x86_64-linux-gnu/c++/12
- /usr/include/c++/12/backward
- /usr/lib/gcc/x86_64-linux-gnu/12/include
- /usr/local/include
- /usr/include/x86_64-linux-gnu
- /usr/include
-End of search list.
-GNU C++20 (Ubuntu 12.2.0-17ubuntu1) version 12.2.0 (x86_64-linux-gnu)
-	compiled by GNU C version 12.2.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.25-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 7071204c1e401a3c747fb90e6304b5a5
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=c++20' '-D' 'josuerom' '-Wall' '-Wextra' '-Wpedantic' '-Wconversion' '-Wno-unused-result' '-Wno-char-subscripts' '-Wfloat-equal' '-Wvla' '-Wduplicated-cond' '-Wlogical-op' '-Wredundant-decls' '-ggdb3' '-D' '_GLIBCXX_DEBUG' '-D' '_GLIBCXX_DEBUG_PEDANTIC' '-D' '_FORTIFY_SOURCE=2' '-fsanitize=address' '-v' '-o' 'CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd2cf.dir/'
- as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccanuMEo.s
-GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.40
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=c++20' '-D' 'josuerom' '-Wall' '-Wextra' '-Wpedantic' '-Wconversion' '-Wno-unused-result' '-Wno-char-subscripts' '-Wfloat-equal' '-Wvla' '-Wduplicated-cond' '-Wlogical-op' '-Wredundant-decls' '-ggdb3' '-D' '_GLIBCXX_DEBUG' '-D' '_GLIBCXX_DEBUG_PEDANTIC' '-D' '_FORTIFY_SOURCE=2' '-fsanitize=address' '-v' '-o' 'CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.'
-Linking CXX executable cmTC_fd2cf
-/snap/clion/235/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd2cf.dir/link.txt --verbose=1
-/usr/bin/g++ -std=c++20 -Djosuerom -Wall -Wextra -Wpedantic -Wconversion  -Wno-unused-result -Wno-char-subscripts -Wfloat-equal -Wvla -Wduplicated-cond -Wlogical-op -Wredundant-decls -ggdb3 -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fdiagnostics-color=always   -v CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_fd2cf 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/g++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.2.0-17ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
-Thread model: posix
-Supported LTO compression algorithms: zlib zstd
-gcc version 12.2.0 (Ubuntu 12.2.0-17ubuntu1) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=c++20' '-D' 'josuerom' '-Wall' '-Wextra' '-Wpedantic' '-Wconversion' '-Wno-unused-result' '-Wno-char-subscripts' '-Wfloat-equal' '-Wvla' '-Wduplicated-cond' '-Wlogical-op' '-Wredundant-decls' '-ggdb3' '-D' '_GLIBCXX_DEBUG' '-D' '_GLIBCXX_DEBUG_PEDANTIC' '-D' '_FORTIFY_SOURCE=2' '-fsanitize=address' '-v' '-o' 'cmTC_fd2cf' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fd2cf.'
- /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2NM2pf.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fd2cf /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. /usr/lib/gcc/x86_64-linux-gnu/12/libasan_preinit.o --push-state --no-as-needed -lasan --pop-state CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=c++20' '-D' 'josuerom' '-Wall' '-Wextra' '-Wpedantic' '-Wconversion' '-Wno-unused-result' '-Wno-char-subscripts' '-Wfloat-equal' '-Wvla' '-Wduplicated-cond' '-Wlogical-op' '-Wredundant-decls' '-ggdb3' '-D' '_GLIBCXX_DEBUG' '-D' '_GLIBCXX_DEBUG_PEDANTIC' '-D' '_FORTIFY_SOURCE=2' '-fsanitize=address' '-v' '-o' 'cmTC_fd2cf' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fd2cf.'
-gmake[1]: Leaving directory '/home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jub0Jy'
+Run Build Command(s):D:/Program Files/JetBrains/CLion 2023.1.2/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_5062b/fast && D:/Program Files/JetBrains/CLion 2023.1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_5062b.dir\build.make CMakeFiles/cmTC_5062b.dir/build
+mingw32-make[1]: Entering directory 'D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1ouwed'
+Building CXX object CMakeFiles/cmTC_5062b.dir/CMakeCXXCompilerABI.cpp.obj
+"D:\Program Files\Compilers\Mingw64\bin\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.obj -c "D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp"
+Using built-in specs.
+COLLECT_GCC=D:\Program Files\Compilers\Mingw64\bin\g++.exe
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-w64-mingw32
+Configured with: ../configure --prefix=/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders' --with-tune=generic --enable-checking=release --enable-threads=mcf --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --with-stabs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/d/Prog/winlibs64ucrt_stage/custombuilt --with-mpfr=/d/Prog/winlibs64ucrt_stage/custombuilt --with-gmp=/d/Prog/winlibs64ucrt_stage/custombuilt --with-isl=/d/Prog/winlibs64ucrt_stage/custombuilt --enable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs64ucrt_stage/gcc-13.1.0/build_mingw/mingw-w64 CFLAGS='-I/d/Prog/winlibs64ucrt_stage/custombuilt/include/libdl-win32 -Wno-int-conversion' CXXFLAGS=-Wno-int-conversion LDFLAGS='-pthread -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware'
+Thread model: mcf
+Supported LTO compression algorithms: zlib zstd
+gcc version 13.1.0 (MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders) 
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5062b.dir\'
+ D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\cmTC_5062b.dir\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\Users\jr3\AppData\Local\Temp\ccdBts1S.s
+GNU C++17 (MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders) version 13.1.0 (x86_64-w64-mingw32)
+	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0, MPC version 1.3.1, isl version isl-0.26-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0"
+ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32"
+ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward"
+ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+ignoring nonexistent directory "R:/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc/include"
+ignoring nonexistent directory "/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc/include"
+ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+ignoring nonexistent directory "/mingw/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+End of search list.
+Compiler executable checksum: 650cd7d4b9eff51621e3c85b6891e55e
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5062b.dir\'
+ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\jr3\AppData\Local\Temp\ccdBts1S.s
+GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64, built by Brecht Sanders) 2.40
+COMPILER_PATH=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_5062b.exe
+"D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5062b.dir\link.txt --verbose=1
+"D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_5062b.dir/objects.a
+"D:\Program Files\Compilers\Mingw64\bin\ar.exe" qc CMakeFiles\cmTC_5062b.dir/objects.a @CMakeFiles\cmTC_5062b.dir\objects1
+"D:\Program Files\Compilers\Mingw64\bin\g++.exe"  -v -Wl,--whole-archive CMakeFiles\cmTC_5062b.dir/objects.a -Wl,--no-whole-archive -o cmTC_5062b.exe -Wl,--out-implib,libcmTC_5062b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=D:\Program Files\Compilers\Mingw64\bin\g++.exe
+COLLECT_LTO_WRAPPER=D:/Program\ Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: x86_64-w64-mingw32
+Configured with: ../configure --prefix=/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders' --with-tune=generic --enable-checking=release --enable-threads=mcf --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --with-stabs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/d/Prog/winlibs64ucrt_stage/custombuilt --with-mpfr=/d/Prog/winlibs64ucrt_stage/custombuilt --with-gmp=/d/Prog/winlibs64ucrt_stage/custombuilt --with-isl=/d/Prog/winlibs64ucrt_stage/custombuilt --enable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs64ucrt_stage/gcc-13.1.0/build_mingw/mingw-w64 CFLAGS='-I/d/Prog/winlibs64ucrt_stage/custombuilt/include/libdl-win32 -Wno-int-conversion' CXXFLAGS=-Wno-int-conversion LDFLAGS='-pthread -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware'
+Thread model: mcf
+Supported LTO compression algorithms: zlib zstd
+gcc version 13.1.0 (MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders) 
+COMPILER_PATH=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5062b.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5062b.'
+ D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\jr3\AppData\Local\Temp\ccSHMhK3.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -m i386pep -Bdynamic -o cmTC_5062b.exe D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\cmTC_5062b.dir/objects.a --no-whole-archive --out-implib libcmTC_5062b.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5062b.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5062b.'
+mingw32-make[1]: Leaving directory 'D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1ouwed'
 
 
 
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/include/c++/12]
-    add: [/usr/include/x86_64-linux-gnu/c++/12]
-    add: [/usr/include/c++/12/backward]
-    add: [/usr/lib/gcc/x86_64-linux-gnu/12/include]
-    add: [/usr/local/include]
-    add: [/usr/include/x86_64-linux-gnu]
-    add: [/usr/include]
+    add: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0]
+    add: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32]
+    add: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward]
+    add: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+    add: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+    add: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+    add: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
   end of search list found
-  collapse include dir [/usr/include/c++/12] ==> [/usr/include/c++/12]
-  collapse include dir [/usr/include/x86_64-linux-gnu/c++/12] ==> [/usr/include/x86_64-linux-gnu/c++/12]
-  collapse include dir [/usr/include/c++/12/backward] ==> [/usr/include/c++/12/backward]
-  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/12/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/12/include]
-  collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-  collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/include/c++/12;/usr/include/x86_64-linux-gnu/c++/12;/usr/include/c++/12/backward;/usr/lib/gcc/x86_64-linux-gnu/12/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+  collapse include dir [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0] ==> [D:/Program Files/Compilers/Mingw64/include/c++/13.1.0]
+  collapse include dir [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32] ==> [D:/Program Files/Compilers/Mingw64/include/c++/13.1.0/x86_64-w64-mingw32]
+  collapse include dir [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward] ==> [D:/Program Files/Compilers/Mingw64/include/c++/13.1.0/backward]
+  collapse include dir [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [D:/Program Files/Compilers/Mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+  collapse include dir [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [D:/Program Files/Compilers/Mingw64/include]
+  collapse include dir [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [D:/Program Files/Compilers/Mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+  collapse include dir [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [D:/Program Files/Compilers/Mingw64/x86_64-w64-mingw32/include]
+  implicit include dirs: [D:/Program Files/Compilers/Mingw64/include/c++/13.1.0;D:/Program Files/Compilers/Mingw64/include/c++/13.1.0/x86_64-w64-mingw32;D:/Program Files/Compilers/Mingw64/include/c++/13.1.0/backward;D:/Program Files/Compilers/Mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include;D:/Program Files/Compilers/Mingw64/include;D:/Program Files/Compilers/Mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;D:/Program Files/Compilers/Mingw64/x86_64-w64-mingw32/include]
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jub0Jy]
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1ouwed]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fd2cf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fd2cf.dir/build.make CMakeFiles/cmTC_fd2cf.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/jr3/workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jub0Jy']
-  ignore line: [Building CXX object CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/g++   -std=c++20 -Djosuerom -Wall -Wextra -Wpedantic -Wconversion  -Wno-unused-result -Wno-char-subscripts -Wfloat-equal -Wvla -Wduplicated-cond -Wlogical-op -Wredundant-decls -ggdb3 -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fdiagnostics-color=always  -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):D:/Program Files/JetBrains/CLion 2023.1.2/bin/mingw/bin/mingw32-make.exe -f Makefile cmTC_5062b/fast && D:/Program Files/JetBrains/CLion 2023.1.2/bin/mingw/bin/mingw32-make.exe  -f CMakeFiles\cmTC_5062b.dir\build.make CMakeFiles/cmTC_5062b.dir/build]
+  ignore line: [mingw32-make[1]: Entering directory 'D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1ouwed']
+  ignore line: [Building CXX object CMakeFiles/cmTC_5062b.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: ["D:\Program Files\Compilers\Mingw64\bin\g++.exe"   -fdiagnostics-color=always   -v -o CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.obj -c "D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp"]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/g++]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.2.0-17ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
-  ignore line: [Thread model: posix]
+  ignore line: [COLLECT_GCC=D:\Program Files\Compilers\Mingw64\bin\g++.exe]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../configure --prefix=/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders' --with-tune=generic --enable-checking=release --enable-threads=mcf --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --with-stabs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/d/Prog/winlibs64ucrt_stage/custombuilt --with-mpfr=/d/Prog/winlibs64ucrt_stage/custombuilt --with-gmp=/d/Prog/winlibs64ucrt_stage/custombuilt --with-isl=/d/Prog/winlibs64ucrt_stage/custombuilt --enable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs64ucrt_stage/gcc-13.1.0/build_mingw/mingw-w64 CFLAGS='-I/d/Prog/winlibs64ucrt_stage/custombuilt/include/libdl-win32 -Wno-int-conversion' CXXFLAGS=-Wno-int-conversion LDFLAGS='-pthread -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware']
+  ignore line: [Thread model: mcf]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 12.2.0 (Ubuntu 12.2.0-17ubuntu1) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=c++20' '-D' 'josuerom' '-Wall' '-Wextra' '-Wpedantic' '-Wconversion' '-Wno-unused-result' '-Wno-char-subscripts' '-Wfloat-equal' '-Wvla' '-Wduplicated-cond' '-Wlogical-op' '-Wredundant-decls' '-ggdb3' '-D' '_GLIBCXX_DEBUG' '-D' '_GLIBCXX_DEBUG_PEDANTIC' '-D' '_FORTIFY_SOURCE=2' '-fsanitize=address' '-v' '-o' 'CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd2cf.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -dD -D_GNU_SOURCE -D josuerom -D _GLIBCXX_DEBUG -D _GLIBCXX_DEBUG_PEDANTIC -D _FORTIFY_SOURCE=2 /snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_fd2cf.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -ggdb3 -Wall -Wextra -Wpedantic -Wconversion -Wno-unused-result -Wno-char-subscripts -Wfloat-equal -Wvla -Wduplicated-cond -Wlogical-op -Wredundant-decls -std=c++20 -version -fdiagnostics-color=always -fsanitize=address -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccanuMEo.s]
-  ignore line: [GNU C++20 (Ubuntu 12.2.0-17ubuntu1) version 12.2.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.25-GMP]
+  ignore line: [gcc version 13.1.0 (MinGW-W64 x86_64-ucrt-mcf-seh  built by Brecht Sanders) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5062b.dir\']
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -U_REENTRANT D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\cmTC_5062b.dir\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fdiagnostics-color=always -o C:\Users\jr3\AppData\Local\Temp\ccdBts1S.s]
+  ignore line: [GNU C++17 (MinGW-W64 x86_64-ucrt-mcf-seh  built by Brecht Sanders) version 13.1.0 (x86_64-w64-mingw32)]
+  ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.26-GMP]
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/12"]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/include-fixed"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/12/../../../../x86_64-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0"]
+  ignore line: [ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32"]
+  ignore line: [ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward"]
+  ignore line: [ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+  ignore line: [ignoring nonexistent directory "R:/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc/include"]
+  ignore line: [ignoring nonexistent directory "/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc/include"]
+  ignore line: [ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "D:/Program Files/Compilers/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+  ignore line: [ignoring nonexistent directory "/mingw/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/include/c++/12]
-  ignore line: [ /usr/include/x86_64-linux-gnu/c++/12]
-  ignore line: [ /usr/include/c++/12/backward]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/include]
-  ignore line: [ /usr/local/include]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
-  ignore line: [ /usr/include]
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0]
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/x86_64-w64-mingw32]
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include/c++/13.1.0/backward]
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C++20 (Ubuntu 12.2.0-17ubuntu1) version 12.2.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 12.2.0  GMP version 6.2.1  MPFR version 4.2.0  MPC version 1.3.1  isl version isl-0.25-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 7071204c1e401a3c747fb90e6304b5a5]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=c++20' '-D' 'josuerom' '-Wall' '-Wextra' '-Wpedantic' '-Wconversion' '-Wno-unused-result' '-Wno-char-subscripts' '-Wfloat-equal' '-Wvla' '-Wduplicated-cond' '-Wlogical-op' '-Wredundant-decls' '-ggdb3' '-D' '_GLIBCXX_DEBUG' '-D' '_GLIBCXX_DEBUG_PEDANTIC' '-D' '_FORTIFY_SOURCE=2' '-fsanitize=address' '-v' '-o' 'CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd2cf.dir/']
-  ignore line: [ as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccanuMEo.s]
-  ignore line: [GNU assembler version 2.40 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.40]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=c++20' '-D' 'josuerom' '-Wall' '-Wextra' '-Wpedantic' '-Wconversion' '-Wno-unused-result' '-Wno-char-subscripts' '-Wfloat-equal' '-Wvla' '-Wduplicated-cond' '-Wlogical-op' '-Wredundant-decls' '-ggdb3' '-D' '_GLIBCXX_DEBUG' '-D' '_GLIBCXX_DEBUG_PEDANTIC' '-D' '_FORTIFY_SOURCE=2' '-fsanitize=address' '-v' '-o' 'CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.']
-  ignore line: [Linking CXX executable cmTC_fd2cf]
-  ignore line: [/snap/clion/235/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd2cf.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/g++ -std=c++20 -Djosuerom -Wall -Wextra -Wpedantic -Wconversion  -Wno-unused-result -Wno-char-subscripts -Wfloat-equal -Wvla -Wduplicated-cond -Wlogical-op -Wredundant-decls -ggdb3 -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fdiagnostics-color=always   -v CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_fd2cf ]
+  ignore line: [Compiler executable checksum: 650cd7d4b9eff51621e3c85b6891e55e]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5062b.dir\']
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\jr3\AppData\Local\Temp\ccdBts1S.s]
+  ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64  built by Brecht Sanders) 2.40]
+  ignore line: [COMPILER_PATH=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\cmTC_5062b.dir\CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_5062b.exe]
+  ignore line: ["D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5062b.dir\link.txt --verbose=1]
+  ignore line: ["D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_5062b.dir/objects.a]
+  ignore line: ["D:\Program Files\Compilers\Mingw64\bin\ar.exe" qc CMakeFiles\cmTC_5062b.dir/objects.a @CMakeFiles\cmTC_5062b.dir\objects1]
+  ignore line: ["D:\Program Files\Compilers\Mingw64\bin\g++.exe"  -v -Wl --whole-archive CMakeFiles\cmTC_5062b.dir/objects.a -Wl --no-whole-archive -o cmTC_5062b.exe -Wl --out-implib libcmTC_5062b.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/g++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.2.0-17ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-12/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-12 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-12-Pa930Z/gcc-12-12.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
-  ignore line: [Thread model: posix]
+  ignore line: [COLLECT_GCC=D:\Program Files\Compilers\Mingw64\bin\g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=D:/Program\ Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../configure --prefix=/R/winlibs64ucrt_stage/inst_gcc-13.1.0/share/gcc --build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --enable-offload-targets=nvptx-none --with-pkgversion='MinGW-W64 x86_64-ucrt-mcf-seh, built by Brecht Sanders' --with-tune=generic --enable-checking=release --enable-threads=mcf --disable-sjlj-exceptions --disable-libunwind-exceptions --disable-serial-configure --disable-bootstrap --enable-host-shared --enable-plugin --disable-default-ssp --disable-rpath --disable-libstdcxx-debug --disable-version-specific-runtime-libs --with-stabs --disable-symvers --enable-languages=c,c++,fortran,lto,objc,obj-c++ --disable-gold --disable-nls --disable-stage1-checking --disable-win32-registry --disable-multilib --enable-ld --enable-libquadmath --enable-libada --enable-libssp --enable-libstdcxx --enable-lto --enable-fully-dynamic-string --enable-libgomp --enable-graphite --enable-mingw-wildcard --enable-libstdcxx-time --enable-libstdcxx-pch --with-mpc=/d/Prog/winlibs64ucrt_stage/custombuilt --with-mpfr=/d/Prog/winlibs64ucrt_stage/custombuilt --with-gmp=/d/Prog/winlibs64ucrt_stage/custombuilt --with-isl=/d/Prog/winlibs64ucrt_stage/custombuilt --enable-libstdcxx-backtrace --enable-install-libiberty --enable-__cxa_atexit --without-included-gettext --with-diagnostics-color=auto --enable-clocale=generic --with-libiconv --with-system-zlib --with-build-sysroot=/R/winlibs64ucrt_stage/gcc-13.1.0/build_mingw/mingw-w64 CFLAGS='-I/d/Prog/winlibs64ucrt_stage/custombuilt/include/libdl-win32 -Wno-int-conversion' CXXFLAGS=-Wno-int-conversion LDFLAGS='-pthread -Wl,--dynamicbase -Wl,--high-entropy-va -Wl,--nxcompat -Wl,--tsaware']
+  ignore line: [Thread model: mcf]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
-  ignore line: [gcc version 12.2.0 (Ubuntu 12.2.0-17ubuntu1) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=c++20' '-D' 'josuerom' '-Wall' '-Wextra' '-Wpedantic' '-Wconversion' '-Wno-unused-result' '-Wno-char-subscripts' '-Wfloat-equal' '-Wvla' '-Wduplicated-cond' '-Wlogical-op' '-Wredundant-decls' '-ggdb3' '-D' '_GLIBCXX_DEBUG' '-D' '_GLIBCXX_DEBUG_PEDANTIC' '-D' '_FORTIFY_SOURCE=2' '-fsanitize=address' '-v' '-o' 'cmTC_fd2cf' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_fd2cf.']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2NM2pf.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_fd2cf /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. /usr/lib/gcc/x86_64-linux-gnu/12/libasan_preinit.o --push-state --no-as-needed -lasan --pop-state CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc2NM2pf.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-znow] ==> ignore
-    arg [-zrelro] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_fd2cf] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/libasan_preinit.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/libasan_preinit.o]
-    arg [--push-state] ==> ignore
-    arg [--no-as-needed] ==> ignore
-    arg [-lasan] ==> lib [asan]
-    arg [--pop-state] ==> ignore
-    arg [CMakeFiles/cmTC_fd2cf.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-    arg [-lstdc++] ==> lib [stdc++]
-    arg [-lm] ==> lib [m]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lc] ==> lib [c]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12] ==> [/usr/lib/gcc/x86_64-linux-gnu/12]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> [/usr/lib]
-  implicit libs: [asan;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/12/libasan_preinit.o;/usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/12;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  ignore line: [gcc version 13.1.0 (MinGW-W64 x86_64-ucrt-mcf-seh  built by Brecht Sanders) ]
+  ignore line: [COMPILER_PATH=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5062b.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5062b.']
+  ignore line: [ D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Program Files/Compilers/Mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\jr3\AppData\Local\Temp\ccSHMhK3.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmcfgthread -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lntdll -m i386pep -Bdynamic -o cmTC_5062b.exe D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. --whole-archive CMakeFiles\cmTC_5062b.dir/objects.a --no-whole-archive --out-implib libcmTC_5062b.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lmcfgthread -lkernel32 -lntdll D:/Program Files/Compilers/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5062b.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5062b.']
+  ignore line: [mingw32-make[1]: Leaving directory 'D:/Workspace/codeforces/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1ouwed']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
   implicit fwks: []
 
 

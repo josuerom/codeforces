@@ -1,1 +1,3 @@
-/usr/bin/g++ -std=c++20 -Djosuerom -Wall -Wextra -Wpedantic -Werror -Weffc++ -Wconversion  -Wno-unused-result -Wno-char-subscripts -Wfloat-equal -Wvla -Wduplicated-cond -Wlogical-op -Wredundant-decls -ggdb3 -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fdiagnostics-color=always -g CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.o -o codeforces 
+"D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\codeforces.dir/objects.a
+"D:\Program Files\Compilers\Mingw64\bin\ar.exe" qc CMakeFiles\codeforces.dir/objects.a @CMakeFiles\codeforces.dir\objects1
+"D:\Program Files\Compilers\Mingw64\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\codeforces.dir/objects.a -Wl,--no-whole-archive -o codeforces.exe -Wl,--out-implib,libcodeforces.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\codeforces.dir\linkLibs.rsp

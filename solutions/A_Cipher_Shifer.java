@@ -150,7 +150,6 @@ public class A_Cipher_Shifer {
 
       char[] readArrayChar() {
          return next().toCharArray();
-         ;
       }
 
       double[] readArrayDouble(int N) {
