@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Workspace/codeforces/solutions/1367B_Even_Array.cpp" "CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj" "gcc" "CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj.d"
+  "D:/Workspace/codeforces/solutions/A_Array_with_Odd_Sum.cpp" "CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj" "gcc" "CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj.d"
   )
 
 # Targets to which this target links.

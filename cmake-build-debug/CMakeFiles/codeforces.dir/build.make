@@ -68,29 +68,29 @@ include CMakeFiles/codeforces.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/codeforces.dir/flags.make
 
-CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj: CMakeFiles/codeforces.dir/flags.make
-CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj: CMakeFiles/codeforces.dir/includes_CXX.rsp
-CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj: D:/Workspace/codeforces/solutions/1367B_Even_Array.cpp
-CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj: CMakeFiles/codeforces.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\codeforces\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj"
-	"D:\Program Files\Compilers\Mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj -MF CMakeFiles\codeforces.dir\solutions\1367B_Even_Array.cpp.obj.d -o CMakeFiles\codeforces.dir\solutions\1367B_Even_Array.cpp.obj -c D:\Workspace\codeforces\solutions\1367B_Even_Array.cpp
+CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj: CMakeFiles/codeforces.dir/flags.make
+CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj: CMakeFiles/codeforces.dir/includes_CXX.rsp
+CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj: D:/Workspace/codeforces/solutions/A_Array_with_Odd_Sum.cpp
+CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj: CMakeFiles/codeforces.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\codeforces\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj"
+	"D:\Program Files\Compilers\Mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj -MF CMakeFiles\codeforces.dir\solutions\A_Array_with_Odd_Sum.cpp.obj.d -o CMakeFiles\codeforces.dir\solutions\A_Array_with_Odd_Sum.cpp.obj -c D:\Workspace\codeforces\solutions\A_Array_with_Odd_Sum.cpp
 
-CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.i"
-	"D:\Program Files\Compilers\Mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Workspace\codeforces\solutions\1367B_Even_Array.cpp > CMakeFiles\codeforces.dir\solutions\1367B_Even_Array.cpp.i
+CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.i"
+	"D:\Program Files\Compilers\Mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Workspace\codeforces\solutions\A_Array_with_Odd_Sum.cpp > CMakeFiles\codeforces.dir\solutions\A_Array_with_Odd_Sum.cpp.i
 
-CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.s"
-	"D:\Program Files\Compilers\Mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Workspace\codeforces\solutions\1367B_Even_Array.cpp -o CMakeFiles\codeforces.dir\solutions\1367B_Even_Array.cpp.s
+CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.s"
+	"D:\Program Files\Compilers\Mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Workspace\codeforces\solutions\A_Array_with_Odd_Sum.cpp -o CMakeFiles\codeforces.dir\solutions\A_Array_with_Odd_Sum.cpp.s
 
 # Object files for target codeforces
 codeforces_OBJECTS = \
-"CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj"
+"CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj"
 
 # External object files for target codeforces
 codeforces_EXTERNAL_OBJECTS =
 
-codeforces.exe: CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj
+codeforces.exe: CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj
 codeforces.exe: CMakeFiles/codeforces.dir/build.make
 codeforces.exe: CMakeFiles/codeforces.dir/linkLibs.rsp
 codeforces.exe: CMakeFiles/codeforces.dir/objects1

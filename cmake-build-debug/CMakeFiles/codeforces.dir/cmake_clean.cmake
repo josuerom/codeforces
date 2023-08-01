@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj"
-  "CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj.d"
+  "CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj"
+  "CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj.d"
   "codeforces.exe"
   "codeforces.exe.manifest"
   "codeforces.pdb"

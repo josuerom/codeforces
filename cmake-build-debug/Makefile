@@ -128,29 +128,29 @@ codeforces/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\codeforces.dir\build.make CMakeFiles/codeforces.dir/build
 .PHONY : codeforces/fast
 
-solutions/1367B_Even_Array.obj: solutions/1367B_Even_Array.cpp.obj
-.PHONY : solutions/1367B_Even_Array.obj
+solutions/A_Array_with_Odd_Sum.obj: solutions/A_Array_with_Odd_Sum.cpp.obj
+.PHONY : solutions/A_Array_with_Odd_Sum.obj
 
 # target to build an object file
-solutions/1367B_Even_Array.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\codeforces.dir\build.make CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.obj
-.PHONY : solutions/1367B_Even_Array.cpp.obj
+solutions/A_Array_with_Odd_Sum.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\codeforces.dir\build.make CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.obj
+.PHONY : solutions/A_Array_with_Odd_Sum.cpp.obj
 
-solutions/1367B_Even_Array.i: solutions/1367B_Even_Array.cpp.i
-.PHONY : solutions/1367B_Even_Array.i
+solutions/A_Array_with_Odd_Sum.i: solutions/A_Array_with_Odd_Sum.cpp.i
+.PHONY : solutions/A_Array_with_Odd_Sum.i
 
 # target to preprocess a source file
-solutions/1367B_Even_Array.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\codeforces.dir\build.make CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.i
-.PHONY : solutions/1367B_Even_Array.cpp.i
+solutions/A_Array_with_Odd_Sum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\codeforces.dir\build.make CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.i
+.PHONY : solutions/A_Array_with_Odd_Sum.cpp.i
 
-solutions/1367B_Even_Array.s: solutions/1367B_Even_Array.cpp.s
-.PHONY : solutions/1367B_Even_Array.s
+solutions/A_Array_with_Odd_Sum.s: solutions/A_Array_with_Odd_Sum.cpp.s
+.PHONY : solutions/A_Array_with_Odd_Sum.s
 
 # target to generate assembly for a file
-solutions/1367B_Even_Array.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\codeforces.dir\build.make CMakeFiles/codeforces.dir/solutions/1367B_Even_Array.cpp.s
-.PHONY : solutions/1367B_Even_Array.cpp.s
+solutions/A_Array_with_Odd_Sum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\codeforces.dir\build.make CMakeFiles/codeforces.dir/solutions/A_Array_with_Odd_Sum.cpp.s
+.PHONY : solutions/A_Array_with_Odd_Sum.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... codeforces
-	@echo ... solutions/1367B_Even_Array.obj
-	@echo ... solutions/1367B_Even_Array.i
-	@echo ... solutions/1367B_Even_Array.s
+	@echo ... solutions/A_Array_with_Odd_Sum.obj
+	@echo ... solutions/A_Array_with_Odd_Sum.i
+	@echo ... solutions/A_Array_with_Odd_Sum.s
 .PHONY : help
 
 

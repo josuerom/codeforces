@@ -84,10 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Workspace/codeforces">
-			<Option target="codeforces"/>
-		</Unit>
-		<Unit filename="D:/Workspace/codeforces/solutions/1367B_Even_Array.cpp">
+		<Unit filename="D:/Workspace/codeforces/solutions/A_Array_with_Odd_Sum.cpp">
 			<Option target="codeforces"/>
 		</Unit>
 		<Unit filename="D:/Workspace/codeforces/CMakeLists.txt">
