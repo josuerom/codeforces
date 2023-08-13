@@ -1,22 +1,21 @@
 
 /**
  *   author:  josuerom
- *   created: 07/08/23 17:27:47
+ *   created: 07/08/23 20:15:37
 **/
 import java.io.*;
 import java.util.*;
 import static java.lang.Math.*;
 
-public class C_Prepend_and_Append {
+public class A_Arithmetic_Array {
    public static void main(String[] authorJosuerom) {
       int tt = io.nextInt();
       while (tt-- > 0) {
          int n = io.nextInt();
-         String s = io.next();
-         LinkedList<Character> lt = new LinkedList<>();
+         int sum = 0;
          for (int i = 0; i < n; i++)
-            lt.add(s.charAt(i));
-         solve(lt, n);
+            sum += io.nextInt();
+         solve(sum, n);
       }
       io.close();
       System.exit(0);
@@ -24,16 +23,12 @@ public class C_Prepend_and_Append {
 
    static FastReader io = new FastReader();
 
-   public static void solve(LinkedList<Character> lt, int n) {
-      for (int i = 0; i < (n / 2); i++) {
-         char a = lt.getFirst(), b = lt.getLast();
-         if ((a == '1' && b == '0') || (a == '0' && b == '1')) {
-            lt.removeFirst();
-            lt.removeLast();
-         } else
-            break;
+   public static void solve(int sum, int n) {
+      if (sum <= 0 || sum < n) {
+         io.println(1);
+         return;
       }
-      io.println(lt.size());
+      io.println(abs(n - sum));
    }
 
    static class FastReader extends PrintWriter {

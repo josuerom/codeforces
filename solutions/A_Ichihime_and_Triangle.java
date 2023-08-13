@@ -1,22 +1,21 @@
 
 /**
  *   author:  josuerom
- *   created: 07/08/23 17:27:47
+ *   created: 12/08/23 20:27:55
 **/
 import java.io.*;
 import java.util.*;
 import static java.lang.Math.*;
 
-public class C_Prepend_and_Append {
+public class A_Ichihime_and_Triangle {
    public static void main(String[] authorJosuerom) {
       int tt = io.nextInt();
       while (tt-- > 0) {
-         int n = io.nextInt();
-         String s = io.next();
-         LinkedList<Character> lt = new LinkedList<>();
-         for (int i = 0; i < n; i++)
-            lt.add(s.charAt(i));
-         solve(lt, n);
+         int a = io.nextInt();
+         int b = io.nextInt();
+         int c = io.nextInt();
+         int d = io.nextInt();
+         solve(a, b, c, d);
       }
       io.close();
       System.exit(0);
@@ -24,16 +23,10 @@ public class C_Prepend_and_Append {
 
    static FastReader io = new FastReader();
 
-   public static void solve(LinkedList<Character> lt, int n) {
-      for (int i = 0; i < (n / 2); i++) {
-         char a = lt.getFirst(), b = lt.getLast();
-         if ((a == '1' && b == '0') || (a == '0' && b == '1')) {
-            lt.removeFirst();
-            lt.removeLast();
-         } else
-            break;
-      }
-      io.println(lt.size());
+   public static void solve(int a, int b, int c, int d) {
+      io.print(max(a, b) + " ");
+      io.print(max(b, c) + " ");
+      io.println(min(c, d));
    }
 
    static class FastReader extends PrintWriter {

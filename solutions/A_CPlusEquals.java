@@ -1,22 +1,20 @@
 
 /**
  *   author:  josuerom
- *   created: 07/08/23 17:27:47
+ *   created: 07/08/23 18:39:43
 **/
 import java.io.*;
 import java.util.*;
 import static java.lang.Math.*;
 
-public class C_Prepend_and_Append {
+public class A_CPlusEquals {
    public static void main(String[] authorJosuerom) {
       int tt = io.nextInt();
       while (tt-- > 0) {
+         int a = io.nextInt();
+         int b = io.nextInt();
          int n = io.nextInt();
-         String s = io.next();
-         LinkedList<Character> lt = new LinkedList<>();
-         for (int i = 0; i < n; i++)
-            lt.add(s.charAt(i));
-         solve(lt, n);
+         solve(max(a, b), min(a, b), n);
       }
       io.close();
       System.exit(0);
@@ -24,16 +22,16 @@ public class C_Prepend_and_Append {
 
    static FastReader io = new FastReader();
 
-   public static void solve(LinkedList<Character> lt, int n) {
-      for (int i = 0; i < (n / 2); i++) {
-         char a = lt.getFirst(), b = lt.getLast();
-         if ((a == '1' && b == '0') || (a == '0' && b == '1')) {
-            lt.removeFirst();
-            lt.removeLast();
-         } else
-            break;
+   public static void solve(int a, int b, int n) {
+      int ans = 0, x = 0, y = 0;
+      while (x <= n) {
+         x = a + b;
+         y = max(a, b);
+         a = x;
+         b = y;
+         ans++;
       }
-      io.println(lt.size());
+      io.println(ans);
    }
 
    static class FastReader extends PrintWriter {
