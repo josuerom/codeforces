@@ -1,7 +1,3 @@
-/******************************************
-* @AUTHOR:            JOSUEROM            *
-* @UNIVERSITY: MINUTE OF GOD OF COLOMBIA  *
-******************************************/
 #include <iostream>
 using namespace std;
 
