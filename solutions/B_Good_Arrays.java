@@ -1,39 +1,54 @@
 
 /**
  *   author:  josuerom
- *   created: 04/08/23 18:51:29
+ *   created: 31/08/23 16:25:55
 **/
 import java.io.*;
 import java.util.*;
 import static java.lang.Math.*;
 
-public class A_Queue_Coffee {
-   static FastReader io = new FastReader();
-   static Queue<String> a = new LinkedList<String>();
-   static Queue<String> b = new LinkedList<String>();
-
-   public static void main(String[] authorJosuerom) {
+public class B_Good_Arrays {
+   public static void main(String[] authorJosuerom) throws IOException {
+      FastReader io = new FastReader("B_Good_Arrays");
       int tt = io.nextInt();
       while (tt-- > 0) {
-         String[] s = io.nextLine().split(" ");
-         solve(s);
+         int n = io.nextInt();
+         int[] a = io.readArray(n);
+         solve(io, n, a);
       }
       io.close();
       System.exit(0);
    }
 
-   public static void solve(String s[]) {
-      if (s[0].equals("LLEGA")) {
-         if (s[1].equals("ALUMNO"))
-            a.add(s[2]);
-         else
-            b.add(s[2]);
-      } else {
-         if (!b.isEmpty())
-            io.println(b.remove());
-         else
-            io.println(a.remove());
+   public static void solve(FastReader io, int n, int a[]) {
+      if (n == 1) {
+         io.println("NO");
+         return;
       }
+      int[] b = Arrays.copyOf(a, n);
+      Arrays.sort(b);
+      int different = 1, sum = 0;
+      for (int i = 0; i < n - 1; i++) {
+         sum += b[i];
+         if (b[i] != b[i + 1])
+            ++different;
+      }
+      sum += b[n - 1];
+      int r = sum / n;
+      if (different == 1 && r * n != sum) {
+         io.println("NO");
+         return;
+      }
+      if (different == n) {
+         io.println("YES");
+         return;
+      }
+      int indx = Arrays.binarySearch(b, r);
+      if (indx < 0 && r * n == sum) {
+         io.println("YES");
+         return;
+      }
+      io.println("YES");
    }
 
    static class FastReader extends PrintWriter {
@@ -90,7 +105,7 @@ public class A_Queue_Coffee {
       public int[] readArray(int n) {
          int[] a = new int[n];
          for (int i = 0; i < n; i++) {
-            a[i] = io.nextInt();
+            a[i] = Integer.parseInt(next());
          }
          return a;
       }

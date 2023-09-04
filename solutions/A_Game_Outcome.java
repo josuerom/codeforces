@@ -1,39 +1,47 @@
 
 /**
  *   author:  josuerom
- *   created: 04/08/23 18:51:29
+ *   created: 28/08/23 11:20:48
 **/
 import java.io.*;
 import java.util.*;
 import static java.lang.Math.*;
 
-public class A_Queue_Coffee {
-   static FastReader io = new FastReader();
-   static Queue<String> a = new LinkedList<String>();
-   static Queue<String> b = new LinkedList<String>();
-
+public class A_Game_Outcome {
    public static void main(String[] authorJosuerom) {
-      int tt = io.nextInt();
-      while (tt-- > 0) {
-         String[] s = io.nextLine().split(" ");
-         solve(s);
+      int n = io.nextInt();
+      int[][] m = new int[n][n];
+      for (int i = 0; i < n; i++) {
+         for (int j = 0; j < n; j++)
+            m[i][j] = io.nextInt();
       }
+      solve(m, n);
       io.close();
       System.exit(0);
    }
 
-   public static void solve(String s[]) {
-      if (s[0].equals("LLEGA")) {
-         if (s[1].equals("ALUMNO"))
-            a.add(s[2]);
-         else
-            b.add(s[2]);
-      } else {
-         if (!b.isEmpty())
-            io.println(b.remove());
-         else
-            io.println(a.remove());
+   static FastReader io = new FastReader();
+
+   public static void solve(int m[][], int n) {
+      int[] sumr = new int[n];
+      int[] sumc = new int[n];
+      for (int i = 0; i < n; i++) {
+         int sr = 0, sc = 0;
+         for (int j = 0; j < n; j++)
+            sr += m[i][j];
+         for (int l = 0; l < n; l++)
+            sc += m[l][i];
+         sumr[i] = sr;
+         sumc[i] = sc;
       }
+      int ans = 0;
+      for (int i = 0; i < n; i++) {
+         for (int j = 0; j < n; j++) {
+            if (sumc[i] > sumr[j])
+               ans++;
+         }
+      }
+      io.println(ans);
    }
 
    static class FastReader extends PrintWriter {

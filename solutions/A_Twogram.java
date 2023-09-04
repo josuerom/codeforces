@@ -1,38 +1,42 @@
 
 /**
  *   author:  josuerom
- *   created: 04/08/23 18:51:29
+ *   created: 04/09/23 17:17:28
 **/
 import java.io.*;
 import java.util.*;
 import static java.lang.Math.*;
 
-public class A_Queue_Coffee {
-   static FastReader io = new FastReader();
-   static Queue<String> a = new LinkedList<String>();
-   static Queue<String> b = new LinkedList<String>();
-
-   public static void main(String[] authorJosuerom) {
-      int tt = io.nextInt();
-      while (tt-- > 0) {
-         String[] s = io.nextLine().split(" ");
-         solve(s);
+public class A_Twogram {
+   public static void main(String[] args) {
+      try (FastReader io = new FastReader()) {
+         int n = io.nextInt();
+         char[] s = io.next().toCharArray();
+         solve(io, n, s);
       }
-      io.close();
       System.exit(0);
    }
 
-   public static void solve(String s[]) {
-      if (s[0].equals("LLEGA")) {
-         if (s[1].equals("ALUMNO"))
-            a.add(s[2]);
-         else
-            b.add(s[2]);
-      } else {
-         if (!b.isEmpty())
-            io.println(b.remove());
-         else
-            io.println(a.remove());
+   public static void solve(FastReader io, int n, char s[]) {
+      HashMap<String, Integer> map = new HashMap<String, Integer>();
+      int max = -1;
+      for (int i = 0; i < n - 1; i++) {
+         String key = s[i] + "" + s[i + 1];
+         if (map.containsKey(key)) {
+            map.put(key, map.get(key) + 1);
+            max = max(max, map.get(key));
+         } else {
+            map.put(key, 1);
+            max = max(max, 1);
+         }
+      }
+      Iterator<String> ptr = map.keySet().iterator();
+      while (ptr.hasNext()) {
+         String key = ptr.next();
+         if (map.get(key) == max) {
+            io.println(key);
+            break;
+         }
       }
    }
 
@@ -49,9 +53,9 @@ public class A_Queue_Coffee {
          br = new BufferedReader(new InputStreamReader(i));
       }
 
-      public FastReader(String problemName) throws IOException {
-         super(problemName + ".out");
-         br = new BufferedReader(new FileReader(problemName + ".in"));
+      public FastReader(String idFile) throws FileNotFoundException {
+         super("samples/out_" + idFile);
+         br = new BufferedReader(new FileReader("samples/" + idFile));
       }
 
       public String next() {
@@ -90,7 +94,7 @@ public class A_Queue_Coffee {
       public int[] readArray(int n) {
          int[] a = new int[n];
          for (int i = 0; i < n; i++) {
-            a[i] = io.nextInt();
+            a[i] = nextInt();
          }
          return a;
       }
