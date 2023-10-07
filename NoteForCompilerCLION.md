@@ -7,11 +7,15 @@ Agregue y seleccione las siguientes opciones:
 
 Name >>> Debug
 
+
 Build type >>> Defauld
+
 
 Toolchain >>> Defauld
 
+
 Generator >>> Let CMake decide
+
 
 CMake options >>> -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="-std=c++2 -O3
 -Djosuerom -Wall -Wextra -Wpedantic -Werror -Weffc++ -Wconversion  -Wno-unused-result -Wno-char-subscripts -Wfloat-equal
