@@ -9,18 +9,14 @@ import java.util.*;
 import static java.lang.Math.*;
 
 public class {NAME} {
-   static FastReader io = new FastReader();
-
-   public static void main(String[] authorJosuerom) {
-      int tt = io.readInt();
-      while (tt-- > 0) {
-         solve();
+public static void main(String[] args) {
+      try (FastReader io = new FastReader()) {
+         
       }
-      io.close();
       System.exit(0);
    }
 
-   public static void solve() {
+   public static void solve(FastReader io) {
    }
 
    static class FastReader extends PrintWriter {
@@ -36,9 +32,9 @@ public class {NAME} {
          br = new BufferedReader(new InputStreamReader(i));
       }
 
-      public FastReader(String problemName) throws IOException {
-         super(problemName + ".out");
-         br = new BufferedReader(new FileReader(problemName + ".in"));
+      public FastReader(String idFile) throws IOException {
+         super("samples/output.out");
+         br = new BufferedReader(new FileReader("samples/" + idFile));
       }
 
       public String next() {
@@ -77,7 +73,7 @@ public class {NAME} {
       public int[] readArray(int n) {
          int[] a = new int[n];
          for (int i = 0; i < n; i++) {
-            a[i] = io.nextInt();
+            a[i] = nextInt();
          }
          return a;
       }
