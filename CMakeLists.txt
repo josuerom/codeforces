@@ -17,4 +17,5 @@ add_compile_options(
         -D_GLIBCXX_DEBUG_PEDANTIC       # Macro para habilitar comprobaciones de contenedores más estrictas
 )
 
-add_executable(CF )
+add_executable(codeforces
+        solutions/900/A_Hanoi_Tower.cpp)
