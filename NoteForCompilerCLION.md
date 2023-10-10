@@ -17,7 +17,7 @@ Toolchain >>> Defauld
 Generator >>> Let CMake decide
 
 
-CMake options >>> -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="-std=c++17 -march=native -Djosuerom -D_2BITS -Wall -Wextra -pedantic -Werror -Weffc++ -Wl,stack=268435456 -Wno-sign-conversion -Wvla -D_GLIBCXX_DEBUG_PEDANTIC"
+CMake options >>> -G Ninja -DCMAKE_CXX_FLAGS="-std=c++17 -march=native -Wall -Wextra -pedantic -Werror -Weffc++ -Wno-sign-conversion -Wvla -Djosuerom -D_2BITS -D_GLIBCXX_DEBUG_PEDANTIC"
 
 Ese comando extenso establece banderas de compilacion al compilador CMake de C++ puede editarlo a su gusto.
 
