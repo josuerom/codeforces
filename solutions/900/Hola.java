@@ -1,17 +1,16 @@
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
 /**
-   ░░█ █▀█ █▀ █░█ █▀▀ █▀█ █▀█ █▀▄▀█
-   █▄█ █▄█ ▄█ █▄█ ██▄ █▀▄ █▄█ █░▀░█
-   created: {DAY}/{MONTH}/23 {HOUR}:{MINUTE}:{SECOND}
+ *   author:  josuerom
+ *   created: 07/10/23 16:47:03
 **/
 import java.io.*;
 import java.util.*;
 import static java.lang.Math.*;
 
-public class {NAME} {
-public static void main(String[] args) {
+public class Hola {
+   public static void main(String[] args) {
       try (FastReader io = new FastReader()) {
-         
+
       }
       System.exit(0);
    }
