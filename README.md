@@ -1,6 +1,6 @@
 # CodeForces
 
-[codeforces](https://codeforces.com/submissions/josuerom)
+[codeforces](https://codeforces.com/submissions/josuerom)  [Training_Camp_2023_UNIMINUTO](https://codeforces.com/group/vBwQR71x1P/contest/447867)
 
 ## Tabla de Salidas en la PC (Programación Competitiva)
  | Mensaje | Número de prueba | Descripcion |
