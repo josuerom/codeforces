@@ -49,8 +49,8 @@ cmake_ninja_workdir = D$:/Workspace/codeforces/cmake-build-debug/
 
 build cmake_object_order_depends_target_codeforces: phony || CMakeFiles/codeforces.dir
 
-build CMakeFiles/codeforces.dir/solutions/900/A_3n_By_One.cpp.obj: CXX_COMPILER__codeforces_unscanned_Debug D$:/Workspace/codeforces/solutions/900/A_3n_By_One.cpp || cmake_object_order_depends_target_codeforces
-  DEP_FILE = CMakeFiles\codeforces.dir\solutions\900\A_3n_By_One.cpp.obj.d
+build CMakeFiles/codeforces.dir/solutions/900/A_The_problem_3n+1.cpp.obj: CXX_COMPILER__codeforces_unscanned_Debug D$:/Workspace/codeforces/solutions/900/A_The_problem_3n+1.cpp || cmake_object_order_depends_target_codeforces
+  DEP_FILE = CMakeFiles\codeforces.dir\solutions\900\A_The_problem_3n+1.cpp.obj.d
   FLAGS = -std=c++17 -march=native -O3 -Wall -pedantic -Werror -Weffc++ -Wno-sign-conversion -Wvla -DDEBUG -DLOCAL -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\codeforces.dir
   OBJECT_FILE_DIR = CMakeFiles\codeforces.dir\solutions\900
@@ -63,7 +63,7 @@ build CMakeFiles/codeforces.dir/solutions/900/A_3n_By_One.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable codeforces.exe
 
-build codeforces.exe: CXX_EXECUTABLE_LINKER__codeforces_Debug CMakeFiles/codeforces.dir/solutions/900/A_3n_By_One.cpp.obj
+build codeforces.exe: CXX_EXECUTABLE_LINKER__codeforces_Debug CMakeFiles/codeforces.dir/solutions/900/A_The_problem_3n+1.cpp.obj
   FLAGS = -std=c++17 -march=native -O3 -Wall -pedantic -Werror -Weffc++ -Wno-sign-conversion -Wvla -DDEBUG -DLOCAL -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\codeforces.dir

@@ -1,6 +1,6 @@
 /**
  *   author:  josuerom
- *   created: 13/09/23 14:37:41
+ *   created: 05/10/23 15:15:39
 **/
 #include <bits/stdc++.h>
 using namespace std;
@@ -17,23 +17,19 @@ using namespace std;
 #define se   second
 #define fi   first
 
+const int N = 2e3 + 7;
+int a[N];
 int n;
-string s;
 
 void solve() {
-   cin >> n >> s;
-   map<string, int> mp;
-   for (int i = 0; i < n - 1; i++) {
-      string x = s.substr(i, 2);
-      mp[x] += 1;
-   }
-   string ans = s.substr(0, 2);
-   int m = 0;
-   for (auto &e : mp) {
-      if (e.se > 1 && e.se >= m) {
-         ans = e.fi;
-         m = e.se;
-      }
+   cin >> n;
+   for (int i = 0; i < n; i++)
+      cin >> a[i];
+   sort(a, a + n, [](int x, int y) { return x % 2 < y % 2; });
+   int ans = 0;
+   for (int i = 0; i < n; i++) {
+      for (int j = i + 1; j < n; j++)
+         ans += gcd(a[i], 2 * a[j]) > 1;
    }
    cout << ans << endl;
 }
@@ -42,12 +38,13 @@ int main() {
    ios::sync_with_stdio(false);
    cin.tie(nullptr); cout.tie(nullptr);
    int tt = 1;
+   cin >> tt;
    for (int nc = 1; nc <= tt; nc++) {
 #ifdef josuerom
-     cout << "--- Case #" << nc << " ---\n";
-     solve();
+      cout << "--- Case #" << nc << " ---\n";
+      solve();
 #else
-     solve();
+      solve();
 #endif
    }
    return 0;

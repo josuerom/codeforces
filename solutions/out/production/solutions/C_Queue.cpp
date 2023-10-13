@@ -1,6 +1,6 @@
 /**
  *   author:  josuerom
- *   created: 13/09/23 14:37:41
+ *   created: 10/10/23 21:13:54
 **/
 #include <bits/stdc++.h>
 using namespace std;
@@ -17,37 +17,34 @@ using namespace std;
 #define se   second
 #define fi   first
 
-int n;
-string s;
+queue<int> cl;
+int n, x;
 
 void solve() {
-   cin >> n >> s;
-   map<string, int> mp;
-   for (int i = 0; i < n - 1; i++) {
-      string x = s.substr(i, 2);
-      mp[x] += 1;
+   cin >> n;
+   if (n == 1) {
+      cin >> x;
+      cl.push(x);
+   } else if (n == 2 && !cl.empty()) {
+      cl.pop();
+   } else if (n == 3 && !cl.empty()) {
+      cout << cl.front() << endl;
+   } else if (n == 3 && cl.empty()) {
+      cout << "Empty!" << endl;
    }
-   string ans = s.substr(0, 2);
-   int m = 0;
-   for (auto &e : mp) {
-      if (e.se > 1 && e.se >= m) {
-         ans = e.fi;
-         m = e.se;
-      }
-   }
-   cout << ans << endl;
 }
 
 int main() {
    ios::sync_with_stdio(false);
    cin.tie(nullptr); cout.tie(nullptr);
    int tt = 1;
+   cin >> tt;
    for (int nc = 1; nc <= tt; nc++) {
 #ifdef josuerom
-     cout << "--- Case #" << nc << " ---\n";
-     solve();
+      cout << "-- Case #" << nc << " --\n";
+      solve();
 #else
-     solve();
+      solve();
 #endif
    }
    return 0;
