@@ -1,3 +1,0 @@
-"D:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\codeforces.dir/objects.a
-"D:\Program Files\Compilers\Mingw64\bin\ar.exe" qc CMakeFiles\codeforces.dir/objects.a @CMakeFiles\codeforces.dir\objects1
-"D:\Program Files\Compilers\Mingw64\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\codeforces.dir/objects.a -Wl,--no-whole-archive -o codeforces.exe -Wl,--out-implib,libcodeforces.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\codeforces.dir\linkLibs.rsp
