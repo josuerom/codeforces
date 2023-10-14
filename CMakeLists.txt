@@ -3,19 +3,4 @@ project(codeforces)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_compile_options(
-        -std=c++17                      # Estándar C++17 para compilación
-        -march=native                   # Genera código específico para la arquitectura del la maquina
-        -Wall                           # Todas las advertencias habilitadas
-        -Wextra                         # Advertencias adicionales habilitadas
-        -Wvla                           # Advertencias relacionadas con el uso del container vector
-        -pedantic                       #  Habilita advertencias adicionales relacionadas con el cumplimiento estricto del estándar del lenguaje
-        -Djosuerom                      # Define la macro "josuerom" en compilación
-        -D_2BITS                        # Define la macro "_2BITS" en compilación
-        -Wl,stack=268435456             # Establece el tamaño de la pila del programa en 256 MB
-        -Wno-sign-conversion            # Desactiva advertencias específicas relacionadas con conversiones entre tipos con y sin signo
-        -D_GLIBCXX_DEBUG_PEDANTIC       # Macro para habilitar comprobaciones de contenedores más estrictas
-)
-
-add_executable(codeforces
-        solutions/900/A_Hanoi_Tower.cpp)
+add_executable(codeforces)
