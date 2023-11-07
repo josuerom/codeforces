@@ -1,4 +1,4 @@
-#pragma GCC optimize("O3,unroll-loops,unsafe-loop-optimizations,inline-functions,-march=native")
+#pragma GCC optimize("O3,unroll-loops,unsafe-loop-optimizations,inline-functions,march=native")
 
 #include <bits/stdc++.h>             //          ██╗░█████╗░░██████╗██╗░░░██╗███████╗██████╗░░█████╗░███╗░░░███╗
 using namespace std;                 //          ██║██╔══██╗██╔════╝██║░░░██║██╔════╝██╔══██╗██╔══██╗████╗░████║
@@ -9,14 +9,15 @@ using namespace std;                 //          ██║██╔══██�
 #define debug(...) 42                //                         created: {DAY}/{MONTH}/23 {HOUR}:{MINUTE}:{SECOND}
 #endif
 
-#define IO_SPEED()          ios::sync_with_stdio(false); cin.tie(0);
 #define decimals(x)         cout.setf(ios::fixed, ios::floatfield); cout.precision(x);
 #define uniq(x)             sort(all(x)); (x).erase(unique(all(x)),(x).end())
 #define FORR(i, x)          for(int i = (int)(x).size()-1; i >= 0; i--)
 #define mod(a, b, mod)      ((((a) % (mod)) + ((b) % (mod))) % (mod))
+#define IN_SPEED()          ios::sync_with_stdio(false); cin.tie(0);
 #define FORI(i, b, c)       for(int (i) = (b); (i) < (c); (i)++)
 #define veredict(x)         cout << ((x) ? "YES" : "NO") << '\n'
-#define binarySearch(x, y) sort(x); binary_search(all(x), (y))
+#define binarySearch(x, y)  sort(x); binary_search(all(x), (y))
+#define TC(T)               for(int nc = 1; nc <= (T); nc++)
 #define memset(a, v)        memset((a),(v),sizeof(a))
 #define rall(x)             (x).rbegin(),(x).rend()
 #define PI                  3.14159265358979323846L
@@ -47,7 +48,7 @@ using namespace std;                 //          ██║██╔══██�
 #define sbr(x, b)           (x >> b)
 #define se                  second
 #define fi                  first
-#define br                  '\n'
+#define endl                '\n'
 
 const int N = 1e6 + 7;
 int a[N], n;
@@ -56,17 +57,16 @@ void solve() {
 }
 
 int main() {
-   IO_SPEED();
-   int tt = 1;
-   cin >> tt;
+   IN_SPEED();
+   int T = 1;
+   cin >> T;
+   TC (T) {
 #ifdef LOCAL
-   FORI (i, 0, tt) {
-      cout << "-- Case #" << i << " --\n";
+      cout << "Case #" << nc << ": ";
       solve();
-   }
 #else
-   while (tt--)
       solve();
 #endif
+   }
    return 0;
 }

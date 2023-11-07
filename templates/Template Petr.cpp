@@ -988,29 +988,29 @@ namespace linear_seq {
 
 /* Now the solution to the problem begins */
 
-class CFImplementationProblem {
+class Solution {
  public:
-  void realSolve() {
+  void solve() {
   }
 
-  void solve() {
-    int tt = 1;
-   //  cin >> tt;
-    for (int it = 1; it <= tt; ++it) {
-      #ifdef josuerom
-         cout << "----- Case #" << it << " -----\n";
-         realSolve();
-      #else
-         realSolve();
-      #endif
+  void testCase() {
+    int TC = 1;
+    // cin >> TC;
+    for (int nc = 1; nc <= TC; nc++) {
+#ifdef LOCAL
+         cout << "Case #" << nc << ": ";
+         solve();
+#else
+         solve();
+#endif
     }
   }
 };
 
 int main() {
     ios::sync_with_stdio(false);
-    cin.tie(nullptr); cout.tie(nullptr);
-    CFImplementationProblem solver;
-    solver.solve();
+    cin.tie(0);
+    Solution solver;
+    solver.testCase();
     return 0;
 }
