@@ -1,15 +1,16 @@
 /**
  *   author:  josuerom
- *   created: 07/10/23 10:55:21
+ *   created: 15/10/23 14:32:25
 **/
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
 void solve() {
-   long long n;
+   long long n = 0, ans = 0;
    cin >> n;
-   cout << (n % 2 == 0 ? (n * n) / 2 + (n - 1) : (n * n) / 2 + n) << '\n';
+   ans = (n % 2 == 0) ? (n * n) / 2 + (n - 1) : (n * n) / 2 + n;
+   cout << ans << '\n';
 }
 
 int main() {
