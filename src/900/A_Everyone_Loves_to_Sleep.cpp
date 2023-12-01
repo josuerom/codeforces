@@ -1,11 +1,11 @@
 /**
  *   author:  josuerom
- *   created: 12/11/23 12:54:32
+ *   created: 29/11/23 21:55:22
 **/
 #include <bits/stdc++.h>
 using namespace std;
 
-#ifdef DEBUG
+#ifdef LOCAL
 #include "debug.h"
 #else
 #define debug(...) 42
