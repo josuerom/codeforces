@@ -21,7 +21,7 @@ def main(programa):
 
 
 def ruta_samples():
-   ruta_por_defecto = f"/home/josuerom/Workspace/codeforces/samples"
+   ruta_por_defecto = f"/home/josuerom/Workspace/codeforces/src/samples"
    return ruta_por_defecto
 
 
@@ -133,10 +133,10 @@ def ejecutar_java(programa):
 if __name__ == "__main__":
    """En Linux
       Para verificar todos los caso de prueba:
-      python3 ../auto/lin_tester.py -t <programa>
+      python3 ../auto/lin_test.py -t <programa>
    
       Para obtener los casos de prueba del problema:
-      python3 ../auto/lin_tester.py -p <id_contest>/<id_problema>
+      python3 ../auto/lin_test.py -p <id_contest>/<id_problema>
    """
    if len(sys.argv) > 3 or (sys.argv[1] != "-t" and sys.argv[1] != "-p"):
       print(colored("Mijito/a instrucción invalida!", "red"))
