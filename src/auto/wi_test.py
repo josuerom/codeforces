@@ -57,7 +57,7 @@ def obtener_input_output(id_contest, id_problema):
 
 
 def ejecutar_python(programa):
-    for i in range(1, 100):
+    for i in range(1, 11):
         entrada_estandar = f"{ruta_samples()}\\in{i}.txt"
         respuesta_correcta = f"{ruta_samples()}\\ans{i}.txt"
         if not os.path.exists(entrada_estandar):
@@ -79,7 +79,7 @@ def ejecutar_python(programa):
 
 def compilar_y_ejecutar_cpp(programa):
     def ejecutar(programa):
-        for i in range(1, 100):
+        for i in range(1, 11):
             entrada_estandar = f"{ruta_samples()}\\in{i}.txt"
             respuesta_correcta = f"{ruta_samples()}\\ans{i}.txt"
             if not os.path.exists(entrada_estandar):
@@ -110,7 +110,7 @@ def compilar_y_ejecutar_cpp(programa):
 
 
 def ejecutar_java(programa):
-    for i in range(1, 100):
+    for i in range(1, 11):
         entrada_estandar = f"{ruta_samples()}\\in{i}.txt"
         respuesta_correcta = f"{ruta_samples()}\\ans{i}.txt"
         if not os.path.exists(entrada_estandar):
