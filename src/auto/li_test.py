@@ -57,7 +57,7 @@ def obtener_input_output(id_contest, id_problema):
 
 
 def ejecutar_python(programa):
-   for i in range(1, 10):
+   for i in range(1, 11):
       entrada_estandar = f"{ruta_samples()}/in{i}.txt"
       respuesta_correcta = f"{ruta_samples()}/ans{i}.txt"
       if not os.path.exists(entrada_estandar):
@@ -79,7 +79,7 @@ def ejecutar_python(programa):
 
 def compilar_y_ejecutar_cpp(programa):
    def ejecutar(programa):
-      for i in range(1, 10):
+      for i in range(1, 11):
          entrada_estandar = f"{ruta_samples()}/in{i}.txt"
          respuesta_correcta = f"{ruta_samples()}/ans{i}.txt"
          if not os.path.exists(entrada_estandar):
@@ -110,7 +110,7 @@ def compilar_y_ejecutar_cpp(programa):
 
 
 def ejecutar_java(programa):
-   for i in range(1, 10):
+   for i in range(1, 11):
       entrada_estandar = f"{ruta_samples()}/in{i}.txt"
       respuesta_correcta = f"{ruta_samples()}/ans{i}.txt"
       if not os.path.exists(entrada_estandar):
@@ -133,10 +133,10 @@ def ejecutar_java(programa):
 if __name__ == "__main__":
    """En Linux
       Para verificar todos los caso de prueba:
-      python3 ../auto/lin_test.py -t <programa>
+      python3 ../auto/li_test.py -t <programa>
    
       Para obtener los casos de prueba del problema:
-      python3 ../auto/lin_test.py -p <id_contest>/<id_problema>
+      python3 ../auto/li_test.py -p <id_contest>/<id_problema>
    """
    if len(sys.argv) > 3 or (sys.argv[1] != "-t" and sys.argv[1] != "-p"):
       print(colored("Mijito/a instrucción invalida!", "red"))
