@@ -133,15 +133,15 @@ def ejecutar_java(programa):
 if __name__ == "__main__":
    """En Linux
       Para verificar todos los caso de prueba:
-      python3 ../auto/lin_tester.py -test <programa>
+      python3 ../auto/lin_tester.py -t <programa>
    
       Para obtener los casos de prueba del problema:
-      python3 ../auto/lin_tester.py -parse <id_contes>/<id_problema>
+      python3 ../auto/lin_tester.py -p <id_contest>/<id_problema>
    """
-   if len(sys.argv) > 3 or (sys.argv[1] != "-parse" and sys.argv[1] != "-test"):
+   if len(sys.argv) > 3 or (sys.argv[1] != "-t" and sys.argv[1] != "-p"):
       print(colored("Mijito/a instrucción invalida!", "red"))
-   elif len(sys.argv) == 3 and sys.argv[1] == "-test":
+   elif len(sys.argv) == 3 and sys.argv[1] == "-t":
       main(sys.argv[2])
-   elif len(sys.argv) == 3 and sys.argv[1] == "-parse":
+   elif len(sys.argv) == 3 and sys.argv[1] == "-p":
       id_contest, id_problema = sys.argv[2].split("/")
       obtener_input_output(id_contest, id_problema)
