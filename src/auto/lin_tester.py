@@ -133,10 +133,10 @@ def ejecutar_java(programa):
 if __name__ == "__main__":
    """En Linux
       Para verificar todos los caso de prueba:
-      python3 ../lin_tester.py -test <programa>
+      python3 ../auto/lin_tester.py -test <programa>
    
       Para obtener los casos de prueba del problema:
-      python3 ../lin_tester.py -parse <id_contes>/<id_problema>
+      python3 ../auto/lin_tester.py -parse <id_contes>/<id_problema>
    """
    if len(sys.argv) > 3 or (sys.argv[1] != "-parse" and sys.argv[1] != "-test"):
       print(colored("Mijito/a instrucción invalida!", "red"))
