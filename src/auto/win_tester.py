@@ -133,10 +133,10 @@ def ejecutar_java(programa):
 if __name__ == "__main__":
     """En Windows
        Para verificar todos los caso de prueba:
-       python wtester.py -test <programa>
+       python ..\auto\wtester.py -test <programa>
     
        Para obtener los casos de prueba junto con las salidas
-       python wtester.py -parse <id_contes>/<id_problema>
+       python ..\auto\wtester.py -parse <id_contes>/<id_problema>
     """
     if len(sys.argv) > 3 or sys.argv[1] != "-parse" and sys.argv[1] != "-test":
       print(colored("Mijito/a instrucción invalida!", "red"))
