@@ -133,10 +133,10 @@ def ejecutar_java(programa):
 if __name__ == "__main__":
     """En Windows
        Para verificar todos los caso de prueba:
-       python ..\auto\win_tester.py -t <programa>
+       python ..\auto\wi_test.py -t <programa>
     
        Para obtener los casos de prueba junto con las salidas
-       python ..\auto\win_tester.py -p <id_contest>/<id_problema>
+       python ..\auto\wi_test.py -p <id_contest>/<id_problema>
     """
     if len(sys.argv) > 3 or sys.argv[1] != "-t" and sys.argv[1] != "-p":
       print(colored("Mijito/a instrucción invalida!", "red"))
